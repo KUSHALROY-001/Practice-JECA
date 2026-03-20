@@ -1,0 +1,1092 @@
+[
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 1,
+    "text": "Which of the following types of memory is non-volatile?",
+    "options": ["RAM", "Cache", "Register", "EPROM"],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 2,
+    "text": "Which of the following statements about RAM is correct?",
+    "options": [
+      "Type of non-volatile memory used for permanent data storage.",
+      "Retains data even when the power is turned off.",
+      "Volatile memory used for temporary storage during program execution.",
+      "Can only be read but not written to."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 3,
+    "text": "Which of the following best distinguishes a sequential circuit from a combinational circuit?",
+    "options": [
+      "Sequential circuits produce output based only on current inputs.",
+      "Sequential circuits use both current inputs and past states to determine output.",
+      "Combinational circuits have memory elements to store past states.",
+      "Combinational circuits require a clock signal to operate."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 4,
+    "text": "A system has a 16-bit data bus and a 20-bit address bus. What is the maximum amount of data (in bytes) the system can directly address in memory?",
+    "options": [
+      "2^20 bytes = 1 MB",
+      "2^16 bytes = 64 KB",
+      "2^20 words = 2 MB",
+      "2^36 bytes = 64 GB"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 5,
+    "text": "1 nibble =",
+    "options": ["2 bits", "4 bits", "8 bits", "16 bits"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 6,
+    "text": "Which of the following is not a type of computer code?",
+    "options": ["EDIC", "ASCII", "BCD", "EBCDIC"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 7,
+    "text": "What is the range of unsigned int in C? (Assuming 16-bit)",
+    "options": [
+      "-32,768 to + 32,767",
+      "-1 to +32,767",
+      "0 to 65535",
+      "1 to 65536"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 8,
+    "text": "What will be output of the following code snippet?\n#include <stdio.h>\nint main() {\n  float x=5;\n  if (x>10)\n    printf(\"Greater\");\n  else if (x=10)\n    printf(\"Equal\");\n  else\n    printf(\"Smaller\");\n  return 0;\n}",
+    "options": ["Greater", "Equal", "Smaller", "No output"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 9,
+    "text": "What will be output of the following code snippet?\n#include <stdio.h>\nint main() {\n  int i;\n  for (i=1;i<=5;i++) {\n    if(i==i)\n      continue;\n    printf(\"%d\", i);\n  }\n  return 0;\n}",
+    "options": ["12345", "2345", "1234", "No output"],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 10,
+    "text": "Which of the following statements about arrays in C is correct?",
+    "options": [
+      "Array indices in C start from 1.",
+      "The size of an array must always be specified at runtime.",
+      "An array name in C represents the address of the first element.",
+      "Arrays in C can store elements of different data types."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 11,
+    "text": "Read the following statements about functions in C and choose the correct option:\n(i) A function in C can return only one value directly.\n(ii) Function names can be the same as variable names in the same scope.\n(iii) A function must always take at least one argument.\n(iv) Recursion is allowed in C functions.",
+    "options": [
+      "All statements are correct.",
+      "Only statements (i) and (iv) are correct.",
+      "Only statements (ii) and (iii) are correct.",
+      "None of the statements are correct."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 12,
+    "text": "What happens when a recursive function in C lacks a proper base condition?",
+    "options": [
+      "The function executes only once and terminates.",
+      "The compiler shows a syntax error.",
+      "It leads to infinite recursion and eventually a stack overflow.",
+      "The function automatically converts to an iterative form."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 13,
+    "text": "What will be the output of the following C code?\n#include <stdio.h>\nint main() {\n  int a=10;\n  int *p=&a;\n  printf(\"%d\\n\",*p);\n  return 0;\n}",
+    "options": [
+      "Address of the variable a",
+      "Garbage value",
+      "Compilation error",
+      "10"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 14,
+    "text": "A risk in a software project has a probability of occurrence of 0.3 and the potential loss if it occurs is estimated to be ₹2,00,000. What is the Risk Exposure (RE) for this risk?",
+    "options": ["₹60,000", "₹2,00,000", "₹6,000", "₹66,666"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 15,
+    "text": "Which metric gives the best measure of efficiency in a defect discovery process across software development phases?",
+    "options": [
+      "Defect Density",
+      "Cyclomatic Complexity",
+      "Defect Removal Efficiency (DRE)",
+      "Mean Time to Failure (MTTF)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 16,
+    "text": "Which testing approach specifically ensures that all logical conditions in a decision are tested at least once?",
+    "options": [
+      "Statement Coverage",
+      "Branch Coverage",
+      "Path Coverage",
+      "Condition Coverage"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 17,
+    "text": "Which of the following pairs correctly matches the type of testing with its main focus or environment?",
+    "options": [
+      "White Box - End-user feedback",
+      "Alpha Testing - Developer site",
+      "Beta Testing - Internal logic testing",
+      "Black Box - Code coverage analysis"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 18,
+    "text": "Which of the following statements about structures and unions in C is true?",
+    "options": [
+      "In a structure, all members share the same memory location.",
+      "In a union, all members have separate memory locations.",
+      "The size of a union is equal to the size of its largest member.",
+      "The size of a structure is always equal to the sum of the sizes of its members, without any padding."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 19,
+    "text": "What will be the output of the following program?\nchar str1[20] = \"Hello\";\nchar str2[20] = \"Hello\";\nstrcpy(str2, str1);\nif (strcmp(str1, str2) == 0)\n  printf(\"Equal\");\nelse\n  printf(\"Not Equal\");",
+    "options": ["Equal", "Not Equal", "Compiler Error", "Undefined Behavior"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 20,
+    "text": "In the context of software quality management, which of the following focuses on preventing defects rather than detecting them?",
+    "options": [
+      "Quality Control",
+      "Quality Assurance",
+      "Software Testing",
+      "Debugging"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 21,
+    "text": "Which of the following options with grep is used to ignore case while searching?",
+    "options": ["-n", "-i", "-r", "-c"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 22,
+    "text": "Which of the following is not a typical use of stacks?",
+    "options": [
+      "Expression evaluation",
+      "Undo mechanism in editors",
+      "Recursion function call management",
+      "Breadth-first search traversal"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 23,
+    "text": "In a circular queue of size n, when is the queue considered full?",
+    "options": [
+      "Front == Rear",
+      "(Rear + 1) % n == Front",
+      "Rear == n",
+      "Front == 0"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 24,
+    "text": "Which of the following traversal techniques lists the nodes of a binary search tree in ascending order?",
+    "options": ["Inorder", "Preorder", "Postorder", "None of these"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 25,
+    "text": "The running time T(n) of an algorithm for n input is given as follows:\nT(n) = c + T(n-1), if n > 1\n= d, if n <= 1.\nHere c and d are constant.",
+    "options": ["n^2", "n", "n^3", "n^n"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 26,
+    "text": "The order of an algorithm that finds whether a given Boolean function of n variables produces 1 is",
+    "options": ["constant", "linear", "logarithmic", "exponential"],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 27,
+    "text": "Which of the following can be done with Linked List?",
+    "options": [
+      "Implementation of Stacks and Queues",
+      "Implementation of Binary Trees",
+      "Implementation of Data Structures that can simulate Dynamic Arrays",
+      "All of the above"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 28,
+    "text": "What is the worst case time complexity to access an element in a binary search tree?",
+    "options": ["O(n)", "O(n log n)", "O(1)", "O(log n)"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 29,
+    "text": "Packet switching means:",
+    "options": [
+      "Sending data as a continuous bit stream",
+      "Using fixed data circuits for each transmission",
+      "Dividing data into packets and sending independently",
+      "Switching physical cables between transmissions"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 30,
+    "text": "Which of the following represents postorder traversal of a binary tree?",
+    "options": [
+      "Root -> Left -> Right",
+      "Left -> Root -> Right",
+      "Left -> Right -> Root",
+      "Right -> Left -> Root"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 31,
+    "text": "In a graph of n nodes and n edges, how many cycles will be present?",
+    "options": ["Exactly 1", "At most 1", "At most 2", "Depends on the graph"],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 32,
+    "text": "What is the value of the postfix expression 6 3 2 4 + - * ?",
+    "options": ["-18", "18", "22", "40"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 33,
+    "text": "Which of the following points is/are not true about Linked List data structure when it is compared with an array?",
+    "options": [
+      "Random access is not allowed in a typical implementation of Linked Lists.",
+      "Access of elements in Linked List takes less time than compared to arrays.",
+      "Arrays have better cache locality that can make them better in terms of performance.",
+      "It is easy to insert and delete elements in Linked List."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 34,
+    "text": "What is a dequeue?",
+    "options": [
+      "A queue implemented with both singly and doubly Linked Lists",
+      "A queue with insert/delete defined for front side of the queue",
+      "A queue with insert/delete defined for both front and rear ends of the queue",
+      "A queue implemented with a doubly Linked List"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 35,
+    "text": "What is the best case time complexity of deleting a node in a Singly Linked List?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 36,
+    "text": "Which of the following is the correct sequence of stages in a basic instruction pipeline?",
+    "options": [
+      "Fetch -> Decode -> Execute",
+      "Decode -> Fetch -> Execute",
+      "Execute -> Decode -> Fetch",
+      "Fetch -> Execute -> Decode"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 37,
+    "text": "______ contains firmware that boots the system.",
+    "options": ["ROM", "RAM", "Cache", "DMA controller"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 38,
+    "text": "Which of the following is not a valid characteristic of SRAM?",
+    "options": [
+      "Faster than DRAM",
+      "Expensive",
+      "Volatile",
+      "Requires frequent refreshing"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 39,
+    "text": "The sequence of events that happen during a typical fetch operation is",
+    "options": [
+      "PC -> MAR -> Memory -> MDR -> IR",
+      "PC -> Memory -> MDR -> IR",
+      "PC -> Memory -> IR",
+      "PC -> MAR -> Memory -> IR"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 40,
+    "text": "How many 2-input multiplexers are required to construct a 2^10-multiplexer?",
+    "options": ["1023", "31", "10", "127"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Operating Systems",
+    "questionNo": 41,
+    "text": "Which one is not a part of Process Control Block (PCB)?",
+    "options": [
+      "Process state",
+      "Program counter",
+      "CPU registers",
+      "Source code of the program"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Operating Systems",
+    "questionNo": 42,
+    "text": "In the process lifecycle, the queue where processes wait for CPU allocation is called the ______ queue.",
+    "options": ["Ready", "Waiting", "Job", "Device"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Operating Systems",
+    "questionNo": 43,
+    "text": "In an operating system, a thread is best described as",
+    "options": [
+      "A program in execution.",
+      "The smallest unit of CPU scheduling.",
+      "A process that has finished execution.",
+      "A collection of processes."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Operating Systems",
+    "questionNo": 44,
+    "text": "Which of the following scheduling algorithms can work in both preemptive and non-preemptive modes?",
+    "options": [
+      "First-Come, First-Served (FCFS)",
+      "Shortest Job First (SJF)",
+      "Priority Scheduling",
+      "Round Robin (RR)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Operating Systems",
+    "questionNo": 45,
+    "text": "Which of the following is a deadlock avoidance algorithm?",
+    "options": [
+      "First-Come, First-Served (FCFS)",
+      "Banker's Algorithm",
+      "Round Robin (RR)",
+      "Shortest Remaining Time First (SRTF)"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Operating Systems",
+    "questionNo": 46,
+    "text": "Which type of fragmentation occurs inside allocated memory blocks?",
+    "options": [
+      "Internal fragmentation",
+      "External fragmentation",
+      "Paging fragmentation",
+      "Compaction fragmentation"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Operating Systems",
+    "questionNo": 47,
+    "text": "Which of the following statements is true about paging and fragmentation?",
+    "options": [
+      "Paging suffers from internal fragmentation but not external fragmentation.",
+      "Paging suffers from external fragmentation but not internal fragmentation.",
+      "Paging suffers from both internal and external fragmentation.",
+      "Paging does not suffer from any kind of fragmentation."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 48,
+    "text": "Which command is used to find the number of lines, words and characters in a file in Unix?",
+    "options": ["count", "wc", "nl", "cat"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 49,
+    "text": "Which Unix command will change the group ownership of the file report.txt to the group staff?",
+    "options": [
+      "chmod staff report.txt",
+      "chown staff report.txt",
+      "groupadd staff report.txt",
+      "chgrp staff report.txt"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 50,
+    "text": "In Unix, user wants to change the priority of a running process, which is the suitable command?",
+    "options": ["nice", "ps", "renice", "kill"],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 51,
+    "text": "In the OSI model, which layer is responsible for detecting errors caused during physical transmission?",
+    "options": [
+      "Physical Layer",
+      "Transport Layer",
+      "Data Link Layer",
+      "Session Layer"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 52,
+    "text": "In the TCP/IP model, ______ is responsible for determining the best path for data packets to travel across interconnected networks.",
+    "options": [
+      "Application Layer",
+      "Transport Layer",
+      "Internet Layer",
+      "Network Access Layer"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 53,
+    "text": "Which type of routing automatically changes its path selection based on current network conditions like congestion or link failures?",
+    "options": [
+      "Static Routing",
+      "Default Routing",
+      "Dynamic Routing",
+      "Adaptive Routing"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 54,
+    "text": "Which of the following protocols is connectionless and provides unreliable data delivery?",
+    "options": ["TCP", "IP", "UDP", "Both (B) and (C)"],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 55,
+    "text": "Which field in the IPv4 header helps uniquely identify fragments of a datagram so they can be reassembled correctly?",
+    "options": ["Identification", "Time to Live (TTL)", "Protocol", "Flags"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 56,
+    "text": "The IP address 10.5.6.7 belongs to which class?",
+    "options": ["Class A", "Class B", "Class C", "Class D"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 57,
+    "text": "Which application layer protocol is primarily used for sending email?",
+    "options": ["IMAP", "POP3", "SMTP", "FTP"],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 58,
+    "text": "What does a firewall primarily do?",
+    "options": [
+      "Encrypts data",
+      "Filters network traffic",
+      "Detects viruses",
+      "Manages network routing"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 59,
+    "text": "Which attack involves intercepting and altering communication between two parties without their knowledge?",
+    "options": [
+      "Phishing",
+      "Man-in-the-Middle Attack",
+      "Denial of Service (DoS)",
+      "Spoofing"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 60,
+    "text": "Which device is used to connect multiple devices within the same network segment and operates at the data link layer?",
+    "options": ["Router", "Gateway", "Switch", "Modem"],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Database Management System",
+    "questionNo": 61,
+    "text": "The physical relationship of record is determined by a mathematical formula that transforms a file key into a record location in",
+    "options": [
+      "a B-tree file.",
+      "an indexed file.",
+      "a hashed file.",
+      "a sequential file."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Database Management System",
+    "questionNo": 62,
+    "text": "A data dictionary is a special file that contains",
+    "options": [
+      "The names of all fields in all files.",
+      "The data types of all fields in all files.",
+      "The width of all fields in all files.",
+      "All of these"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Database Management System",
+    "questionNo": 63,
+    "text": "A functional dependency of the form X -> Y is trivial if",
+    "options": [
+      "Y is a subset of X",
+      "Y is a proper subset of X",
+      "X is a subset of Y",
+      "X is a proper subset of Y and Y is a proper subset of X"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Database Management System",
+    "questionNo": 64,
+    "text": "There is a possibility of a cascading rollback when",
+    "options": [
+      "A transaction writes items that have been written only by a committed transaction.",
+      "A transaction writes items that is previously written by an uncommitted transaction.",
+      "A transaction reads an items that is previously written by an uncommitted transaction.",
+      "Both (B) and (C)"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Database Management System",
+    "questionNo": 65,
+    "text": "In an entity relationship, y is the dominant entity and x is a subordinate entity. Then which one is incorrect?",
+    "options": [
+      "Operationally, if y is deleted, so is x.",
+      "x is existence dependent on y.",
+      "Operationally, if x is deleted, so is y.",
+      "Operationally, if x is deleted, y remains same."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Database Management System",
+    "questionNo": 66,
+    "text": "Choose the correct statement:",
+    "options": [
+      "An alternate key is a candidate key, that is not a primary key.",
+      "An alternate key is a primary key, that is not a candidate key.",
+      "An alternate key is a candidate key, that is also a primary key.",
+      "None of the above"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Database Management System",
+    "questionNo": 67,
+    "text": "If one attribute is a determinant of a second, which in turn is a determinant of a third, then the relation cannot be",
+    "options": ["well-structured.", "in 1NF.", "in 2NF.", "in 3NF."],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Database Management System",
+    "questionNo": 68,
+    "text": "Which of the following statements regarding relational algebra are true?\n(i) R <condition> S == sigma_{<condition>}(R x S)\n(ii) R <condition> S == Pi_{<condition>}(R x S)\n(iii) R <condition> S == R * rho_{<list>}S",
+    "options": ["Only (i).", "Only (ii).", "Only (iii).", "None of these"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 69,
+    "text": "Which process model is best suited when requirements are well understood and unlikely to change?",
+    "options": [
+      "Incremental Model",
+      "Waterfall Model",
+      "Spiral Model",
+      "Agile Mode"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 70,
+    "text": "Which testing strategy is performed without knowledge of the internal code?",
+    "options": [
+      "Black-box Testing",
+      "Unit Testing",
+      "Structural Testing",
+      "White-box Testing"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 71,
+    "text": "Which design principle aims to reduce dependencies between modules?",
+    "options": ["Cohesion", "Coupling", "Modularity", "Abstraction"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 72,
+    "text": "Correct sequence of Risk Management process is",
+    "options": [
+      "Identification -> Assessment -> Prioritization -> Mitigation -> Monitoring -> Documentation.",
+      "Assessment -> Identification -> Prioritization -> Mitigation -> Monitoring -> Documentation.",
+      "Identification -> Assessment -> Mitigation -> Prioritization -> Monitoring -> Documentation.",
+      "Identification -> Mitigation -> Assessment -> Prioritization -> Monitoring -> Documentation."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 73,
+    "text": "Which of the following testing methods is normally used as the acceptance test for a software system?",
+    "options": [
+      "Regression testing",
+      "Integration testing",
+      "Unit testing",
+      "Functional testing"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Machine Learning",
+    "questionNo": 74,
+    "text": "Which of the following is not a supervised machine learning algorithm?",
+    "options": [
+      "K-means",
+      "Naïve Bayes",
+      "SVM for classification problems",
+      "Decision tree"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Machine Learning",
+    "questionNo": 75,
+    "text": "What is the key benefit of using deep learning for tasks like recognizing images?",
+    "options": [
+      "They need less training data than other methods.",
+      "They're easier to explain and understand than other models.",
+      "They can learn complex details from the data on their own.",
+      "They work faster and are more efficient computationally."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Machine Learning",
+    "questionNo": 76,
+    "text": "What is the key difference between supervised and unsupervised learning?",
+    "options": [
+      "Supervised learning requires labeled data, while unsupervised learning does not.",
+      "Supervised learning predicts labels, while unsupervised learning discovers patterns.",
+      "Supervised learning is used for classification, while unsupervised learning is used for regression.",
+      "Supervised learning is always more accurate than unsupervised learning."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Machine Learning",
+    "questionNo": 77,
+    "text": "The purpose of an activation function in a neural network is to",
+    "options": [
+      "Initialize weights",
+      "Add non-linearity",
+      "Normalize input",
+      "Optimize gradients"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Machine Learning",
+    "questionNo": 78,
+    "text": "Hidden Markov Models assume the system is",
+    "options": ["Deterministic", "Linear", "Stochastic", "Static"],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Machine Learning",
+    "questionNo": 79,
+    "text": "In SVMs, the margin is defined as",
+    "options": [
+      "The perpendicular distance from the decision boundary to the closest support vector.",
+      "The Euclidean distance between the two farthest data points in the dataset.",
+      "The difference in predicted probabilities between the two classes.",
+      "The perpendicular distance from any point to the hyperplane along the normal vector."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Machine Learning",
+    "questionNo": 80,
+    "text": "An artificially intelligent car decreases its speed based on its distance from the car in front of it. Which algorithm is used?",
+    "options": [
+      "Naïve-Bayes",
+      "Decision Tree",
+      "Linear Regression",
+      "Logistic Regression"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 81,
+    "text": "What will be the output of the following C program?\n#include <stdio.h>\nint recur(int n) {\n  if (n==0)\n    return 0;\n  else\n    return n + recur(n-1);\n}\nint main() {\n  int result = recur(4);\n  printf(\"%d\\n\", result);\n  return 0;\n}",
+    "options": ["10", "6", "4", "0"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 82,
+    "text": "A software module contains 1500 lines of code and 15 defects were found during testing. What is the defect density of the module?",
+    "options": [
+      "0.01 defects per KLOC",
+      "1 defect per KLOC",
+      "10 defects per KLOC",
+      "100 defects per KLOC"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 83,
+    "text": "A development team found 90 defects during the design phase of a project. However, 10 additional design defects were discovered during the testing phase. What is the Defect Removal Efficiency (DRE) for the design phase?",
+    "options": ["10%", "90%", "80%", "95%"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "C Programming",
+    "questionNo": 84,
+    "text": "What will be the output of the following C code?\n#include <stdio.h>\nint main() {\n  int x;\n  x = 4<3 ? 100 : 3==3>2 ? 50 : 75;\n  printf(\"%d\", x);\n  return 0;\n}",
+    "options": ["Compilation Error", "100", "50", "75"],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 85,
+    "text": "Five elements P, Q, R, S, T are pushed onto a stack starting from P. The stack is then popped 4 times, and each popped element is inserted into a queue. Two elements are then deleted from the queue and pushed back onto the stack. Finally, one element is popped from the stack. What will be the popped element?",
+    "options": ["P", "Q", "R", "S"],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 86,
+    "text": "Consider the following operations on a singly linked list initially containing the elements: 10 -> 20 -> 30 -> 40\n(i) Insert 15 after 10.\n(ii) Delete the node containing 30.\n(iii) Insert 25 at the end of the list.\n(iv) Delete the first node.\nWhat will be the final sequence of elements in the linked list?",
+    "options": [
+      "15 -> 20 -> 25 -> 40",
+      "20 -> 15 -> 40 -> 25",
+      "15 -> 20 -> 40 -> 25",
+      "20 -> 15 -> 25 -> 40"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 87,
+    "text": "A complete binary tree has 63 nodes. How many leaf nodes does it have?",
+    "options": ["16", "32", "42", "48"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 88,
+    "text": "Find the output from the following C++ code snippet:\nclass A {\npublic:\n  void show() { cout<< \"Class A\\n\"; }\n};\nclass B public A {\npublic:\n  void show() {\n    A::show();\n    cout<< \"Class B\";\n  }\n};\nint main() {\n  B obj;\n  obj.show();\n  return 0;\n}",
+    "options": [
+      "Class A",
+      "Class B",
+      "Program will be in infinite loop",
+      "Compilation error"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 89,
+    "text": "What will be the output of this program?\n#include <iostream>\nusing namespace std;\nclass Test {\npublic:\n  static int x;\n  Test() { x++; }\n  void display() { cout<< x << \" \"; }\n};\nint Test::x = 5;\nint main() {\n  Test t1;\n  t1.display();\n  Test t2;\n  t2.display();\n  return 0;\n}",
+    "options": ["67", "66", "77", "55"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 90,
+    "text": "What is the output of the following C++ code?\n#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n  virtual void show() { cout<< \"Base\"; }\n};\nclass Derived : public public: Base {\npublic:\n  void show() override { cout<< \"Derived\"; }\n};\nint main() {\n  Base* ptr;\n  Derived d;\n  ptr = &d;\n  ptr->show();\n  return 0;\n}",
+    "options": ["Compilation error", "Base", "Derived", "Runtime error"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 91,
+    "text": "Which of the following are true about cyclomatic complexity?",
+    "options": [
+      "It measures the number of independent paths in a program.",
+      "It measures the size of the program in lines of code.",
+      "Higher Values indicate simpler code.",
+      "It is calculated as E - N + 2, where E is edges and N is nodes."
+    ],
+    "correctOptionIndex": [0, 3]
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 92,
+    "text": "A testing phase executes 180 test cases out of 200 planned, with 162 passes and 18 failures. Which are true?",
+    "options": [
+      "Test execution coverage = 90%",
+      "Test pass rate = 90%",
+      "Requirement coverage = 85%",
+      "All of these"
+    ],
+    "correctOptionIndex": [0, 1]
+  },
+  {
+    "year": 2025,
+    "topic": "Software Engineering",
+    "questionNo": 93,
+    "text": "In the context of Software Development Life Cycle (SDLC), which of the following statements is correct?",
+    "options": [
+      "The Spiral model focuses only on risk identification and not on risk mitigation.",
+      "The Incremental model delivers the complete product only at the final iteration.",
+      "In the Waterfall model, requirements can be changed at any phase without impact.",
+      "The V-Model integrates testing activities corresponding to each development phase."
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 94,
+    "text": "The number of cross point needed for 10 lines cross point switch in full duplex in nature and there are no self connection is",
+    "options": ["45", "100", "50", "20"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Networks",
+    "questionNo": 95,
+    "text": "Maximum data rate of a channel for noiseless 3 KHz binary channel is",
+    "options": ["3000 bps", "6000 bps", "1500 bps", "None of these"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 96,
+    "text": "A computer with 32 bit wide data bus uses 4K x 8 static RAM memory chips. The smallest memory of this computer is",
+    "options": ["32 KB", "16 KB", "8 KB", "24 KB"],
+    "correctOptionIndex": 1
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 97,
+    "text": "A machine needs a minimum of 100 second to sort 1000 names by quick sort. The minimum time needed to sort 100 names will be approximately",
+    "options": ["6.7 second", "10 second", "11.2 second", "50.2 second"],
+    "correctOptionIndex": 0
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 98,
+    "text": "Choose the correct answer:\nIf X is a Boolean variable then",
+    "options": ["0+X=X", "1+X=X", "X+X=X", "None of these"],
+    "correctOptionIndex": [0, 2]
+  },
+  {
+    "year": 2025,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 99,
+    "text": "Which of following units can be used to measure the speed of a computer?",
+    "options": ["SYPS", "MIPS", "BAUD", "FLOPS"],
+    "correctOptionIndex": [1, 3]
+  },
+  {
+    "year": 2025,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 100,
+    "text": "Which of the following are advantages of using a linked list over arrays?",
+    "options": [
+      "Dynamic size allocation",
+      "Faster random access",
+      "Easier insertion and deletion",
+      "All of these"
+    ],
+    "correctOptionIndex": [0, 2]
+  }
+]

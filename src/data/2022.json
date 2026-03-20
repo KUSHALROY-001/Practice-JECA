@@ -1,0 +1,1067 @@
+[
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 1,
+    "text": "What is the output of the following program?\n#include <stdio.h>\nvoid main ()\n{\nconst int a=4;\nfloat b;\nb=++a;\nprintf(\"%d, %f\", a, ++b);\n}",
+    "options": ["Compiler error", "5, 5", "4, 5", "5, 4"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 2,
+    "text": "What is the output of the following program?\n#include <stdio.h>\n#define I char\nvoid main ()\n{\nI i=65;\nprintf(\"sizeof(i) = %d\", sizeof(i));\n}",
+    "options": [
+      "Compiler Error",
+      "sizeof(i) = 1",
+      "sizeof(i) = 65",
+      "sizeof(i) = 66"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 3,
+    "text": "What is the output of the following program?\n#include <stdio.h>\nvoid main()\n{\nint x=0, y=0;\nif(x && y++)\nprintf(\"%d..%d\", x++, y);\nprintf(\"%d..%d\", x, y);\n}",
+    "options": ["0..0", "0..1", "1..1", "1..0"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 4,
+    "text": "What is the output of the following program?\n#include <stdio.h>\nenum colors {BLACK, BLUE, CYAN};\nvoid main ()\n{\nprintf (\"%d..%d..%d\", BLACK, BLUE, CYAN);\n}",
+    "options": ["BLACK, BLUE, CYAN", "0..0..0", "0..1..2", "No output"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 5,
+    "text": "What is the output of the following program?\n#include <stdio.h>\nvoid main ()\n{\nchar xy=0;\nfor(;xy>0;xy++);\nprintf(\"%d\\n\", xy);\n}",
+    "options": ["2", "0", "Compiler error", "1"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 6,
+    "text": "What is the output of the following program?\n#include<stdio.h>\nvoid main()\n{\nint *j;\n{\nint i=1000;\nj=&i;\n}\nprintf(\"%d\", *j);\n}",
+    "options": ["1000", "0", "Garbage value", "Compiler error"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 7,
+    "text": "Which of the following statement immediately terminates the execution of a loop?",
+    "options": ["else", "break", "return", "goto"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 8,
+    "text": "An unrestricted use of the \"goto\" statement is harmful because",
+    "options": [
+      "it is difficult to verify program",
+      "memory requirement is increased",
+      "it increases execution time of the program",
+      "compiler generates longer machine code"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 9,
+    "text": "In object oriented programming, inheritance is a technique to",
+    "options": [
+      "pass arguments and improve data hiding",
+      "pass arguments and add features to existing classes without rewriting them",
+      "automatically acquire features from its parent object",
+      "improve data hiding and encapsulation"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 10,
+    "text": "In object oriented programming, the visibility mode by default is",
+    "options": ["public", "private", "protected", "anywhere"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 11,
+    "text": "Which statement is false based on the concept of object oriented programming?",
+    "options": [
+      "Method overloading is an example of compile time polymorphism.",
+      "Method overriding is an example of runtime polymorphism.",
+      "Derived class does not need a base class.",
+      "Object oriented programming supports inheritance."
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 12,
+    "text": "Method overloading in respect of object oriented programming is",
+    "options": [
+      "overloading without argument passing",
+      "overloading the method that has same name but different parameters",
+      "a feature in which multiple functions with different names and same parameters",
+      "not possible"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 13,
+    "text": "In object oriented programming, ______ can be declared in a class template.",
+    "options": [
+      "global data members",
+      "constant data members",
+      "static data members",
+      "statistical data members"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 14,
+    "text": "In object oriented programming, same function or object behaves different in different situations. It is known as",
+    "options": [
+      "inheritance",
+      "polymorphism",
+      "memory addressing",
+      "encapsulation"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 15,
+    "text": "Which of the following class constructor will be invoked first in object oriented programming?",
+    "options": [
+      "Base class",
+      "Virtual base class",
+      "Abstract class",
+      "Derived class"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 16,
+    "text": "In object oriented programming, public members of a base class become protected member of the derived class. This situation happens in",
+    "options": [
+      "Virtual inheritance",
+      "Protected inheritance",
+      "Private inheritance",
+      "Public inheritance"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 17,
+    "text": "In unix/linux platform, which vi editor command copies the current line of the file?",
+    "options": ["yy", "yw", "yc", "ZZ"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 18,
+    "text": "In unix/linux platform, which command is used to delete a line in vi editor?",
+    "options": ["p", "dd", "x", "q"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 19,
+    "text": "In unix/linux platform, which set is correct to move cursor within vi editor?",
+    "options": [
+      "h Move cursor up, k Move cursor down, j Move cursor left, l Move cursor right.",
+      "k Move cursor up, j Move cursor down, h Move cursor left, l Move cursor right.",
+      "k Move cursor up, l Move cursor down, h Move cursor left, j - Move cursor right.",
+      "l Move cursor up, j Move cursor down, k Move cursor left, h - Move cursor right."
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 20,
+    "text": "In unix/linux platform, which command is used to see path of the working directory?",
+    "options": ["ls", "dir", "vi", "pwd"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 21,
+    "text": "In unix/linux platform, which command is used to view the first n number of lines of a particular file (consider the file name is \"filename\")?",
+    "options": [
+      "head -n filename",
+      "tail -n filename",
+      "head-n-tail filename",
+      "top-n filename"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 22,
+    "text": "In unix/linux platform, which command is used to search for a pattern within a file?",
+    "options": ["cd", "cp", "paste", "grep"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 23,
+    "text": "In unix/linux platform, hidden file can be viewed using",
+    "options": ["ls -a", "ls -1", "ls -h", "ls -k"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 24,
+    "text": "In unix/linux platform, what is the output of the following command (consider the file name is \"filename\")?\ngrep -v 'hello' filename",
+    "options": [
+      "show the current directory",
+      "show the pattern ignoring case",
+      "show the lines which don't match with the pattern",
+      "show the line numbers at the time of result"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 25,
+    "text": "In shell script, what is the output of the following program?\ncounter=1\nwhile [$counter -le 10]\ndo\necho $counter\n((counter++))\ndone",
+    "options": [
+      "lists all the numbers from 1 to 10",
+      "lists all the odd numbers from 1 to 10",
+      "lists all the even numbers from 1 to 10",
+      "lists only the 10th position number"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 26,
+    "text": "Stack is a ______ in data structure concept.",
+    "options": [
+      "basic data type",
+      "derived data type",
+      "float data type",
+      "char data type"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 27,
+    "text": "In data structure, the stack is a linear type of data structure in which data is stored and retrieved in a ______ manner.",
+    "options": [
+      "No out only in",
+      "Last in First out",
+      "First in First out",
+      "Last out Last in"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 28,
+    "text": "In bubble sort algorithm, worst case time complexity is ______ considering 'n' is the number of elements.",
+    "options": ["O(1)", "O(n^2)", "O(n)", "O(n log n)"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 29,
+    "text": "In data structure, a binary tree with 'n' nodes has",
+    "options": ["n edges", "n+1 edges", "n-1 edges", "n-2 edges"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 30,
+    "text": "Merge sort follows ______ in data structure.",
+    "options": [
+      "divide and conquer strategy",
+      "back tracking approach",
+      "heuristic search",
+      "greedy approach"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 31,
+    "text": "In data structure, maximum degree of a vertex in a typical graph with 'n' vertices is",
+    "options": ["n", "n-1", "n+1", "2n-1"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 32,
+    "text": "In data structure, a graph is represented as a pair of sets (V, E), where",
+    "options": [
+      "V is the set of variables and E is the set of edges",
+      "V is the set of vertices and E is the set of edges",
+      "V is the set of vertices and E is the set of elements",
+      "V is the set of variables and E is the set of elements"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 33,
+    "text": "In binary search tree data structure, in-order traversal means the nodes are being searched in ______ order.",
+    "options": [
+      "left child node - right child node - root node",
+      "right child node - root node - left child node",
+      "root node - right child node - left child node",
+      "left child node - root node - right child node"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 34,
+    "text": "Queue data structure can be utilized for ______ implementation.",
+    "options": ["radix sort", "quick sort", "recursion", "depth first search"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 35,
+    "text": "The hardware device used for direct memory access is known as",
+    "options": ["DMA scheduler", "DMA controller", "DMA disk", "DMA monitor"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 36,
+    "text": "Hit ratio means",
+    "options": [
+      "[number of hit / (number of hit + number of miss)]",
+      "[number of miss / (number of hit + number of miss)]",
+      "a negative value based on specific software",
+      "a negative value based on specific hardware"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 37,
+    "text": "A suspension of a process, caused by an event external to that process and performed in such a way that the process can be resumed, is known as",
+    "options": ["scheduler", "interrupt", "deadlock", "virtual memory"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 38,
+    "text": "Operating system supports FCFS scheduling which is ______ type.",
+    "options": ["viral", "non-preemptive", "preemptive", "multi-layer"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 39,
+    "text": "Round robin is a type of ______ in context of operating system.",
+    "options": [
+      "fragmentation",
+      "process scheduling",
+      "process synchronization",
+      "deadlock"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 40,
+    "text": "In operating system, dispatcher module helps in ______ between the processes at CPU.",
+    "options": ["spawning", "processing", "killing", "switching"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 41,
+    "text": "Belady's anomaly happens in ______ page replacement policy.",
+    "options": ["FIFO", "LRU", "LFU", "NRU"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 42,
+    "text": "In operating system, a thread is considered as",
+    "options": [
+      "Heavy Weight Process",
+      "Light Weight Process",
+      "Process",
+      "Program"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 43,
+    "text": "In operating system, Inter Process Communication (IPC) is required for ______ activity.",
+    "options": ["cache", "DMA", "synchronization", "disk"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 44,
+    "text": "Paging is a ______ management function in operating system.",
+    "options": ["CPU", "memory", "disk", "process"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 45,
+    "text": "What do you mean by best fit algorithm in memory management? Select the correct option.",
+    "options": [
+      "Allocate the program to a specific memory partition which is the smallest available partition to be able to allocate the whole program.",
+      "Allocate the program to a specific disk partition which is the smallest available partition to be able to allocate the whole program.",
+      "Allocate the process to a specific memory partition which is the smallest available partition to be able to allocate the whole process.",
+      "Allocate the process to a specific disk partition which is the smallest available partition to be able to allocate the whole process."
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 46,
+    "text": "In operating system, Banker's algorithm is used for",
+    "options": [
+      "Mutual exclusion",
+      "Deadlock recovery",
+      "Deadlock avoidance",
+      "Cache allocation"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 47,
+    "text": "In operating system, a state is considered as ______ only if the system is capable of allocating resources to each process following resource allocation methods avoiding deadlock situation.",
+    "options": [
+      "starvation",
+      "greedy allocation",
+      "unsafe state",
+      "safe state"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 48,
+    "text": "SCAN, C-SCAN, LOOK, C-LOOK are types of ______ scheduling.",
+    "options": ["process", "CPU", "memory", "disk"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 49,
+    "text": "In Computer Network, TFTP means",
+    "options": [
+      "Transition File Transfer Protocol",
+      "Transport File Transfer Protocol",
+      "Trimmed File Transfer Protocol",
+      "Trivial File Transfer Protocol"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 50,
+    "text": "In Computer Network, SGMP means",
+    "options": [
+      "Simplex Gateway Monitoring Protocol",
+      "Simplex Gateway Memory Protocol",
+      "Simple Gateway Monitoring Protocol",
+      "Simple Gateway Memory Protocol"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 51,
+    "text": "In computer network, Token Ring (IEEE 802.5) is a type of",
+    "options": [
+      "monitoring protocol",
+      "communication protocol",
+      "visibility protocol",
+      "chaos protocol"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 52,
+    "text": "In network, a device can transmit data in bi-directional way at a particular time instance.",
+    "options": ["simplex", "half duplex", "multiplex", "full duplex"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 53,
+    "text": "IEEE 802.2 specifies LLC which means",
+    "options": [
+      "logical link control",
+      "logistic link control",
+      "length-wise link control",
+      "layer link control"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 54,
+    "text": "In computer network, Open Systems Interconnection model has seven layers within which ______ layer is used for routing.",
+    "options": ["application", "network", "session", "transport"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 55,
+    "text": "In computer network, ______ helps to find out hardware address of a host from its known IP address.",
+    "options": [
+      "Address Resolution Protocol",
+      "Reverse Address Resolution Protocol",
+      "Simple Network Management Protocol",
+      "Simple Mail Transfer Protocol"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 56,
+    "text": "In computer network, error control is considered as a function of ______ layer.",
+    "options": ["Application", "Presentation", "Session", "Data link"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 57,
+    "text": "If hexadecimal notation of an IP address is F32C1483, then the equivalent decimal notation (separated by dot) is",
+    "options": [
+      "241.44.20.131",
+      "243.42.20.135",
+      "243.44.20.131",
+      "243.44.20.135"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 58,
+    "text": "Based on DBMS, choose the correct option for composite attribute.",
+    "options": ["Address", "Birth date", "Phone number", "Age"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 59,
+    "text": "In DBMS, what do you mean by a tuple?",
+    "options": ["One column", "Two columns", "One row", "Two rows"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 60,
+    "text": "Rho (p) indicates ______ in relational algebra.",
+    "options": ["Selection", "Projection", "Rename", "Join"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 61,
+    "text": "Normalization is the technique to organize data in database to ______ redundancy.",
+    "options": ["maximize", "minimize", "average", "diffuse"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 62,
+    "text": "In DBMS, a relation is having ______ Normal Form if it contains an atomic value.",
+    "options": ["First", "Second", "Third", "Fourth"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 63,
+    "text": "In software engineering, the tester does not know the internal designs of the software application in case of ______ testing.",
+    "options": ["White box", "Black box", "Acceptance", "Beta"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 64,
+    "text": "In software engineering, context diagram is termed as",
+    "options": ["Level 0 DFD", "Level 1 DFD", "Level 2 DFD", "Level 3 DFD"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 65,
+    "text": "In software engineering, SRS means",
+    "options": [
+      "System Requirements Specification",
+      "System Readable Specification",
+      "Software Requirements Specification",
+      "Software Readable Specification"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 66,
+    "text": "In software engineering, degree of interdependence between software modules is termed as",
+    "options": ["data", "coupling", "control", "pointer"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 67,
+    "text": "In software engineering, Alpha testing is the product testing executed by",
+    "options": [
+      "Development team",
+      "Friendly set of customers",
+      "Management team",
+      "Beta Testing team"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 68,
+    "text": "In Software Engineering, COCOMO means",
+    "options": [
+      "Constructive Cost Model",
+      "Conclusive Cost Model",
+      "Constructive Cohesion Model",
+      "Conclusive Cohesion Model"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 69,
+    "text": "Which of the following option is not a software life cycle model?",
+    "options": [
+      "Waterfall model",
+      "Prototyping model",
+      "Spiral model",
+      "Seed model"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 70,
+    "text": "In Software Engineering, Build and Fix model has ______ number of phases.",
+    "options": ["1", "2", "3", "4"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 71,
+    "text": "In software engineering, Waterfall model maintains the sequence of stages as follows:",
+    "options": [
+      "Testing the Product -> Requirement Analysis and Planning -> Designing the Product Architecture -> Building or Developing the Product -> Feasibility Study -> Deployment in the Market and Maintenance.",
+      "Requirement Analysis and Planning -> Feasibility Study -> Designing the Product Architecture -> Building or Developing the Product -> Testing the Product -> Deployment in the Market and Maintenance.",
+      "Designing the Product Architecture -> Requirement Analysis and Planning -> Feasibility Study -> Building or Developing the Product -> Testing the Product -> Deployment in the Market and Maintenance.",
+      "Feasibility Study -> Requirement Analysis and Planning -> Designing the Product Architecture -> Building or Developing the Product -> Testing the Product -> Deployment in the Market and Maintenance."
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 72,
+    "text": "In machine learning, Bayes error rate is considered as the ______ possible error rate for a given class of classifier.",
+    "options": ["highest", "medium", "lowest", "median"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 73,
+    "text": "Markov property supports ______ .",
+    "options": [
+      "only current state",
+      "current & previous states",
+      "only previous state",
+      "only next state"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 74,
+    "text": "In machine learning, ______ is considered as the generalized formula of distance measurement.",
+    "options": [
+      "Distance metric",
+      "Minkowski metric",
+      "Classification",
+      "Clustering"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 75,
+    "text": "In machine learning, Viterbi path is used in",
+    "options": [
+      "dynamic programming algorithm for clustering",
+      "dynamic programming algorithm for classification",
+      "static programming algorithm for clustering",
+      "static programming algorithm for classification"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 76,
+    "text": "In machine learning, CART is a",
+    "options": [
+      "classification and regression tree based algorithm",
+      "clustering and regression tree based algorithm",
+      "decision tree algorithm",
+      "artificial neural algorithm"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 77,
+    "text": "In machine learning, perceptron can be considered as artificial",
+    "options": ["neutron", "neuron", "nucleus", "atom"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 78,
+    "text": "In linear discriminant function based classifier, decision boundary is considered as",
+    "options": ["plane", "hypoplane", "hyperplane", "pseudoplane"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 79,
+    "text": "In hierarchical clustering, CF tree is ______ tree which stores clustering features.",
+    "options": [
+      "weight balanced",
+      "width balanced",
+      "height balanced",
+      "not a balanced"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 80,
+    "text": "Loss function states ______ in Bayesian decision theory.",
+    "options": [
+      "normal distribution",
+      "normal density",
+      "exactly how cheap each action is",
+      "exactly how costly each action is"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 81,
+    "text": "What is the output of the following program?\n#include <stdio.h>\nvoid main()\n{\nint z=50;\nprintf(\"%d\", z++++++z);\n}",
+    "options": ["53", "Compiler error", "52", "lvalue required"],
+    "correctOptionIndex": [1, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "C Programming",
+    "questionNo": 82,
+    "text": "Select the memory handling functions from the following options:",
+    "options": ["malloc", "free", "calloc", "realloc"],
+    "correctOptionIndex": [0, 1, 2, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 83,
+    "text": "Which of the following are good reasons to use an object oriented language?",
+    "options": [
+      "you can define your own data types",
+      "an object oriented program can be taught to correct its own errors",
+      "it is easier to conceptualize an object oriented program",
+      "you can use polymorphism"
+    ],
+    "correctOptionIndex": [0, 2, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 84,
+    "text": "In view of object oriented programming, select the correct statement(s).",
+    "options": [
+      "Constructors return values",
+      "Constructors do not return values",
+      "Constructors cannot be overloaded",
+      "Destructors do not have return values"
+    ],
+    "correctOptionIndex": [1, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 85,
+    "text": "In unix/linux platform, which of the following statement(s) is (are) not correct?",
+    "options": [
+      "vim editor is the improved version of vi editor",
+      "vi editor commands are not case sensitive",
+      "vi editor has two modes of operation: command mode and insert mode",
+      "vi is not a text editor"
+    ],
+    "correctOptionIndex": [1, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 86,
+    "text": "Example of linear data structure is",
+    "options": ["Linked-list", "Graph", "Tree", "stack"],
+    "correctOptionIndex": [0, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 87,
+    "text": "In operating system, process means",
+    "options": [
+      "a program in high level language",
+      "instance of a computer program",
+      "a job in secondary memory",
+      "a program in execution"
+    ],
+    "correctOptionIndex": [1, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 88,
+    "text": "Which type of operating system fetches data and gives response in terms of actual time?",
+    "options": [
+      "Time sharing system",
+      "RTOS",
+      "Real-time operating system",
+      "Job processing system"
+    ],
+    "correctOptionIndex": [1, 2]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 89,
+    "text": "In operating system, fork is",
+    "options": [
+      "dispatching of a task",
+      "creation of a child process",
+      "creation of a new process",
+      "increasing priority of a task"
+    ],
+    "correctOptionIndex": [1, 2]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 90,
+    "text": "In operating system, file attributes are",
+    "options": ["Name", "Type", "Location", "Processor"],
+    "correctOptionIndex": [0, 1, 2]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 91,
+    "text": "Producer-consumer is a ______ problem in operating system level.",
+    "options": [
+      "deadlock",
+      "synchronization",
+      "memory",
+      "multi-process synchronization"
+    ],
+    "correctOptionIndex": [1, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Operating Systems",
+    "questionNo": 92,
+    "text": "What do you mean by binary semaphore? Select the correct option(s).",
+    "options": [
+      "Only one entity can access the critical section at any time instance.",
+      "Make available several access tokens to a given critical section.",
+      "It can have only two values (0, 1).",
+      "It can have only three values (-1, 0, +1)."
+    ],
+    "correctOptionIndex": [0, 2]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 93,
+    "text": "Select the protocol(s) utilized for delivering email over Internet.",
+    "options": ["FTP", "SMTP", "POP", "IMAP"],
+    "correctOptionIndex": [1, 2, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Computer Networks",
+    "questionNo": 94,
+    "text": "IPv4 header consists of",
+    "options": [
+      "Version",
+      "TTL",
+      "Source IP address",
+      "Destination IP address"
+    ],
+    "correctOptionIndex": [0, 1, 2, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 95,
+    "text": "Choose the correct option(s) for functions of DBMS.",
+    "options": [
+      "Concurrency",
+      "Non-shareable database",
+      "Backup and recovery",
+      "Database schema"
+    ],
+    "correctOptionIndex": [0, 2]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 96,
+    "text": "Select the correct option(s) regarding \"Union\" and \"Union All\" in SQL.",
+    "options": [
+      "\"Union\" removes duplicate rows.",
+      "\"Union\" does not remove duplicate rows.",
+      "\"Union all\" removes duplicate rows.",
+      "\"Union All\" does not remove duplicate rows."
+    ],
+    "correctOptionIndex": [0, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 97,
+    "text": "Choose of the correct option(s) for the type of ordered index used in DBMS.",
+    "options": ["Light index", "Dense index", "Sparse index", "Thread index"],
+    "correctOptionIndex": [1, 2]
+  },
+  {
+    "year": 2022,
+    "topic": "Database Management System",
+    "questionNo": 98,
+    "text": "Select the correct option(s) for query processing in DBMS.",
+    "options": ["Parsing", "Translation", "Optimization", "Evaluation"],
+    "correctOptionIndex": [0, 1, 2, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Software Engineering",
+    "questionNo": 99,
+    "text": "Select the process metrics used in software engineering for typical measurements to evaluate the performance of the proposed system.",
+    "options": ["Productivity", "Error Rate", "Plan", "Efficiency"],
+    "correctOptionIndex": [0, 1, 3]
+  },
+  {
+    "year": 2022,
+    "topic": "Machine Learning",
+    "questionNo": 100,
+    "text": "In Support Vector Machine (SVM), hyperplane is selected based on",
+    "options": [
+      "largest separation between two classes",
+      "shortest separation between two classes",
+      "average margin between two classes",
+      "largest margin between two classes"
+    ],
+    "correctOptionIndex": [0, 3]
+  }
+]

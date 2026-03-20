@@ -1,0 +1,1042 @@
+[
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 1,
+    "text": "What is the output of the following code snippet?\n#include<stdio.h>\nmain(){\nint x=65, *p=&x;\nvoid *q=p;\nchar *r=q;\nprintf(\"%c\",*r);\n}",
+    "options": ["A", "Z", "65", "None of the above"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 2,
+    "text": "ROM is a",
+    "options": [
+      "Combinational Circuit",
+      "Static Circuit",
+      "Sequential Circuit",
+      "Magnetic Circuit"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 3,
+    "text": "A computer with a 32 bit wide data bus uses 4 k x 8 static RAM memory chips. The smallest memory this computer is",
+    "options": ["8 kb", "16 kb", "24 kb", "32 kb"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 4,
+    "text": "Each stage in pipelining should be completed within ______ cycle(s).",
+    "options": ["1", "2", "3", "4"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Database Management System",
+    "questionNo": 5,
+    "text": "Relational calculus is a",
+    "options": [
+      "Procedural language",
+      "Non-procedural language",
+      "Data definition language",
+      "High-level language"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 6,
+    "text": "How many parameters does a default constructor require?",
+    "options": ["1", "2", "0", "3"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Machine Learning",
+    "questionNo": 7,
+    "text": "An artificially intelligent car decreases its speed based on its distance from the car in front of it. Which method is used?",
+    "options": [
+      "Naive Bayes",
+      "Decision Tree",
+      "Linear Regression",
+      "Logistic Regression"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 8,
+    "text": "The keyword friend does not appear in",
+    "options": [
+      "the class allowing access to another class.",
+      "the class desiring access to another class.",
+      "the private section of a class.",
+      "the public section of a class."
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Software Engineering",
+    "questionNo": 9,
+    "text": "What is the maximum number of level-2 DFD possible if the number of processes in level-1 DFD is n?",
+    "options": ["n/2", "2", "n^2", "n"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 10,
+    "text": "The small extremely fast RAM's are termed as",
+    "options": ["Heaps", "Accumulators", "Stacks", "Cache"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Machine Learning",
+    "questionNo": 11,
+    "text": "K-means clustering method is an example of which type of clustering method?",
+    "options": ["Hierarchical", "Random", "Density based", "Partitioning"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 12,
+    "text": "The store and forward mechanism is used in",
+    "options": [
+      "packet switching.",
+      "message switching.",
+      "circuit switching.",
+      "data gram switching."
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 13,
+    "text": "What is the output of the following C-program?\n#include<stdio.h>\nint main()\n{\nconst int a=10;\nprintf(\"%d\", ++a);\nreturn 0;\n}",
+    "options": ["11", "10", "Compilation Error", "0"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 14,
+    "text": "How can you display a list of all files including the hidden files?",
+    "options": ["find all", "find -a", "ls -a", "All of these"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 15,
+    "text": "Which C keyword is used to extend the visibility of variables?",
+    "options": ["extend", "extends", "extern", "auto"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Database Management System",
+    "questionNo": 16,
+    "text": "Which of the following should not have transitive dependency?",
+    "options": [
+      "First normal form",
+      "Second normal form",
+      "Third normal form",
+      "Fourth normal form"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Machine Learning",
+    "questionNo": 17,
+    "text": "Regression is a type of:",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "None of the above"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 18,
+    "text": "What is the output of the following C-program?\n#include<stdio.h>\n#define CUBE(x) (x*x*x)\nint main()\n{\nint a, b=3;\na=CUBE(b++);\nprintf(\"%d, %d\\n\", a, b);\nreturn 0;\n}",
+    "options": ["9, 4", "27, 4", "27, 6", "Error"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 19,
+    "text": "The ______ is an asymmetric key cryptographic algorithm.",
+    "options": [
+      "RSA",
+      "Huffman code",
+      "Mono-alphabetic substitution",
+      "Steganography"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Machine Learning",
+    "questionNo": 20,
+    "text": "What is the purpose of the confusion matrix in machine learning?",
+    "options": [
+      "To visualize the distribution of the data in a dataset",
+      "To compare the performance of different models",
+      "To evaluate the performance of a classification model",
+      "To evaluate the performance of a regression model"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 21,
+    "text": "In DMA transfers, the required signals and addresses are given by the",
+    "options": [
+      "Processor",
+      "Device drivers",
+      "DMA controllers",
+      "The program itself"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 22,
+    "text": "What is the output of following C code?\nint main()\n{\nint x = 2, y=1;\nx*=x+y;\nprintf(\"%d\", x);\n}",
+    "options": ["Compilation error", "Varies on Complier", "5", "6"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 23,
+    "text": "Which among the following can't be used for polymorphism?",
+    "options": [
+      "Static member functions",
+      "Member functions overloading",
+      "Predefined operator overloading",
+      "Constructor overloading"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 24,
+    "text": "If there are 32 segments each of size 1K bytes, then the logical address should have",
+    "options": ["12 bits", "13 bits", "14 bits", "15 bits"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Software Engineering",
+    "questionNo": 25,
+    "text": "In software engineering the tester does not know the internal designs of the software application in case of ______ testing.",
+    "options": ["White Box", "Black Box", "Beta", "Acceptance"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 26,
+    "text": "What is the output of the following code snippet?\n#include <stdio.h>\nint main()\n{\nint x;\nx=5>8?10:1!=2<5?20:30;\nprintf(\"%d\",x);\nreturn 0;\n}",
+    "options": ["5", "10", "20", "30"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Software Engineering",
+    "questionNo": 27,
+    "text": "______ is a measure of the degree of interdependence between modules.",
+    "options": [
+      "Cohesion",
+      "Coupling",
+      "None of the above mentioned",
+      "Both (A) and (B)"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 28,
+    "text": "The permission -rwxr--r-- represented in octal expression will be",
+    "options": ["777", "744", "666", "711"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 29,
+    "text": "What will be the output of the C code?\n#include <stdio.h>\nint main()\n{\nint a=1;\nif(a--)\nprintf(\"True\");\nif(a++)\nprint(\"False\");\n}",
+    "options": ["True", "False", "True False", "No output"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 30,
+    "text": "Which command changes a file's group owner?",
+    "options": ["cgrp", "group", "change", "chgrp"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Machine Learning",
+    "questionNo": 31,
+    "text": "Which of the following is an example of a classification problem?",
+    "options": [
+      "Predicting the price of a house based on its features",
+      "Predicting the weight of a person based on their height",
+      "Predicting whether a customer will churn or not",
+      "Predicting the age of a person based on their income"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 32,
+    "text": "What is the output of the C-program?\n#include<stdio.h>\nint main()\n{\nint i=0;\nint x=i++;\ny=++i;\nprintf(\"%d %d\", x, y);\n}",
+    "options": ["0, 2", "1, 2", "1, 1", "compile error"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Machine Learning",
+    "questionNo": 33,
+    "text": "What is the difference between supervised and unsupervised learning?",
+    "options": [
+      "Supervised learning requires labelled data while unsupervised learning does not.",
+      "Unsupervised learning requires labelled data while supervised learning does not.",
+      "Supervised learning does not require data while unsupervised learning does.",
+      "There is no difference between supervised and unsupervised learning."
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 34,
+    "text": "Which of the following feature is shown by function overriding?",
+    "options": ["Abstraction", "Polymorphism", "Encapsulation", "Inheritance"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 35,
+    "text": "If a file has read and write permission for the owner, then the octal representation of the permissions will be:",
+    "options": ["7", "5", "6", "3"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Database Management System",
+    "questionNo": 36,
+    "text": "In an ER diagram, an entity set is represented by a",
+    "options": ["Rectangle", "Ellipse", "Diamond box", "Circle"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 37,
+    "text": "What is the output of the C-program?\n#include<stdio.h>\nint main()\n{\nint i=0;\nwhile(i=0)\nprintf(\"\\n True\");\nprintf(\"\\n False\");\n}",
+    "options": [
+      "True (infinite time)",
+      "Compiler dependent",
+      "False",
+      "True (1 time)"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 38,
+    "text": "Identify the incorrect constructor type:",
+    "options": [
+      "Friend Constructor",
+      "Copy Constructor",
+      "Default Constructor",
+      "Parameterized Constructor"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Software Engineering",
+    "questionNo": 39,
+    "text": "______ specification is also known as the SRS document.",
+    "options": [
+      "White-box",
+      "Grey-box",
+      "Black-box",
+      "None of the above mentioned"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 40,
+    "text": "What is the output of the following code snippet?\nmain() {\nint i, k=5;\nif(i=k) {\nprintf(\"YES\\n\");\n}\nelse {\nprintf(\"NO\\n\");\n}\n}",
+    "options": ["5", "YES", "NO", "Will give error"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 41,
+    "text": "Which of the following(s) is/are not shared by threads?",
+    "options": [
+      "Stack",
+      "Program counter",
+      "Both program counter and stack",
+      "None"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 42,
+    "text": "Given an unsorted array. The array has this property that every element in the array is at most k distance from its position in a sorted array where k is a positive integer smaller than the size of an array. Which sorting algorithm can be easily modified for sorting this array and what is the obtainable time complexity?",
+    "options": [
+      "Insertion Sort with time complexity O(kn)",
+      "Heap Sort with time complexity O(n log k)",
+      "Quick Sort with time complexity O(k log k)",
+      "Merge Sort with time complexity O(k log k)"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 43,
+    "text": "Which one of the following is a synchronization tool?",
+    "options": ["Thread", "Pipe", "Semaphore", "Socket"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 44,
+    "text": "When a process is in a \"Blocked\" state waiting for some I/O service. When the service is completed, it goes to the",
+    "options": [
+      "Terminated state",
+      "Suspended state",
+      "Running state",
+      "Ready state"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 45,
+    "text": "A process is thrashing if",
+    "options": [
+      "it spends more time in execution, rather than paging",
+      "it spends more time in paging, rather than in execution",
+      "it has no memory allocated to it",
+      "it indefinitely waits for a resource"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Software Engineering",
+    "questionNo": 46,
+    "text": "______ is not among the eight principles followed by the Software Code of Ethics and Professional Practice.",
+    "options": ["PRODUCT", "ENVIRONMENT", "PUBLIC", "PROFESSION"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 47,
+    "text": "Making class members inaccessible to nonmember functions is an example of:",
+    "options": ["polymorphism", "data hiding", "redundancy", "recursion"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Database Management System",
+    "questionNo": 48,
+    "text": "In a relational database, what does the term \"ACID\" stand for?",
+    "options": [
+      "Atomicity, Consistency, Integrity, Durability",
+      "Association, Constraint, Index, Database",
+      "Authorization, Compatibility, Isolation, Dependency",
+      "Aggregate, Collection, Inheritance, Design"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 49,
+    "text": "Which of the given statement is the correct recurrence for the worst case of Binary Search?",
+    "options": [
+      "T(n) = 2T(n/2) + O(1) & T(1) = O(1) = T(0).",
+      "T(n) = T(n-1) + O(1) & T(1) = O(1) = T(0).",
+      "T(n) = T(n/2) + O(1) & T(1) = T(0) = O(1).",
+      "T(n) = T(n-2) + O(1) & T(1) = T(0) = O(1)."
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Database Management System",
+    "questionNo": 50,
+    "text": "Which of the following statements about primary key in a database table is true?",
+    "options": [
+      "A table can have multiple primary keys.",
+      "A primary key uniquely identifies each record in a table.",
+      "Primary keys can contain NULL values.",
+      "Primary keys are used to establish relationships between tables."
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 51,
+    "text": "Which of the following data structure is required to convert an arithmetic expression in infix form to its equivalent postfix form?",
+    "options": ["Queue", "Linked List", "Binary Search Tree", "Stack"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 52,
+    "text": "Which is the correct statement about operator overloading?",
+    "options": [
+      "Only arithmetic operators can be overloaded.",
+      "Only non-arithmetic operators can be overloaded.",
+      "Precedence of operators are changed after overloading.",
+      "Associativity and precedence of operators does not change."
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Database Management System",
+    "questionNo": 53,
+    "text": "A clustering index is defined on the fields which are of types",
+    "options": [
+      "Non-key and ordering",
+      "Non-key and non-ordering",
+      "Key and ordering",
+      "Key and non-ordering"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 54,
+    "text": "Suppose the numbers 7, 5, 1, 8, 3, 6, 0, 9, 4, 2 are inserted in that order into an initially empty binary search tree. The binary search tree uses usual ordering on natural numbers. What is the in-order traversal sequence of the resultant tree?",
+    "options": [
+      "7, 5, 1, 0, 3, 2, 4, 6, 8, 9",
+      "0, 2, 4, 3, 1, 6, 5, 9, 8, 7",
+      "0, 1, 2, 3, 4, 5, 6, 7, 8, 9",
+      "9, 8, 6, 4, 2, 3, 0, 1, 5, 7"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 55,
+    "text": "Which of the following is popular for applications such as storage of log files in a database management system since it offers the best write performance?",
+    "options": ["RAID level 0", "RAID level 1", "RAID level 2", "RAID level 3"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 56,
+    "text": "Which of the following statement is correct?",
+    "options": [
+      "Pre-order traversal of Binary search gives sorted list.",
+      "In-order traversal of Binary search tree gives sorted list.",
+      "Post-order traversal of Binary search tree gives sorted list.",
+      "None of the above."
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 57,
+    "text": "Which one of the following is deadlock avoidance algorithm?",
+    "options": [
+      "Elevator algorithm",
+      "Banker's algorithm",
+      "LRU algorithm",
+      "SCAN algorithm"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 58,
+    "text": "Which command is used to set the three permissions for all the three categories of users of a file?",
+    "options": ["chgrp", "chown", "chmod", "chusr"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 59,
+    "text": "Which command is used for printing the current working directory?",
+    "options": ["dir", "HOME", "cd", "pwd"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 60,
+    "text": "When several processes access the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place is called",
+    "options": [
+      "Race condition",
+      "Critical condition",
+      "Virtual condition",
+      "Linear condition"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 61,
+    "text": "Baud means",
+    "options": [
+      "The number of bits transmitted per unit time",
+      "The number of bytes transmitted per unit time",
+      "The rate at which the signal changes",
+      "None of the above"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 62,
+    "text": "Which option will be used with sort command to start sorting after the nth column of the (m+1)th field?",
+    "options": ["-mn", "+m.n", "+nm m+1", "+(m+1).n"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 63,
+    "text": "Which layer of the OSI model is responsible for routing and forwarding packets?",
+    "options": [
+      "Network Layer (Layer 3)",
+      "Transport Layer (Layer 4)",
+      "Data Link Layer (Layer 2)",
+      "Physical Layer (Layer 1)"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 64,
+    "text": "Which command is used for displaying the beginning of a file in Unix?",
+    "options": ["lp", "begin", "pr", "head"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 65,
+    "text": "Consider three CPU-intensive processes, which require 10, 20 and 30 time units and arrive at times 0, 2 and 6 respectively. How many context switches are needed if the operating system implements a shortest remaining time first scheduling algorithm? Do not count the context switches at time zero and at the end.",
+    "options": ["1", "2", "3", "4"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 66,
+    "text": "What is the result of the following postfix expression? ab*cd* + where a=2, b=2, c=3, d=4",
+    "options": ["16", "12", "14", "10"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 67,
+    "text": "Which one of the following does not have a Net ID and Host Id?",
+    "options": ["Class A", "Class B", "Class C", "Class D"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 68,
+    "text": "Which command is used to extract specific columns from the file?",
+    "options": ["cat", "cut", "grep", "paste"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 69,
+    "text": "In the OSI model, encryption and decryption are functions of the",
+    "options": [
+      "Transport Layer",
+      "Session Layer",
+      "Presentation Layer",
+      "Application Layer"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 70,
+    "text": "Which of the following is not a communication command?",
+    "options": ["write", "mesg", "mail", "grep"],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 71,
+    "text": "A deadlock avoidance algorithm dynamically examines the ______ to ensure that a circular wait condition can never exist.",
+    "options": [
+      "Operating system",
+      "Resources",
+      "System Storage State",
+      "Resource Allocation State"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 72,
+    "text": "A Port address in TCP/IP is ______ bits long.",
+    "options": ["32", "48", "16", "None of the above"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 73,
+    "text": "What is the worst case time complexity of inserting n elements into an empty linear linked list, if it needs to be maintained in sorted order after every insertion?",
+    "options": ["θ(n)", "θ(n log n)", "θ(n^2)", "O(1)"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 74,
+    "text": "In IPV4 network ID and host ID in class A",
+    "options": [
+      "8 bits network ID, 24 bits host ID.",
+      "24 bits network ID, 8 bits host ID.",
+      "14 bits network ID, 16 bits host ID.",
+      "16 bits network ID, 14 bits host ID."
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 75,
+    "text": "What is the worst case complexity of inserting a node in doubly linked list?",
+    "options": ["O(log n)", "O(n)", "O(n log n)", "O(1)"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 76,
+    "text": "Virtual memory is normally implemented by",
+    "options": [
+      "Demand Paging",
+      "Buses",
+      "Virtualization",
+      "All of the above mentioned methods"
+    ],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 77,
+    "text": "Which of the following sorting algorithm will be the most efficient if the elements are already in sorted order?",
+    "options": [
+      "Bubble sort",
+      "Selection sort",
+      "Insertion sort",
+      "Merge sort"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 78,
+    "text": "______ server is used to create a secure tunnel connection.",
+    "options": ["Radius", "VPN", "Proxy", "DNS"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 79,
+    "text": "What is the prefix of the following expression A-B/(C*D^E)?",
+    "options": ["-A/B*C^DE", "-A/BC*^DE", "-ABCD*^DE", "-/*^ACBDE"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 80,
+    "text": "Hamming code is used for",
+    "options": [
+      "Error detection",
+      "Error correction",
+      "Error encapsulation",
+      "Both Error detection and correction"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 81,
+    "text": "Which of the following(s) are not type of inheritance?",
+    "options": [
+      "Hierarchical Inheritance",
+      "Linear Inheritance",
+      "Multilevel Inheritance",
+      "Distributed Inheritance"
+    ],
+    "correctOptionIndex": [1, 3]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 82,
+    "text": "There are three IP addresses as given below : X=202.23.14.150 Y=168.19.200.12 Z=72.192.52.210 Which of the following statements is correct?",
+    "options": [
+      "X is Class A, Y is class B, Z is class C",
+      "X is Class C, Y is class A, Z is class B",
+      "X is Class A, Y is class C, Z is class B",
+      "X is Class C, Y is class B, Z is class A"
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 83,
+    "text": "A process refers to 5 pages namely A, B, C, D and E in the order: \"A, B, C, D, A, B, E, A, B, C, D, E\". If the page replacement algorithm is FIFO, the number of page transfers with an empty internal store of 3 frames is",
+    "options": ["8", "10", "9", "7"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Data Structures and Algorithms",
+    "questionNo": 84,
+    "text": "What are non-linear data structure?",
+    "options": ["Graph", "Linked List", "Queue", "Tree"],
+    "correctOptionIndex": [0, 3]
+  },
+  {
+    "year": 2024,
+    "topic": "Database Management System",
+    "questionNo": 85,
+    "text": "Relation R has eight attributes ABCDEFGH. Field of R contain only atomic values. X={CH->G, A->BC, B->CFH, E->A, F->EG} is a set of Functional Dependencies (FD's) so that F+ is exactly the set of FD's that hold for R. How many candidate keys does the relation R have?",
+    "options": ["3", "4", "5", "6"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Unix / Linux & Shell Scripting",
+    "questionNo": 86,
+    "text": "What are the valid shells in linux?",
+    "options": ["Kernel shell", "C shell", "Vi shell", "Korn shell"],
+    "correctOptionIndex": [1, 3]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 87,
+    "text": "What are the valid layers of OSI model?",
+    "options": [
+      "Internet layer",
+      "Transport layer",
+      "Data Link layer",
+      "Session layer"
+    ],
+    "correctOptionIndex": [1, 2, 3]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 88,
+    "text": "A subnet has been assigned a subnet mask of 255.255.255.192. What is the maximum number of hosts that can belong to this subnet?",
+    "options": ["14", "30", "62", "126"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Software Engineering",
+    "questionNo": 89,
+    "text": "Identify the incorrect phase of STLC (Software Testing Life Cycle).",
+    "options": [
+      "Test Closure",
+      "Coding",
+      "Requirement Analysis",
+      "Test Planning"
+    ],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Networks",
+    "questionNo": 90,
+    "text": "For which one of the following reasons does Internet Protocol (IP) use the time-to-live (TTL) field in the IP datagram header?",
+    "options": [
+      "Ensure packets reach destination within that time.",
+      "Discard packets that reach later than that time.",
+      "Prevent packets from looping indefinitely.",
+      "Limit the time for which a packet gets queued in intermediate router."
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Machine Learning",
+    "questionNo": 91,
+    "text": "Which of the following is not supervised learning?",
+    "options": ["PCA", "Naive Bayesian", "Linear Regression", "Decision Tree"],
+    "correctOptionIndex": [0]
+  },
+  {
+    "year": 2024,
+    "topic": "Machine Learning",
+    "questionNo": 92,
+    "text": "Which of the following statements is not true about the pruning in the decision tree?",
+    "options": [
+      "When the decision tree is created, many of the branches will reflect anomalies in the training data due to noise.",
+      "The over fitting happens when the learning algorithm continues to develop hypothesis that reduce training set error at the cost of increased test set errors.",
+      "It optimizes the computational efficiency.",
+      "It reduces the classification accuracy."
+    ],
+    "correctOptionIndex": [3]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 93,
+    "text": "If 2 classes derive one base class and redefine a function of base class, also overload some operators inside class body. Among these two things of function and operator overloading, where is polymorphism used?",
+    "options": [
+      "Function overloading only",
+      "Operator overloading only",
+      "Both (A) and (B) are using polymorphism",
+      "Either function overloading or operator overloading because polymorphism can be applied only once in a program"
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 94,
+    "text": "What is the output of the following C-program?\n#include<stdio.h>\nint main()\n{\nint a=20;\nprintf (\"CINEMA\");\nreturn 1;\nprintf (\"DINOSAUR\");\nreturn 1;\n}",
+    "options": ["CINEMA DINOSAUR", "CINEMA", "DINOSAUR", "Compilation error"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 95,
+    "text": "A CPU generates 32-bit virtual addresses. The page size is 4 KB. The processor has a translation look-aside buffer (TLB) which can hold a total of 128 page table entries and is 4-way set associative. The minimum size of the TLB tag is:",
+    "options": ["11 bits", "13 bits", "15 bits", "20 bits"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Object-Oriented Programming",
+    "questionNo": 96,
+    "text": "Which of the following statements about polymorphism in C++ are correct?",
+    "options": [
+      "Polymorphism allows a function to perform different tasks based on the object that invokes it.",
+      "C++ supports compile-time polymorphism through function overloading and runtime polymorphism through virtual functions.",
+      "Polymorphism is achieved by hiding the implementation details of a class.",
+      "In C++, polymorphism can only be achieved through inheritance."
+    ],
+    "correctOptionIndex": [0, 1]
+  },
+  {
+    "year": 2024,
+    "topic": "C Programming",
+    "questionNo": 97,
+    "text": "What is the return value of f(p,p), if the value of p is initialized to 5 before the call?\nint f(int &x, int c) {\nc=c-1;\nif (c==0) return 1;\nx=x+1;\nreturn f(x,c)*x;\n}",
+    "options": ["3024", "6561", "55440", "161051"],
+    "correctOptionIndex": [1]
+  },
+  {
+    "year": 2024,
+    "topic": "Operating Systems",
+    "questionNo": 98,
+    "text": "What could ideally be the optimal page replacement algorithm?",
+    "options": [
+      "Replace the page that has not been used for a long time.",
+      "Replace the page that has been used for a long time.",
+      "Replace the page that will not be used for a long time.",
+      "None of the above mentioned policies."
+    ],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Computer Architecture & Digital Logic",
+    "questionNo": 99,
+    "text": "If memory access takes 20 ns with cache and 110 ns without cache, then the hit-ratio (cache uses a 10 ns memory) is :",
+    "options": ["87%", "88%", "90%", "93%"],
+    "correctOptionIndex": [2]
+  },
+  {
+    "year": 2024,
+    "topic": "Software Engineering",
+    "questionNo": 100,
+    "text": "What is the full form of PERT and CPM in Software Engineering?",
+    "options": [
+      "Project Evaluation and Review Technique; Computer Program Management",
+      "Program Evaluation and Review Technique; Critical Path Method",
+      "Project Execution and Resource Tracking; Code Performance Monitoring",
+      "Program Execution and Regression Testing; Continuous Process Modeling"
+    ],
+    "correctOptionIndex": [1]
+  }
+]
