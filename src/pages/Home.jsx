@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FileText, Target, ChevronRight, Sparkles } from "lucide-react";
+import { FileText, Target, ChevronRight, Sparkles, ChevronDown } from "lucide-react";
 import { getPYQMeta, getMockMeta } from "../data";
+import { QuestionPatternSection } from "../components/QuestionPatternSection";
+import { SyllabusSection } from "../components/SyllabusSection";
+import { ExamZoneSection } from "../components/ExamZoneSection";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -282,6 +285,30 @@ const Home = () => {
               </button>
             </form>
           </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="mt-12 flex flex-col items-center justify-center text-slate-500">
+          <span className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">Scroll to Explore</span>
+          <ChevronDown className="animate-bounce text-cyan-400" size={24} />
+        </div>
+
+        <QuestionPatternSection />
+
+        {/* Syllabus & Hot Topics */}
+        <SyllabusSection />
+
+        {/* Exam Zones */}
+        <ExamZoneSection />
+
+        {/* Footer */}
+        <div className="mt-12 flex justify-center border-t border-white/10 pt-8 pb-4">
+          <button 
+            onClick={() => navigate('/contact')} 
+            className="text-sm font-semibold text-slate-500 transition hover:text-cyan-400"
+          >
+            Need Help or Found an Error? Contact Us
+          </button>
         </div>
       </div>
     </div>
