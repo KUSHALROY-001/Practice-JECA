@@ -1,0 +1,1182 @@
+[
+  {
+    "topic": "C Programming",
+    "questionNo": 1,
+    "text": "What will be the output of the following C code snippet?\n#include <stdio.h>\nint main() {\n    int a[] = {10, 20, 30, 40};\n    int *p = a;\n    printf(\"%d \", *++p);\n    printf(\"%d\", ++*p);\n    return 0;\n}",
+    "options": ["20 21", "10 11", "20 20", "21 21"],
+    "correctOptionIndex": [0],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 2,
+    "text": "Consider the following macro definition. What will be the value of `y`?\n#define CUBE(x) (x * x * x)\nint main() {\n    int a = 2;\n    int y = CUBE(a + 1);\n    printf(\"%d\", y);\n    return 0;\n}",
+    "options": ["27", "9", "5", "Compilation Error"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 3,
+    "text": "What is the expected output when the `sizeof` operator is applied to the following character array in a standard 32-bit/64-bit C compiler?\nchar str[15] = \"JECA2026\";\nprintf(\"%zu %zu\", sizeof(str), strlen(str));",
+    "options": ["8 8", "9 8", "15 8", "15 9"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 4,
+    "text": "In C, what is the primary role of the `mutable` keyword?",
+    "options": [
+      "It allows a variable to be modified concurrently by multiple threads.",
+      "It allows a struct member to be modified even if the struct variable is declared as `const`.",
+      "It prevents a pointer from decaying into an array.",
+      "The `mutable` keyword does not exist in the standard C language; it is a C++ feature."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 5,
+    "text": "Which of the following describes the correct memory padding/alignment behavior for the following struct on a 32-bit architecture?\nstruct Test {\n    char a;\n    int b;\n    char c;\n};",
+    "options": [
+      "sizeof(struct Test) will be exactly 6 bytes.",
+      "sizeof(struct Test) will typically be 12 bytes due to padding.",
+      "sizeof(struct Test) will typically be 8 bytes.",
+      "The struct elements are reordered automatically by the compiler to use 6 bytes."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 6,
+    "text": "What is the correct syntax to declare a pointer to a function that takes an `int` as an argument and returns a `float`?",
+    "options": [
+      "float *func(int);",
+      "float (*func)(int);",
+      "float (func*)(int);",
+      "float* func*(int);"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 7,
+    "text": "What does the bitwise expression `x ^ y ^ x` evaluate to, assuming `x` and `y` are integers?",
+    "options": ["x", "y", "0", "1"],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 8,
+    "text": "In C++, why is it critical to make a base class destructor `virtual` when the class is intended to be inherited?",
+    "options": [
+      "To prevent the instantiation of the base class.",
+      "To ensure that the derived class's destructor is called when an object is deleted through a base class pointer, preventing memory leaks.",
+      "To allow the destructor to be overloaded with different parameters.",
+      "To automatically initialize virtual base tables (V-Tables) for the derived objects."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 9,
+    "text": "Which of the following scenarios triggers a C++ Copy Constructor rather than an Assignment Operator?",
+    "options": [
+      "MyClass obj1; MyClass obj2; obj2 = obj1;",
+      "MyClass obj1; MyClass obj2(obj1);",
+      "MyClass obj1; MyClass obj2 = obj1;",
+      "Both Options B and C."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 10,
+    "text": "In the context of C++ Polymorphism, early binding (static binding) is resolved by the compiler at compile-time. Which feature relies on late binding (dynamic binding)?",
+    "options": [
+      "Function Overloading",
+      "Operator Overloading",
+      "Virtual Functions overridden in a derived class",
+      "Function Templates"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 11,
+    "text": "When resolving the 'Diamond Problem' (multiple paths of inheritance to the same base class) in C++, which keyword is used to ensure only one instance of the base class is inherited?",
+    "options": ["static", "virtual", "friend", "abstract"],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 12,
+    "text": "What makes a C++ class an 'Abstract Class'?",
+    "options": [
+      "It has no member variables.",
+      "It contains at least one pure virtual function (e.g., `virtual void func() = 0;`).",
+      "All of its constructors are declared in the `private` access modifier section.",
+      "It cannot be inherited by any other class."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 13,
+    "text": "If you throw an exception of type `int` in C++ and do not have a specific `catch (int e)` block, what will happen if you have a `catch (...)` block?",
+    "options": [
+      "The program will immediately crash with a 'Unhandled Exception' error.",
+      "The `catch (...)` block acts as a catch-all handler and will catch the integer exception.",
+      "A compilation error will occur because `catch (...)` is invalid syntax.",
+      "The integer is automatically converted to a string and caught by a `catch(string)` block if present."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 14,
+    "text": "In an AVL Tree, what is the strict property regarding the balancing factor of any node?",
+    "options": [
+      "The height of the left and right subtrees must be exactly equal.",
+      "The absolute difference in heights of the left and right subtrees must not exceed 1.",
+      "The root node must always have a balance factor of 0.",
+      "The number of nodes in the left subtree must equal the number of nodes in the right subtree."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 15,
+    "text": "Which fundamental Data Structure is heavily utilized internally by the OS to evaluate arithmetic expressions written in Postfix (Reverse Polish) notation?",
+    "options": ["Queue", "Linked List", "Stack", "Binary Search Tree"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 16,
+    "text": "Which sorting algorithm provides a guaranteed worst-case time complexity of O(n log n)?",
+    "options": ["Quick Sort", "Bubble Sort", "Merge Sort", "Insertion Sort"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 17,
+    "text": "Performing an In-Order traversal on a valid Binary Search Tree (BST) will process the node values in which sequence?",
+    "options": [
+      "Descending order",
+      "Ascending (non-decreasing) order",
+      "Level-by-level (top to bottom)",
+      "Root first, then leaves"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 18,
+    "text": "In the context of Hashing, 'Linear Probing' is a technique used specifically to solve which problem?",
+    "options": [
+      "Memory fragmentation",
+      "Hash collisions",
+      "Key encryption",
+      "Database indexing"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 19,
+    "text": "If you are implementing a Priority Queue, which underlying data structure provides the most optimal time complexity for both insertion and extraction of the highest-priority element?",
+    "options": [
+      "Unsorted Array",
+      "Sorted Linked List",
+      "Binary Heap",
+      "Circular Queue"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 20,
+    "text": "In Operating Systems, what is the primary purpose of Dijkstra's Banker's Algorithm?",
+    "options": [
+      "CPU Scheduling",
+      "Deadlock Avoidance",
+      "Page Replacement",
+      "Disk Arm Scheduling"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 21,
+    "text": "Which CPU scheduling algorithm severely suffers from the 'Convoy Effect', where short processes get stuck waiting for a long process to release the CPU?",
+    "options": [
+      "Round Robin (RR)",
+      "Shortest Job First (SJF)",
+      "First-Come, First-Served (FCFS)",
+      "Multilevel Feedback Queue"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 22,
+    "text": "How many total processes will be created by the execution of the following C code block?\nint main() {\n    fork();\n    fork();\n    fork();\n    return 0;\n}",
+    "options": ["3", "4", "7", "8"],
+    "correctOptionIndex": [3],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 23,
+    "text": "Belady’s Anomaly specifically occurs in which of the following Page Replacement Algorithms?",
+    "options": [
+      "LRU (Least Recently Used)",
+      "Optimal Page Replacement",
+      "FIFO (First-In-First-Out)",
+      "LFU (Least Frequently Used)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 24,
+    "text": "In OS synchronization, what happens when a process executes the `wait()` (or `P()`) operation on a Semaphore that currently has a value of 0?",
+    "options": [
+      "The value of the semaphore becomes -1, and the process continues.",
+      "The process is blocked/suspended and placed in a waiting queue until the semaphore value becomes greater than 0.",
+      "The OS terminates the process immediately to prevent a deadlock.",
+      "The semaphore is automatically reset to 1."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 25,
+    "text": "What is 'Thrashing' in the context of Virtual Memory management?",
+    "options": [
+      "When the CPU operates at maximum capacity, generating excess heat.",
+      "When the OS spends significantly more time swapping pages in and out of the disk than executing actual instructions.",
+      "When memory becomes so fragmented that no new processes can be loaded.",
+      "When a process accesses memory locations outside its designated address space."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 26,
+    "text": "In Database Normalization, a relation is formally defined to be in Boyce-Codd Normal Form (BCNF) if and only if:",
+    "options": [
+      "It is in 3NF and has no multi-valued dependencies.",
+      "For every non-trivial functional dependency X \u2192 Y, X is a superkey.",
+      "Every non-prime attribute is fully functionally dependent on the primary key.",
+      "There are no partial dependencies."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 27,
+    "text": "What is the fundamental difference between the `WHERE` clause and the `HAVING` clause in SQL?",
+    "options": [
+      "`WHERE` filters rows before aggregate functions are applied; `HAVING` filters groups after aggregate functions are applied.",
+      "`HAVING` can only be used with subqueries, while `WHERE` is for standard queries.",
+      "`WHERE` is used in `SELECT` statements; `HAVING` is used in `UPDATE` statements.",
+      "There is no difference; they can be used interchangeably."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 28,
+    "text": "In the ACID properties of database transactions, what does 'Durability' guarantee?",
+    "options": [
+      "That a transaction is treated as an indivisible unit.",
+      "That concurrent execution of transactions leaves the database in the same state as sequential execution.",
+      "That once a transaction is committed, its changes are permanently recorded in the database, even in the event of a system crash.",
+      "That only valid data matching table constraints is saved."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 29,
+    "text": "In an Entity-Relationship (ER) diagram, how is a 'Weak Entity' standardly represented?",
+    "options": [
+      "By a dashed rectangle.",
+      "By a double-outlined diamond.",
+      "By an ellipse with a dotted line.",
+      "By a double-outlined rectangle."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 30,
+    "text": "Which fundamental data structure is utilized by modern relational databases (like MySQL/PostgreSQL) to implement primary indexes, because it stores data pointers strictly in linked leaf nodes, making range queries exceptionally fast?",
+    "options": ["B Tree", "B+ Tree", "Red-Black Tree", "Hash Table"],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 31,
+    "text": "If a file has the Unix permissions `-rwxr-xr--`, what is the equivalent numeric representation used in the `chmod` command?",
+    "options": ["754", "774", "755", "764"],
+    "correctOptionIndex": [0],
+    "mock": 10
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 32,
+    "text": "Which Unix command is specifically utilized to search for a specific text pattern or regular expression within a file?",
+    "options": ["find", "awk", "grep", "locate"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 33,
+    "text": "What does the COCOMO model primarily estimate in Software Engineering?",
+    "options": [
+      "Cyclomatic Complexity",
+      "Code execution performance",
+      "Software cost, effort, and schedule",
+      "The number of expected bugs post-release"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 34,
+    "text": "In Machine Learning, a model that performs exceptionally well on its training data but performs terribly on unseen test data is exhibiting which phenomenon?",
+    "options": [
+      "Underfitting (High Bias)",
+      "Overfitting (High Variance)",
+      "Optimal fit",
+      "Dimensionality Reduction"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 35,
+    "text": "Which Transport Layer protocol is connectionless, does not guarantee delivery, and has virtually no overhead, making it ideal for real-time video streaming or online gaming?",
+    "options": [
+      "TCP (Transmission Control Protocol)",
+      "IP (Internet Protocol)",
+      "UDP (User Datagram Protocol)",
+      "ICMP (Internet Control Message Protocol)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 36,
+    "text": "What is the primary difference between the `malloc()` and `calloc()` functions in C?",
+    "options": [
+      "`malloc()` allocates contiguous memory, whereas `calloc()` allocates non-contiguous memory.",
+      "`malloc()` initializes the allocated memory to zero, whereas `calloc()` leaves it uninitialized.",
+      "`calloc()` takes two arguments (number of elements and size of each) and initializes the memory to zero, whereas `malloc()` takes one argument and leaves memory uninitialized.",
+      "`calloc()` is used strictly for arrays, while `malloc()` is used strictly for single structures."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 37,
+    "text": "What does the following C expression efficiently accomplish for integer variables `a` and `b`?\n a ^= b; \n b ^= a; \n a ^= b;",
+    "options": [
+      "Sets both `a` and `b` to zero.",
+      "Swaps the values of `a` and `b` without using a temporary third variable.",
+      "Calculates the bitwise NOR of `a` and `b`.",
+      "Results in a compilation error due to sequence point violations."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 38,
+    "text": "Predict the output of the following C snippet:\n#include <stdio.h>\nint main() {\n    int a = 10, b = 20, c = 30;\n    int result = a > b ? a : b > c ? b : c;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "options": ["10", "20", "30", "Compilation Error"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 39,
+    "text": "If `int arr[3][4];` is declared, what does the expression `*(arr + 1) + 2` represent?",
+    "options": [
+      "The integer value at `arr[1][2]`.",
+      "The memory address of `arr[1][2]`.",
+      "The memory address of `arr[2][1]`.",
+      "The integer value at `arr[2][1]`."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 40,
+    "text": "What is the function of `sprintf()` in C?",
+    "options": [
+      "To read formatted input from a string.",
+      "To print formatted output to the console screen.",
+      "To store formatted output into a character array (string) instead of printing it to the console.",
+      "To open a file and write a formatted string into it."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 41,
+    "text": "In C, if a global variable is declared with the `static` keyword, what effect does it have?",
+    "options": [
+      "It prevents the variable from being modified.",
+      "It limits the scope of the global variable strictly to the file in which it is declared (internal linkage).",
+      "It stores the variable in the CPU register for faster access.",
+      "It makes the variable accessible from any file in the program."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 42,
+    "text": "In C++, what is the size of an empty class (a class with no member variables and no virtual functions) when instantiated using standard compilers?",
+    "options": [
+      "0 bytes",
+      "1 byte",
+      "4 bytes",
+      "Depends entirely on the operating system."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 43,
+    "text": "Which of the following statements about C++ `static` member functions is TRUE?",
+    "options": [
+      "They can seamlessly access non-static member variables of the class.",
+      "They have a hidden `this` pointer passed to them automatically.",
+      "They can be declared as `virtual` to support runtime polymorphism.",
+      "They can only directly access other static members of the class and can be called without instantiating an object."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 44,
+    "text": "What happens if you attempt to invoke a `virtual` function from inside a C++ constructor?",
+    "options": [
+      "A compilation error occurs because the Virtual Table (V-Table) is not yet built.",
+      "The program crashes with a Segmentation Fault.",
+      "Dynamic dispatch is disabled; the constructor calls the version of the function defined in its own class, not the derived class.",
+      "The function behaves exactly as standard runtime polymorphism, calling the most derived version."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 45,
+    "text": "In C++, the `explicit` keyword is placed in front of a constructor declaration primarily to prevent:",
+    "options": [
+      "The constructor from being overloaded.",
+      "The class from being inherited.",
+      "Implicit type conversions and copy-initialization that utilize that specific constructor.",
+      "The constructor from allocating dynamic memory."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 46,
+    "text": "Which C++ casting operator is specifically designed to safely downcast a base class pointer to a derived class pointer, performing a runtime check and returning `nullptr` if the cast is invalid?",
+    "options": [
+      "static_cast",
+      "reinterpret_cast",
+      "const_cast",
+      "dynamic_cast"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 47,
+    "text": "Which type of C++ inheritance explicitly hides the base class's `public` members, making them `private` in the derived class?",
+    "options": [
+      "Public Inheritance",
+      "Protected Inheritance",
+      "Private Inheritance",
+      "Virtual Inheritance"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 48,
+    "text": "In a strict Binary Tree of height `H` (where a single node tree has a height of 0), what is the formula for the MAXIMUM number of nodes the tree can contain?",
+    "options": ["2^H", "2^(H+1) - 1", "2^H - 1", "2^(H-1)"],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 49,
+    "text": "What is the optimal time complexity to build a Binary Max-Heap from an unsorted array of `N` elements using the standard bottom-up heapify method?",
+    "options": ["O(1)", "O(log N)", "O(N)", "O(N log N)"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 50,
+    "text": "Which property correctly defines the 'Load Factor' (λ) in a Hash Table?",
+    "options": [
+      "The maximum number of collisions permitted before the program crashes.",
+      "The ratio of the number of elements stored (N) to the size of the hash table (M).",
+      "The prime number utilized in the hash function.",
+      "The depth of the deepest Linked List in a chaining implementation."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 51,
+    "text": "If Floyd's Cycle-Finding Algorithm (Tortoise and Hare) detects a loop in a Linked List, how can you mathematically find the starting node of the loop?",
+    "options": [
+      "Reset both pointers to the head and move them at the same speed.",
+      "Keep the fast pointer at the meeting point, reset the slow pointer to the head, and move both at a speed of 1 step per iteration until they meet.",
+      "Reverse the linked list from the meeting point.",
+      "It is mathematically impossible to find the start of the loop without utilizing a Hash Map."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 52,
+    "text": "Which of the following sorting algorithms is NOT an 'in-place' sort and requires O(N) auxiliary space?",
+    "options": ["Quick Sort", "Heap Sort", "Merge Sort", "Insertion Sort"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 53,
+    "text": "What is the minimum number of edges required to create a fully connected undirected graph containing 'V' vertices?",
+    "options": ["V", "V / 2", "V - 1", "V * (V - 1) / 2"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 54,
+    "text": "In Operating Systems memory management, what is the fundamental difference between Paging and Segmentation?",
+    "options": [
+      "Paging suffers from External Fragmentation, while Segmentation suffers from Internal Fragmentation.",
+      "Paging divides memory into fixed-size blocks, while Segmentation divides memory into variable-size blocks based on logical program divisions.",
+      "Paging requires a Translation Lookaside Buffer (TLB), while Segmentation does not.",
+      "Paging is entirely managed by the programmer, while Segmentation is managed by the hardware."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 55,
+    "text": "Which CPU Scheduling Algorithm fundamentally calculates a dynamically changing priority ratio `(Wait Time + Burst Time) / Burst Time` to prevent process starvation?",
+    "options": [
+      "Shortest Remaining Time First (SRTF)",
+      "Highest Response Ratio Next (HRRN)",
+      "Round Robin (RR)",
+      "Multilevel Feedback Queue (MLFQ)"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 56,
+    "text": "In the context of Deadlocks, a system is formally considered to be in a 'Safe State' if:",
+    "options": [
+      "No process is currently requesting any resources.",
+      "The system has more available resources than the total maximum demand of all processes combined.",
+      "There exists at least one sequence of all processes such that each process can complete using currently available resources plus resources held by previously completed processes.",
+      "There are zero preemptible resources in the system."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 57,
+    "text": "Which statement accurately describes a key difference between a Mutex and a Binary Semaphore?",
+    "options": [
+      "A Binary Semaphore can hold values up to 10, whereas a Mutex is strictly 0 or 1.",
+      "A Mutex implies an 'ownership' property where only the thread that locked the mutex can unlock it, whereas a Semaphore can be signaled by any thread.",
+      "Mutexes are utilized solely for Inter-Process Communication (IPC) across network sockets.",
+      "There is absolutely no functional or conceptual difference between them."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 58,
+    "text": "In Disk Scheduling algorithms, what does the SCAN algorithm do?",
+    "options": [
+      "Services requests in the exact order they arrive (FCFS).",
+      "Moves the disk arm starting from the current position toward one end, servicing requests, and upon reaching the end, reverses direction and services requests on the way back.",
+      "Always services the request closest to the current head position (SSTF).",
+      "Services requests in a circular queue format, jumping back to the beginning without servicing requests on the return trip (C-SCAN)."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 59,
+    "text": "Why do relational databases overwhelmingly prefer B+ Trees over standard B Trees for implementing indexes?",
+    "options": [
+      "B+ Trees have a lower maximum height than B Trees.",
+      "B+ Trees store raw data records in the internal nodes, reducing the total node count.",
+      "B+ Trees store all data pointers exclusively in the leaf nodes, which are linked together, making sequential range queries significantly faster and more efficient.",
+      "B Trees do not support standard SQL operations."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 60,
+    "text": "Consider two tables, `A` and `B`. If you execute a `LEFT OUTER JOIN` on `A` and `B`, what will the result contain?",
+    "options": [
+      "Only the rows that have matching keys in both tables.",
+      "All rows from table `B`, and the matched rows from table `A`.",
+      "All rows from table `A`, with NULL values filled in for columns from `B` where there is no matching key.",
+      "A full Cartesian product of `A` and `B`."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 61,
+    "text": "During Database Normalization, a decomposition of relation R into R1 and R2 is considered a 'Lossless-Join Decomposition' if and only if the intersection of R1 and R2 attributes is:",
+    "options": [
+      "Empty (NULL).",
+      "A primary key for the original relation R.",
+      "A candidate key or superkey for at least one of the decomposed relations (R1 or R2).",
+      "Composed entirely of multi-valued attributes."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 62,
+    "text": "In transaction concurrency control, two operations are considered 'Conflicting' if they satisfy which three conditions?",
+    "options": [
+      "They belong to different transactions, they access the same data item, and at least one is a Write operation.",
+      "They belong to the same transaction, they access different data items, and both are Read operations.",
+      "They belong to different transactions, they access the same data item, and both are Read operations.",
+      "They happen simultaneously on different CPU cores."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 63,
+    "text": "If a Relational Algebra Cartesian Product is performed between Relation X (10 rows, 4 columns) and Relation Y (5 rows, 3 columns), what is the resulting cardinality (rows) and degree (columns)?",
+    "options": [
+      "50 Rows, 12 Columns",
+      "15 Rows, 7 Columns",
+      "50 Rows, 7 Columns",
+      "10 Rows, 4 Columns"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 64,
+    "text": "Which specific flag is used with the Unix `grep` command to perform an 'inverted match' (i.e., display all lines that do NOT contain the specified pattern)?",
+    "options": ["grep -i", "grep -n", "grep -c", "grep -v"],
+    "correctOptionIndex": [3],
+    "mock": 10
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 65,
+    "text": "What is the primary operational difference between Alpha Testing and Beta Testing in the Software Development Life Cycle?",
+    "options": [
+      "Alpha testing is White-Box; Beta testing is purely automated.",
+      "Alpha testing is performed by actual end-users in a real-world environment; Beta testing is performed by developers.",
+      "Alpha testing is conducted at the developer's site by internal staff; Beta testing is conducted by real end-users at their own locations.",
+      "There is no difference; they are synonymous terms in Agile."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 66,
+    "text": "What is the output of the following C code?\n#include <stdio.h>\nint main() {\n    int a = 1;\n    switch(a) {\n        case 1:\n            printf(\"One \");\n        case 2:\n            printf(\"Two \");\n            break;\n        default:\n            printf(\"None\");\n    }\n    return 0;\n}",
+    "options": ["One", "One Two", "One Two None", "Compilation Error"],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 67,
+    "text": "What is a 'Friend Class' in C++?",
+    "options": [
+      "A class that inherits all properties of another class without using the `public` keyword.",
+      "A class whose member functions have access to the private and protected members of another class in which it is declared as a friend.",
+      "A class that cannot be instantiated and is used purely as an interface.",
+      "A class that is dynamically linked at runtime."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 68,
+    "text": "Which algorithm is highly optimized for finding the Shortest Path from a single source node to all other nodes in a graph that contains NON-NEGATIVE edge weights?",
+    "options": [
+      "Kruskal's Algorithm",
+      "Floyd-Warshall Algorithm",
+      "Dijkstra's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 69,
+    "text": "In the Unix/Linux file system, what information does an 'inode' (index node) specifically NOT contain?",
+    "options": [
+      "File Ownership (UID and GID)",
+      "File Size in bytes",
+      "The actual human-readable Name of the file",
+      "Timestamps (Access, Modify, Change)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 70,
+    "text": "What does the `fseek()` function's parameter `SEEK_END` signify when adjusting a file pointer in C?",
+    "options": [
+      "It seeks to the beginning of the file.",
+      "It seeks a specified number of bytes relative to the current position of the pointer.",
+      "It seeks a specified number of bytes relative to the end of the file.",
+      "It permanently truncates the file at the current pointer location."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 71,
+    "text": "According to Cayley's Formula, how many distinct spanning trees can be constructed from a completely connected undirected graph having 'n' vertices?",
+    "options": ["n!", "n^(n-1)", "n^(n-2)", "2^(n-1) - 1"],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 72,
+    "text": "In a paged memory management system, what is the primary purpose of the Translation Lookaside Buffer (TLB)?",
+    "options": [
+      "To store frequently accessed pages of data to prevent disk I/O.",
+      "To cache recent virtual-to-physical address translations to reduce the time taken to access the page table in main memory.",
+      "To prevent unauthorized access to restricted memory segments.",
+      "To translate high-level programming instructions into machine code."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 73,
+    "text": "What is the primary difference in meaning between the C declarations `int *p[5];` and `int (*p)[5];`?",
+    "options": [
+      "They are identical in functionality; the parentheses are purely stylistic.",
+      "The first is an array of 5 integer pointers; the second is a single pointer to an array of 5 integers.",
+      "The first is a single pointer to an array of 5 integers; the second is an array of 5 integer pointers.",
+      "The first allocates memory dynamically; the second allocates memory statically."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 74,
+    "text": "In Relational Algebra, which operation is most appropriate to solve queries that include the phrase \"for all\" (e.g., \"Find the students who have taken ALL courses offered by the CS department\")?",
+    "options": [
+      "Natural Join",
+      "Cartesian Product",
+      "Set Intersection",
+      "Division"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 75,
+    "text": "In C++, what is the expected behavior if an exception is thrown from inside a destructor while another exception is already actively propagating (stack unwinding is in progress)?",
+    "options": [
+      "The new exception replaces the old one and propagates upward.",
+      "Both exceptions are caught by the nearest `catch(...)` block.",
+      "The program immediately invokes `std::terminate()` and crashes.",
+      "The destructor simply returns early without throwing the second exception."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 76,
+    "text": "If a cache memory has a hit rate of 90%, a cache access time of 10ns, and a main memory access time of 100ns, what is the Effective Access Time (EAT) of the system? (Assuming simultaneous access is not used).",
+    "options": ["19 ns", "20 ns", "90 ns", "100 ns"],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 77,
+    "text": "In the Unix file system, how does a 'Hard Link' conceptually differ from a 'Soft (Symbolic) Link'?",
+    "options": [
+      "A hard link points to the target file's path, while a soft link points to the target file's inode.",
+      "A hard link points directly to the target file's inode, meaning the file data remains accessible even if the original file name is deleted.",
+      "Hard links can span across different file systems, whereas soft links cannot.",
+      "Hard links can be created for directories, whereas soft links cannot."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 78,
+    "text": "What does the standard C library function `scanf()` return upon successful execution?",
+    "options": [
+      "The actual input string read from the user.",
+      "The memory address where the input data was stored.",
+      "The total number of input items successfully matched and assigned.",
+      "A boolean value (1 for success, 0 for failure)."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 79,
+    "text": "In graph theory algorithms, a 'Minimum Spanning Tree' (MST) of a weighted, connected, undirected graph MUST include which of the following?",
+    "options": [
+      "The edge with the absolute maximum weight in the entire graph.",
+      "All edges of the graph.",
+      "The edge with the absolute minimum weight in the entire graph.",
+      "A cycle to ensure connectivity."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 80,
+    "text": "Which of the following is a known disadvantage of normalizing a database relation into Boyce-Codd Normal Form (BCNF) as opposed to stopping at 3rd Normal Form (3NF)?",
+    "options": [
+      "BCNF may introduce new data anomalies.",
+      "BCNF does not necessarily preserve all original functional dependencies upon decomposition.",
+      "BCNF requires the use of multi-valued dependencies, which slows down queries.",
+      "BCNF tables cannot be joined using standard SQL."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 81,
+    "text": "[MULTI-CORRECT] Which of the following operations explicitly result in 'Undefined Behavior' (UB) according to the C standard?",
+    "options": [
+      "Accessing an array outside of its declared bounds.",
+      "Dereferencing a NULL pointer.",
+      "Overflowing a signed integer variable.",
+      "Overflowing an unsigned integer variable."
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 82,
+    "text": "[MULTI-CORRECT] Which of the following statements regarding Constructors and Destructors in C++ are TRUE?",
+    "options": [
+      "A constructor can be declared as `virtual`.",
+      "A destructor can be declared as `virtual`.",
+      "An abstract class can have a constructor.",
+      "Constructors cannot be overloaded."
+    ],
+    "correctOptionIndex": [1, 2],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 83,
+    "text": "[MULTI-CORRECT] Which of the following statements are mathematically TRUE for a standard Binary Search Tree (BST)?",
+    "options": [
+      "An in-order traversal of a BST always visits the nodes in sorted (ascending) order.",
+      "The worst-case time complexity for searching a BST is O(N).",
+      "The left child of a node is always strictly less than the node, and the right child is strictly greater than or equal to the node.",
+      "A BST is always perfectly height-balanced by default upon insertion."
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 84,
+    "text": "[MULTI-CORRECT] Which of the following mechanisms can an Operating System use to PREVENT Deadlocks? (Targeting the four necessary conditions).",
+    "options": [
+      "Denying the 'Hold and Wait' condition by requiring a process to request all its resources simultaneously.",
+      "Allowing resource Preemption, forcibly taking resources away from blocked processes.",
+      "Using Dijkstra's Banker's Algorithm to track resource allocations dynamically.",
+      "Imposing a strict total ordering of all resource types to prevent 'Circular Wait'."
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 85,
+    "text": "[MULTI-CORRECT] In DBMS Concurrency Control, the Strict Two-Phase Locking (Strict 2PL) protocol provides which of the following guarantees?",
+    "options": [
+      "It completely prevents Deadlocks from occurring.",
+      "It ensures that all resulting schedules are Conflict Serializable.",
+      "It prevents Cascading Rollbacks by holding exclusive locks until transaction commit/abort.",
+      "It eliminates the need for maintaining a transaction log."
+    ],
+    "correctOptionIndex": [1, 2],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 86,
+    "text": "[MULTI-CORRECT] Identify the valid memory allocation functions in C that return a `void*` pointer.",
+    "options": ["malloc()", "calloc()", "realloc()", "alloc()"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 87,
+    "text": "[MULTI-CORRECT] Which of the following are valid characteristics of a `friend` function in C++?",
+    "options": [
+      "It is NOT a member function of the class it is befriended to.",
+      "It can access `private` and `protected` data members of the class directly using an object reference.",
+      "A `friend` function is inherited by derived classes automatically.",
+      "It does not have a hidden `this` pointer passed to it."
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 88,
+    "text": "[MULTI-CORRECT] A Stack data structure is heavily utilized as the underlying mechanism for which of the following operations?",
+    "options": [
+      "Evaluating Postfix mathematical expressions.",
+      "Executing Breadth-First Search (BFS) on a graph.",
+      "Managing function calls and recursion within a program.",
+      "Reversing a string."
+    ],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 89,
+    "text": "[MULTI-CORRECT] When multiple threads are spawned within the SAME process, which of the following memory/OS resources are SHARED among all those threads?",
+    "options": [
+      "The Code (Text) Section",
+      "The Global Data Section",
+      "The Stack",
+      "Open File Descriptors"
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 90,
+    "text": "[MULTI-CORRECT] Which of the following statements regarding the behavior of `NULL` in standard SQL are TRUE?",
+    "options": [
+      "The expression `NULL = NULL` evaluates to TRUE.",
+      "The aggregate function `COUNT(*)` includes rows containing NULL values.",
+      "The aggregate function `COUNT(column_name)` ignores rows where that column is NULL.",
+      "Any arithmetic operation with NULL (e.g., `5 + NULL`) results in NULL."
+    ],
+    "correctOptionIndex": [1, 2, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 91,
+    "text": "[MULTI-CORRECT] Which of the following are native features of the Transmission Control Protocol (TCP)?",
+    "options": [
+      "Connection-oriented communication via a 3-way handshake.",
+      "Built-in Congestion Control algorithms.",
+      "Guaranteed low-latency delivery suitable for live voice streaming.",
+      "Flow Control utilizing a sliding window mechanism."
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 92,
+    "text": "[MULTI-CORRECT] Which of the following testing methodologies are explicitly classified as White-Box (Structural) testing?",
+    "options": [
+      "Statement Coverage",
+      "Equivalence Partitioning",
+      "Branch/Decision Coverage",
+      "Path Coverage"
+    ],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 93,
+    "text": "[MULTI-CORRECT] If a Machine Learning model is heavily 'Overfitting' the training data, which of the following strategies can be employed to reduce the overfitting?",
+    "options": [
+      "Applying Regularization techniques (like L1/L2 penalty).",
+      "Training the model for a longer duration (more epochs).",
+      "Increasing the volume of diverse training data.",
+      "Pruning the tree (if using Decision Trees)."
+    ],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 94,
+    "text": "[MULTI-CORRECT] Which of the following Unix/Linux commands are utilized primarily for Process Management and monitoring?",
+    "options": ["ps", "top", "grep", "kill"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 95,
+    "text": "[MULTI-CORRECT] Which of the following file access modes in C will successfully create a new file if the specified file does NOT already exist?",
+    "options": ["\"r\"", "\"w\"", "\"a\"", "\"w+\""],
+    "correctOptionIndex": [1, 2, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 96,
+    "text": "[MULTI-CORRECT] Which of the following statements about C++ Templates are TRUE?",
+    "options": [
+      "Templates allow for generic programming, increasing code reusability.",
+      "Template instantiation happens at runtime.",
+      "A template can be specialized to provide a specific implementation for a particular data type.",
+      "Using templates heavily can lead to 'Code Bloat' (increased executable size)."
+    ],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 97,
+    "text": "[MULTI-CORRECT] Which of the following underlying data structures can be effectively utilized to implement a Priority Queue?",
+    "options": [
+      "An Unsorted Array",
+      "A Min-Heap or Max-Heap",
+      "A Binary Search Tree (BST)",
+      "A standard FIFO Queue"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 10
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 98,
+    "text": "[MULTI-CORRECT] Which of the following CPU Scheduling algorithms can be implemented in a PREEMPTIVE manner?",
+    "options": [
+      "Shortest Job First (SJF / SRTF)",
+      "First-Come, First-Served (FCFS)",
+      "Priority Scheduling",
+      "Round Robin (RR)"
+    ],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 10
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 99,
+    "text": "[MULTI-CORRECT] A database table that is NOT properly normalized is susceptible to which of the following anomalies?",
+    "options": [
+      "Insertion Anomaly",
+      "Concurrency Anomaly",
+      "Deletion Anomaly",
+      "Update Anomaly"
+    ],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 10
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 100,
+    "text": "[MULTI-CORRECT] Which of the following keywords are utilized as Storage Class Specifiers in standard C?",
+    "options": ["extern", "register", "volatile", "static"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 10
+  }
+]

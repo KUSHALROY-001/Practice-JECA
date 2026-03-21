@@ -1,7 +1,7 @@
 [
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 1,
     "text": "Which of the following types of memory is non-volatile?",
     "options": ["RAM", "Cache", "Register", "EPROM"],
@@ -9,7 +9,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 2,
     "text": "Which of the following statements about RAM is correct?",
     "options": [
@@ -22,7 +22,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 3,
     "text": "Which of the following best distinguishes a sequential circuit from a combinational circuit?",
     "options": [
@@ -35,7 +35,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 4,
     "text": "A system has a 16-bit data bus and a 20-bit address bus. What is the maximum amount of data (in bytes) the system can directly address in memory?",
     "options": [
@@ -48,7 +48,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 5,
     "text": "1 nibble =",
     "options": ["2 bits", "4 bits", "8 bits", "16 bits"],
@@ -56,7 +56,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 6,
     "text": "Which of the following is not a type of computer code?",
     "options": ["EDIC", "ASCII", "BCD", "EBCDIC"],
@@ -226,7 +226,7 @@
   },
   {
     "year": 2025,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 21,
     "text": "Which of the following options with grep is used to ignore case while searching?",
     "options": ["-n", "-i", "-r", "-c"],
@@ -234,7 +234,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 22,
     "text": "Which of the following is not a typical use of stacks?",
     "options": [
@@ -247,7 +247,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 23,
     "text": "In a circular queue of size n, when is the queue considered full?",
     "options": [
@@ -260,7 +260,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 24,
     "text": "Which of the following traversal techniques lists the nodes of a binary search tree in ascending order?",
     "options": ["Inorder", "Preorder", "Postorder", "None of these"],
@@ -268,7 +268,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 25,
     "text": "The running time T(n) of an algorithm for n input is given as follows:\nT(n) = c + T(n-1), if n > 1\n= d, if n <= 1.\nHere c and d are constant.",
     "options": ["n^2", "n", "n^3", "n^n"],
@@ -276,7 +276,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 26,
     "text": "The order of an algorithm that finds whether a given Boolean function of n variables produces 1 is",
     "options": ["constant", "linear", "logarithmic", "exponential"],
@@ -284,7 +284,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 27,
     "text": "Which of the following can be done with Linked List?",
     "options": [
@@ -297,7 +297,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 28,
     "text": "What is the worst case time complexity to access an element in a binary search tree?",
     "options": ["O(n)", "O(n log n)", "O(1)", "O(log n)"],
@@ -318,7 +318,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 30,
     "text": "Which of the following represents postorder traversal of a binary tree?",
     "options": [
@@ -331,7 +331,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 31,
     "text": "In a graph of n nodes and n edges, how many cycles will be present?",
     "options": ["Exactly 1", "At most 1", "At most 2", "Depends on the graph"],
@@ -339,7 +339,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 32,
     "text": "What is the value of the postfix expression 6 3 2 4 + - * ?",
     "options": ["-18", "18", "22", "40"],
@@ -347,7 +347,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 33,
     "text": "Which of the following points is/are not true about Linked List data structure when it is compared with an array?",
     "options": [
@@ -360,7 +360,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 34,
     "text": "What is a dequeue?",
     "options": [
@@ -373,7 +373,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 35,
     "text": "What is the best case time complexity of deleting a node in a Singly Linked List?",
     "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
@@ -381,7 +381,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 36,
     "text": "Which of the following is the correct sequence of stages in a basic instruction pipeline?",
     "options": [
@@ -394,7 +394,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 37,
     "text": "______ contains firmware that boots the system.",
     "options": ["ROM", "RAM", "Cache", "DMA controller"],
@@ -402,7 +402,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 38,
     "text": "Which of the following is not a valid characteristic of SRAM?",
     "options": [
@@ -415,7 +415,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 39,
     "text": "The sequence of events that happen during a typical fetch operation is",
     "options": [
@@ -428,7 +428,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 40,
     "text": "How many 2-input multiplexers are required to construct a 2^10-multiplexer?",
     "options": ["1023", "31", "10", "127"],
@@ -522,7 +522,7 @@
   },
   {
     "year": 2025,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 48,
     "text": "Which command is used to find the number of lines, words and characters in a file in Unix?",
     "options": ["count", "wc", "nl", "cat"],
@@ -530,7 +530,7 @@
   },
   {
     "year": 2025,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 49,
     "text": "Which Unix command will change the group ownership of the file report.txt to the group staff?",
     "options": [
@@ -543,7 +543,7 @@
   },
   {
     "year": 2025,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 50,
     "text": "In Unix, user wants to change the priority of a running process, which is the suitable command?",
     "options": ["nice", "ps", "renice", "kill"],
@@ -933,7 +933,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 85,
     "text": "Five elements P, Q, R, S, T are pushed onto a stack starting from P. The stack is then popped 4 times, and each popped element is inserted into a queue. Two elements are then deleted from the queue and pushed back onto the stack. Finally, one element is popped from the stack. What will be the popped element?",
     "options": ["P", "Q", "R", "S"],
@@ -941,7 +941,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 86,
     "text": "Consider the following operations on a singly linked list initially containing the elements: 10 -> 20 -> 30 -> 40\n(i) Insert 15 after 10.\n(ii) Delete the node containing 30.\n(iii) Insert 25 at the end of the list.\n(iv) Delete the first node.\nWhat will be the final sequence of elements in the linked list?",
     "options": [
@@ -954,7 +954,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 87,
     "text": "A complete binary tree has 63 nodes. How many leaf nodes does it have?",
     "options": ["16", "32", "42", "48"],
@@ -1046,7 +1046,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 96,
     "text": "A computer with 32 bit wide data bus uses 4K x 8 static RAM memory chips. The smallest memory of this computer is",
     "options": ["32 KB", "16 KB", "8 KB", "24 KB"],
@@ -1054,7 +1054,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 97,
     "text": "A machine needs a minimum of 100 second to sort 1000 names by quick sort. The minimum time needed to sort 100 names will be approximately",
     "options": ["6.7 second", "10 second", "11.2 second", "50.2 second"],
@@ -1062,7 +1062,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 98,
     "text": "Choose the correct answer:\nIf X is a Boolean variable then",
     "options": ["0+X=X", "1+X=X", "X+X=X", "None of these"],
@@ -1070,7 +1070,7 @@
   },
   {
     "year": 2025,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 99,
     "text": "Which of following units can be used to measure the speed of a computer?",
     "options": ["SYPS", "MIPS", "BAUD", "FLOPS"],
@@ -1078,7 +1078,7 @@
   },
   {
     "year": 2025,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 100,
     "text": "Which of the following are advantages of using a linked list over arrays?",
     "options": [

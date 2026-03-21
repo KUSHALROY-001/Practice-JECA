@@ -1,0 +1,845 @@
+[
+  {
+    "topic": "C Programming",
+    "questionNo": 1,
+    "text": "What is the output of the following C code?\n\n#include <stdio.h>\nint main() {\n  int a = 5;\n  printf(\"%d %d %d\", a, a++, ++a);\n  return 0;\n}",
+    "options": ["5 5 7", "Undefined Behavior", "5 6 7", "Compilation Error"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 2,
+    "text": "Which of the following correctly opens a file for both reading and writing, and truncates it if it exists?",
+    "options": ["r+", "w+", "a+", "rw"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 3,
+    "text": "What is the output of the following code?\n\nint x = 10;\nint *p = &x;\n*p += 5;\nprintf(\"%d\", x);",
+    "options": ["10", "15", "5", "Compilation Error"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 4,
+    "text": "Which of the following is TRUE about virtual functions in C++?",
+    "options": [
+      "They are resolved at compile time.",
+      "They support runtime polymorphism.",
+      "They cannot be inherited.",
+      "They must be static."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 5,
+    "text": "Which concept allows multiple classes to share the same method name but with different implementations?",
+    "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 6,
+    "text": "What is the worst-case time complexity of binary search?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 7,
+    "text": "Which data structure is used for implementing recursion?",
+    "options": ["Queue", "Stack", "Linked List", "Tree"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 8,
+    "text": "Which disk scheduling algorithm can cause starvation?",
+    "options": ["FCFS", "SCAN", "SSTF", "LOOK"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 9,
+    "text": "Which of the following is NOT a necessary condition for deadlock?",
+    "options": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Preemption",
+      "Circular wait"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 10,
+    "text": "Which data structure is commonly used to implement indexing in databases?",
+    "options": ["Stack", "Queue", "B+ Tree", "Graph"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 11,
+    "text": "Which normal form removes partial dependency?",
+    "options": ["1NF", "2NF", "3NF", "BCNF"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 12,
+    "text": "Which routing algorithm is used in link-state routing?",
+    "options": ["Bellman-Ford", "Dijkstra", "Flooding", "Distance Vector"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 13,
+    "text": "TCP is a ______ protocol.",
+    "options": [
+      "Connectionless",
+      "Connection-oriented",
+      "Unreliable",
+      "Broadcast"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 14,
+    "text": "Which command is used to change the owner of a file?",
+    "options": ["chmod", "chown", "chgrp", "mv"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 15,
+    "text": "Which symbol is used as a wildcard to match any number of characters in Unix?",
+    "options": ["?", "*", "#", "&"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 16,
+    "text": "Which model is best suited for projects with unclear requirements?",
+    "options": ["Waterfall", "Spiral", "V-Model", "Incremental"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 17,
+    "text": "Which of the following is an example of unsupervised learning?",
+    "options": [
+      "Linear Regression",
+      "Logistic Regression",
+      "K-Means Clustering",
+      "Decision Tree"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 18,
+    "text": "Which memory is fastest among the following?",
+    "options": ["RAM", "Cache", "Hard Disk", "ROM"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 19,
+    "text": "What is the output?\n\nint x = 4;\nprintf(\"%d\", x << 1);",
+    "options": ["2", "4", "8", "16"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 20,
+    "text": "Which operator is used to access structure members using a pointer?",
+    "options": [".", "->", "*", "&"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 21,
+    "text": "Which function is used to move file pointer to a specific position?",
+    "options": ["fseek()", "rewind()", "ftell()", "fmove()"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 22,
+    "text": "Which keyword is used to prevent inheritance in C++?",
+    "options": ["const", "static", "final", "sealed"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 23,
+    "text": "Which of the following is NOT a feature of OOP?",
+    "options": ["Encapsulation", "Inheritance", "Compilation", "Polymorphism"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 24,
+    "text": "Which traversal is used to delete a tree?",
+    "options": ["Preorder", "Inorder", "Postorder", "Level order"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 25,
+    "text": "Which data structure uses FIFO?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 26,
+    "text": "Which scheduling algorithm is preemptive?",
+    "options": ["FCFS", "SJF", "Round Robin", "FIFO"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 27,
+    "text": "Thrashing occurs due to:",
+    "options": ["High CPU usage", "Excessive paging", "Low memory", "Deadlock"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 28,
+    "text": "Which command removes a table completely?",
+    "options": ["DELETE", "REMOVE", "DROP", "TRUNCATE"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 29,
+    "text": "Which key uniquely identifies a record?",
+    "options": ["Foreign Key", "Primary Key", "Candidate Key", "Super Key"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 30,
+    "text": "Which layer handles error detection?",
+    "options": ["Physical", "Data Link", "Network", "Application"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 31,
+    "text": "IPv6 address length is:",
+    "options": ["32 bit", "64 bit", "128 bit", "256 bit"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 32,
+    "text": "Which command shows current directory?",
+    "options": ["ls", "pwd", "cd", "dir"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 33,
+    "text": "Which command copies files?",
+    "options": ["mv", "cp", "copy", "dup"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 34,
+    "text": "Which phase defines system requirements?",
+    "options": ["Design", "Testing", "Requirement Analysis", "Maintenance"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 35,
+    "text": "Decision Tree is used for:",
+    "options": ["Clustering", "Classification", "Regression only", "Sorting"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 36,
+    "text": "Which is volatile memory?",
+    "options": ["ROM", "RAM", "Hard Disk", "DVD"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 37,
+    "text": "What is the output?\n\nprintf(\"%d\", sizeof('A'));",
+    "options": ["1", "2", "4", "Depends"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 38,
+    "text": "Which storage class has global visibility?",
+    "options": ["auto", "register", "static", "extern"],
+    "correctOptionIndex": [3],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 39,
+    "text": "Which constructor has no arguments?",
+    "options": ["Parameterized", "Default", "Copy", "Static"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 40,
+    "text": "Which sorting algorithm is stable?",
+    "options": ["Quick Sort", "Merge Sort", "Heap Sort", "Selection Sort"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 41,
+    "text": "Deadlock avoidance algorithm:",
+    "options": ["Banker’s", "FIFO", "LRU", "RR"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 42,
+    "text": "Which normal form removes transitive dependency?",
+    "options": ["1NF", "2NF", "3NF", "BCNF"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 43,
+    "text": "Which protocol is unreliable?",
+    "options": ["TCP", "UDP", "HTTP", "FTP"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 44,
+    "text": "Which command deletes a file?",
+    "options": ["del", "remove", "rm", "erase"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 45,
+    "text": "High cohesion is:",
+    "options": ["Bad design", "Good design", "No effect", "Optional"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 46,
+    "text": "Regression is used for:",
+    "options": ["Classification", "Prediction", "Clustering", "Sorting"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 47,
+    "text": "Cache memory is:",
+    "options": ["Slow", "Medium", "Fast", "Permanent"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 48,
+    "text": "Which function returns length of string?",
+    "options": ["strlen()", "size()", "length()", "count()"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 49,
+    "text": "Which concept hides data?",
+    "options": ["Inheritance", "Encapsulation", "Polymorphism", "Overloading"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 50,
+    "text": "Stack uses:",
+    "options": ["FIFO", "LIFO", "Random", "None"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 51,
+    "text": "Process is:",
+    "options": ["Program in execution", "File", "Thread", "Instruction"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 52,
+    "text": "SQL stands for:",
+    "options": [
+      "Structured Query Language",
+      "Simple Query Language",
+      "Standard Query Language",
+      "Sequential Query Language"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 53,
+    "text": "Which device connects networks?",
+    "options": ["Switch", "Router", "Hub", "Repeater"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 54,
+    "text": "Which command creates empty file?",
+    "options": ["touch", "mkfile", "create", "new"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 55,
+    "text": "Testing ensures:",
+    "options": ["Coding", "Quality", "Execution", "Compilation"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 56,
+    "text": "Clustering belongs to:",
+    "options": ["Supervised", "Unsupervised", "Reinforcement", "None"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 57,
+    "text": "ROM is:",
+    "options": ["Volatile", "Non-volatile", "Temporary", "Cache"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 58,
+    "text": "Which graph has no cycles?",
+    "options": ["Tree", "Directed", "Complete", "Weighted"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 59,
+    "text": "Context switching occurs when:",
+    "options": ["Process changes", "Memory full", "CPU idle", "Disk full"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 60,
+    "text": "Which clause is used to filter records?",
+    "options": ["SELECT", "WHERE", "GROUP", "ORDER"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 61,
+    "text": "What is the output?\n\nint a = 10;\nprintf(\"%d\", a+++a);",
+    "options": ["20", "21", "Compilation Error", "Undefined Behavior"],
+    "correctOptionIndex": [3],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 62,
+    "text": "Which of the following is TRUE about static variables?",
+    "options": [
+      "Stored in stack",
+      "Retains value between function calls",
+      "Destroyed after function ends",
+      "Allocated dynamically"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 63,
+    "text": "Which expression is equivalent to *(ptr + i)?",
+    "options": ["ptr[i]", "&ptr[i]", "*ptr + i", "ptr + i"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 64,
+    "text": "Which function is invoked when an object goes out of scope?",
+    "options": ["Constructor", "Destructor", "Operator", "Friend"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 65,
+    "text": "Which of the following supports runtime polymorphism?",
+    "options": [
+      "Templates",
+      "Function Overloading",
+      "Virtual Functions",
+      "Macros"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 66,
+    "text": "Time complexity of heap sort:",
+    "options": ["O(n)", "O(n log n)", "O(log n)", "O(n^2)"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 67,
+    "text": "Which data structure is best for implementing priority queue?",
+    "options": ["Stack", "Queue", "Heap", "Array"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 68,
+    "text": "Which algorithm suffers from Belady’s anomaly?",
+    "options": ["LRU", "FIFO", "Optimal", "SJF"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 69,
+    "text": "Which is NOT a page replacement algorithm?",
+    "options": ["FIFO", "LRU", "Round Robin", "Optimal"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 70,
+    "text": "Which of the following is a non-procedural language?",
+    "options": ["Relational Algebra", "Relational Calculus", "C", "Assembly"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 71,
+    "text": "Which index improves search performance?",
+    "options": ["Clustered", "Non-clustered", "Primary", "All"],
+    "correctOptionIndex": [3],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 72,
+    "text": "Which protocol provides reliable communication?",
+    "options": ["UDP", "IP", "TCP", "ICMP"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 73,
+    "text": "Which layer handles flow control?",
+    "options": ["Transport", "Network", "Physical", "Application"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 74,
+    "text": "Which command is used to terminate a process?",
+    "options": ["kill", "stop", "end", "terminate"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 75,
+    "text": "Which model uses iteration?",
+    "options": ["Waterfall", "Spiral", "V-model", "None"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 76,
+    "text": "SVM is used for:",
+    "options": ["Classification", "Clustering", "Sorting", "Searching"],
+    "correctOptionIndex": [0],
+    "mock": 7
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 77,
+    "text": "Register is:",
+    "options": ["Slow", "Fast", "Permanent", "Secondary"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 78,
+    "text": "Maximum nodes in binary tree of height h:",
+    "options": ["2^h", "2^h - 1", "h^2", "2h"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 79,
+    "text": "Semaphore is used for:",
+    "options": ["Memory", "Synchronization", "Scheduling", "Paging"],
+    "correctOptionIndex": [1],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 80,
+    "text": "Which command is DDL?",
+    "options": ["SELECT", "INSERT", "CREATE", "UPDATE"],
+    "correctOptionIndex": [2],
+    "mock": 7
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 81,
+    "text": "Which are valid C data types?",
+    "options": ["int", "float", "string", "char"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 82,
+    "text": "Which are storage classes?",
+    "options": ["auto", "extern", "public", "static"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 83,
+    "text": "Which support inheritance?",
+    "options": ["C++", "Java", "C", "Python"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 84,
+    "text": "Which are linear data structures?",
+    "options": ["Stack", "Queue", "Tree", "Array"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 85,
+    "text": "Deadlock conditions include:",
+    "options": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Preemption",
+      "Circular wait"
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 86,
+    "text": "Which are SQL commands?",
+    "options": ["SELECT", "UPDATE", "PRINT", "DELETE"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 87,
+    "text": "Which are transport layer protocols?",
+    "options": ["TCP", "UDP", "IP", "HTTP"],
+    "correctOptionIndex": [0, 1],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 88,
+    "text": "Which are file permissions?",
+    "options": ["Read", "Write", "Execute", "Delete"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 7
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 89,
+    "text": "Which are SDLC models?",
+    "options": ["Waterfall", "Spiral", "Binary", "Agile"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 90,
+    "text": "Which are supervised learning methods?",
+    "options": ["Regression", "Classification", "Clustering", "Decision Tree"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 91,
+    "text": "Which are input devices?",
+    "options": ["Keyboard", "Mouse", "Monitor", "Scanner"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 92,
+    "text": "Which are bitwise operators?",
+    "options": ["&", "|", "^", "%"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 7
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 93,
+    "text": "Which are access specifiers?",
+    "options": ["public", "private", "protected", "static"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 7
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 94,
+    "text": "Which are graph types?",
+    "options": ["Directed", "Undirected", "Binary", "Weighted"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 95,
+    "text": "Which are scheduling algorithms?",
+    "options": ["FCFS", "RR", "SJF", "LRU"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 7
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 96,
+    "text": "Which are database constraints?",
+    "options": ["Primary Key", "Foreign Key", "Unique", "Loop"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 7
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 97,
+    "text": "Which are network devices?",
+    "options": ["Router", "Switch", "Hub", "Compiler"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 7
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 98,
+    "text": "Which are Unix commands?",
+    "options": ["ls", "cp", "mkdir", "compile"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 7
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 99,
+    "text": "Which are testing types?",
+    "options": ["Unit", "Integration", "System", "Compilation"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 7
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 100,
+    "text": "Which are clustering algorithms?",
+    "options": ["K-means", "Hierarchical", "Regression", "DBSCAN"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 7
+  }
+]

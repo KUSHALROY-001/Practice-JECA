@@ -1,0 +1,1177 @@
+[
+  {
+    "topic": "C Programming",
+    "questionNo": 1,
+    "text": "What does the declaration `int *const p;` mean in C?",
+    "options": [
+      "p is a pointer to a constant integer.",
+      "p is a constant pointer to an integer.",
+      "p is a constant pointer to a constant integer.",
+      "p is an integer constant."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 2,
+    "text": "What is the guaranteed result of the `sizeof(char)` operator in standard C?",
+    "options": [
+      "Depends on the compiler and architecture.",
+      "Always 1.",
+      "Always 8.",
+      "Depends on whether the system is 32-bit or 64-bit."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 3,
+    "text": "Which of the following C storage classes CANNOT have its memory address obtained using the unary `&` operator?",
+    "options": ["auto", "static", "extern", "register"],
+    "correctOptionIndex": [3],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 4,
+    "text": "What will the function `fopen(\"data.txt\", \"r+\")` do if the file `data.txt` does NOT exist?",
+    "options": [
+      "It creates a new empty file named data.txt.",
+      "It returns a NULL pointer.",
+      "It throws a runtime exception.",
+      "It opens a temporary file in memory."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 5,
+    "text": "In C, what is the output of the expression `5 ^ 5 ^ 5`?",
+    "options": ["0", "5", "10", "125"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 6,
+    "text": "What is the primary purpose of the `#pragma pack(1)` preprocessor directive in C?",
+    "options": [
+      "To optimize the loop unrolling process.",
+      "To force the compiler to align structure members on 1-byte boundaries, eliminating padding.",
+      "To compress the final executable file size.",
+      "To strictly enforce type-checking during compilation."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 7,
+    "text": "In C++, what is the default access specifier for members of a `class` and a `struct`, respectively?",
+    "options": [
+      "public for class, private for struct.",
+      "private for class, public for struct.",
+      "private for both.",
+      "public for both."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 8,
+    "text": "What is the specific architectural purpose of declaring a Base Class as a 'Virtual Base Class' in C++?",
+    "options": [
+      "To prevent the base class from ever being instantiated.",
+      "To force all derived classes to override its functions.",
+      "To resolve the 'Diamond Problem' in multiple inheritance by ensuring only one copy of the base class is inherited.",
+      "To allocate the base class explicitly on the heap rather than the stack."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 9,
+    "text": "Why must a C++ copy constructor take its argument by reference (e.g., `ClassName(const ClassName &obj)`) rather than by value?",
+    "options": [
+      "To improve execution speed and save memory.",
+      "Because passing by value would invoke the copy constructor again, leading to an infinite recursive loop.",
+      "To allow the copy constructor to modify the original object.",
+      "Because const objects cannot be passed by value."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 10,
+    "text": "Which C++ casting operator is strictly evaluated at run-time and is utilized specifically for safe downcasting in polymorphic class hierarchies?",
+    "options": [
+      "static_cast",
+      "reinterpret_cast",
+      "const_cast",
+      "dynamic_cast"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 11,
+    "text": "Which of the following operators CANNOT be overloaded by a programmer in C++?",
+    "options": [
+      "+ (Addition)",
+      "== (Equality)",
+      "[] (Subscript)",
+      ":: (Scope Resolution)"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 12,
+    "text": "What does the `explicit` keyword do when placed before a C++ constructor declaration?",
+    "options": [
+      "It prevents the constructor from being used for implicit type conversions.",
+      "It makes the constructor publicly accessible from anywhere.",
+      "It forces the constructor to initialize all member variables to zero.",
+      "It allows the constructor to be called without creating an object."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 13,
+    "text": "What is the absolute octal representation of the file permission `-rwxr-x--x` in Unix?",
+    "options": ["751", "754", "711", "641"],
+    "correctOptionIndex": [0],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 14,
+    "text": "Which Unix command is used to display the total number of lines, words, and bytes contained within a file?",
+    "options": ["count", "wc", "len", "stat"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 15,
+    "text": "If you execute `ps aux` in a Linux terminal and see a process state marked as 'Z', what does this indicate?",
+    "options": [
+      "The process is Sleeping (Zzz).",
+      "The process is a Zombie (terminated but not reaped by its parent).",
+      "The process has been Zipped (compressed).",
+      "The process is running in Zone 0."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 16,
+    "text": "Which flag is used with the `grep` command to output only the total COUNT of matching lines rather than the lines themselves?",
+    "options": ["-n", "-v", "-l", "-c"],
+    "correctOptionIndex": [3],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 17,
+    "text": "What is the primary function of the `nice` command in Unix?",
+    "options": [
+      "To gracefully format and indent source code files.",
+      "To execute a program with an altered scheduling priority.",
+      "To cleanly terminate a process without data loss.",
+      "To display system resource usage in a user-friendly GUI."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 18,
+    "text": "What is the auxiliary space complexity required to perform the standard Merge Sort algorithm on an array of N elements?",
+    "options": ["O(1)", "O(log N)", "O(N)", "O(N log N)"],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 19,
+    "text": "Which data structure is exceptionally efficient for tasks like Dictionary implementation, Auto-complete, and Prefix matching?",
+    "options": ["Hash Table", "Trie (Prefix Tree)", "B+ Tree", "Min-Heap"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 20,
+    "text": "In a standard Circular Queue of capacity N, what is the mathematical condition to strictly check if the queue is FULL?",
+    "options": [
+      "REAR == N - 1",
+      "FRONT == REAR",
+      "(REAR + 1) % N == FRONT",
+      "(FRONT + 1) % N == REAR"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 21,
+    "text": "Which of the following graph algorithms fundamentally FAILS to produce correct results if the graph contains edges with negative weights?",
+    "options": [
+      "Bellman-Ford Algorithm",
+      "Floyd-Warshall Algorithm",
+      "Dijkstra's Algorithm",
+      "Kruskal's Algorithm"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 22,
+    "text": "What is the worst-case time complexity of searching for a specific element in an unbalanced Binary Search Tree (BST) containing N nodes?",
+    "options": ["O(1)", "O(log N)", "O(N)", "O(N log N)"],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 23,
+    "text": "Which graph traversal algorithm uses a Back-Edge detection mechanism to efficiently determine if a Directed Graph contains a Cycle?",
+    "options": [
+      "Breadth-First Search (BFS)",
+      "Depth-First Search (DFS)",
+      "Prim's Algorithm",
+      "Topological Sort"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 24,
+    "text": "In hashing, what does the term 'Load Factor' mathematically represent?",
+    "options": [
+      "The maximum capacity of the hash table.",
+      "The ratio of the number of elements stored to the total size of the hash table.",
+      "The collision resolution step size.",
+      "The time taken to compute the hash function."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 25,
+    "text": "Which CPU architecture utilizes physically separate memory units and buses for Data and Instructions, preventing the Von Neumann bottleneck?",
+    "options": [
+      "CISC Architecture",
+      "Harvard Architecture",
+      "RISC Architecture",
+      "SMP Architecture"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 26,
+    "text": "In computer architecture, a 'Trap' is formally defined as:",
+    "options": [
+      "An asynchronous hardware interrupt generated by I/O devices.",
+      "A synchronous software-generated interrupt caused by an error or a specific system call.",
+      "A physical hardware failure in the memory bus.",
+      "An intentional infinite loop in the kernel."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 27,
+    "text": "What does the term 'Cycle Stealing' refer to in the context of computer hardware?",
+    "options": [
+      "A malware technique to execute hidden background tasks.",
+      "A technique where the DMA controller temporarily pauses the CPU to transfer data across the system bus.",
+      "An OS scheduler preempting a lower-priority process.",
+      "A clock synchronization technique for multicore processors."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 28,
+    "text": "In a 'Little Endian' memory architecture, how is a multi-byte integer like `0x12345678` stored in memory?",
+    "options": [
+      "The most significant byte (0x12) is stored at the lowest memory address.",
+      "The least significant byte (0x78) is stored at the lowest memory address.",
+      "The bytes are stored randomly depending on the cache.",
+      "The entire integer is stored in a single memory register regardless of addressing."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 29,
+    "text": "What is the primary function of the Translation Lookaside Buffer (TLB) in modern operating systems?",
+    "options": [
+      "To cache frequently accessed disk blocks.",
+      "To buffer network packets before protocol processing.",
+      "To cache recent Virtual-to-Physical page table address translations.",
+      "To store the program counter for context switching."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 30,
+    "text": "Which of the following protocols specifically solves the 'Priority Inversion' problem in real-time operating systems?",
+    "options": [
+      "Priority Inheritance Protocol",
+      "Round Robin Protocol",
+      "Banker's Algorithm",
+      "Ostrich Algorithm"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 31,
+    "text": "Which specific page replacement algorithm mathematically guarantees the lowest possible page fault rate, though it is impossible to implement in real life?",
+    "options": [
+      "LRU (Least Recently Used)",
+      "FIFO (First-In, First-Out)",
+      "Optimal Page Replacement (OPT)",
+      "Clock Algorithm"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 32,
+    "text": "The critical section problem must satisfy three strict requirements: Mutual Exclusion, Progress, and:",
+    "options": [
+      "Preemption",
+      "Bounded Waiting",
+      "Hold and Wait",
+      "Context Switching"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 33,
+    "text": "In Unix/Linux, what exactly does the `fork()` system call return to the PARENT process upon successful creation of a child process?",
+    "options": [
+      "0",
+      "-1",
+      "The Process ID (PID) of the newly created child process.",
+      "The Parent's own Process ID."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 34,
+    "text": "Consider a system with 5 identical resources and N processes. Each process requires at most 2 resources to complete. What is the MAXIMUM value of N that mathematically guarantees deadlock can NEVER occur?",
+    "options": ["3", "4", "5", "6"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 35,
+    "text": "Which RAID level utilizes data striping without any parity or mirroring, providing enhanced performance but ZERO fault tolerance?",
+    "options": ["RAID 0", "RAID 1", "RAID 5", "RAID 10"],
+    "correctOptionIndex": [0],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 36,
+    "text": "What is the minimum possible size of a standard IPv4 header?",
+    "options": ["8 bytes", "16 bytes", "20 bytes", "32 bytes"],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 37,
+    "text": "Which Application Layer protocol utilizes UDP to automatically assign IP addresses and network configuration parameters to client devices?",
+    "options": ["DNS", "DHCP", "SMTP", "FTP"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 38,
+    "text": "At which layer of the OSI model does the IPSec (Internet Protocol Security) suite operate to provide end-to-end encryption and authentication?",
+    "options": [
+      "Data Link Layer",
+      "Network Layer",
+      "Transport Layer",
+      "Application Layer"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 39,
+    "text": "In TCP/IP, what are 'Ephemeral Ports'?",
+    "options": [
+      "Ports statically assigned to core services like HTTP (80) or FTP (21).",
+      "Temporary, short-lived port numbers automatically assigned by the OS to client applications for outgoing connections.",
+      "Ports specifically reserved for firewall administrative access.",
+      "Virtual ports used exclusively for internal loopback testing."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 40,
+    "text": "If a network uses the subnet mask `255.255.255.224`, how many total subnets can be created from a standard Class C network, assuming traditional classful boundary borrowing?",
+    "options": ["4", "8", "16", "32"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 41,
+    "text": "What is the total bit-length of the address space in the IPv6 protocol?",
+    "options": ["32 bits", "64 bits", "128 bits", "256 bits"],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 42,
+    "text": "Fourth Normal Form (4NF) is specifically designed to identify and eliminate which type of dependency?",
+    "options": [
+      "Partial Dependency",
+      "Transitive Dependency",
+      "Multi-valued Dependency",
+      "Join Dependency"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 43,
+    "text": "Which critical subsystem of a DBMS is primarily responsible for ensuring the 'Durability' property of the ACID paradigm?",
+    "options": [
+      "Query Optimizer",
+      "Concurrency Control Manager",
+      "Recovery Manager (via Write-Ahead Logging)",
+      "Buffer Manager"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 44,
+    "text": "Applying a 'PRIMARY KEY' constraint to a SQL column automatically enforces which two underlying constraints?",
+    "options": [
+      "UNIQUE and CHECK",
+      "UNIQUE and NOT NULL",
+      "NOT NULL and DEFAULT",
+      "FOREIGN KEY and UNIQUE"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 45,
+    "text": "If Table A contains 'M' rows and Table B contains 'N' rows, how many rows will be present in the result set of a CROSS JOIN (Cartesian Product) between A and B?",
+    "options": ["M + N", "MAX(M, N)", "M * N", "M^N"],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 46,
+    "text": "Which of the following represents the WORST and most tightly bound type of Software Coupling?",
+    "options": [
+      "Data Coupling",
+      "Control Coupling",
+      "Stamp Coupling",
+      "Content Coupling"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 4
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 47,
+    "text": "Which Software Development Life Cycle (SDLC) model emphasizes building software in short, iterative time-boxes (Sprints) while heavily accommodating changing requirements?",
+    "options": [
+      "Waterfall Model",
+      "Agile Methodology",
+      "V-Model",
+      "Cleanroom Model"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 48,
+    "text": "According to the COCOMO estimation model, a software project characterized by strict, inflexible constraints, complex hardware integration, and a high need for reliability is classified as:",
+    "options": [
+      "Organic Mode",
+      "Semi-detached Mode",
+      "Embedded Mode",
+      "Iterative Mode"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 49,
+    "text": "In building a Decision Tree, which metric is commonly utilized to quantify the impurity or randomness of a dataset node in order to maximize Information Gain?",
+    "options": [
+      "Euclidean Distance",
+      "Entropy",
+      "Mean Squared Error",
+      "Cosine Similarity"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 50,
+    "text": "During the training phase of an Artificial Neural Network, which fundamental calculus concept is heavily utilized by the Backpropagation algorithm to compute weight gradients?",
+    "options": [
+      "The Chain Rule",
+      "L'Hopital's Rule",
+      "The Product Rule",
+      "Integration by Parts"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 51,
+    "text": "What does the `scanf()` function return upon successful execution?",
+    "options": [
+      "The exact string that was read from the standard input.",
+      "The total number of characters read.",
+      "The number of items successfully read and assigned.",
+      "A pointer to the assigned variable."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 52,
+    "text": "In C, which of the following accurately describes a 'Memory Leak'?",
+    "options": [
+      "Accessing an array beyond its allocated bounds.",
+      "Failing to free dynamically allocated memory before losing the pointer to it.",
+      "A stack overflow caused by infinite recursion.",
+      "Assigning a floating-point value to an integer variable."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 53,
+    "text": "What is the primary difference between a `struct` and a `union` in C?",
+    "options": [
+      "A struct can hold functions, whereas a union cannot.",
+      "A struct allocates separate memory for each member, whereas a union shares the same memory space for all its members.",
+      "A union can only hold primary data types, whereas a struct can hold derived data types.",
+      "A union is evaluated at compile time, whereas a struct is evaluated at runtime."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 54,
+    "text": "In C++, how is a Pure Virtual Function explicitly declared within an abstract base class?",
+    "options": [
+      "virtual void func() = 0;",
+      "pure virtual void func();",
+      "virtual void func() {};",
+      "void func() = abstract;"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 55,
+    "text": "Which of the following problems does the C++ 'Virtual Inheritance' feature primarily resolve?",
+    "options": [
+      "The Memory Leak Problem.",
+      "The Diamond Problem in Multiple Inheritance.",
+      "The Dangling Pointer Problem.",
+      "The Infinite Recursion Problem."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 56,
+    "text": "What happens if a C++ class defines a destructor but lacks a user-defined copy constructor and assignment operator?",
+    "options": [
+      "The compiler generates an error.",
+      "The class cannot be instantiated.",
+      "The compiler provides a default shallow copy, which may lead to double-free errors for dynamically allocated memory.",
+      "The class automatically performs a deep copy of all pointers."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 57,
+    "text": "Which of the following is true about 'Namespace' in C++?",
+    "options": [
+      "It is used to prevent name collisions by scoping identifiers.",
+      "It is a runtime memory management tool.",
+      "It replaces the functionality of classes.",
+      "It strictly prohibits the use of global variables."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 58,
+    "text": "Which Unix command is heavily utilized to search for files in a directory hierarchy based on criteria like name, size, or modification date?",
+    "options": ["grep", "find", "locate", "whereis"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 59,
+    "text": "In a Unix shell, what does the command `umask 022` dictate for newly created files?",
+    "options": [
+      "It sets the default permissions to 022 (----w--w-).",
+      "It subtracts 022 from the maximum permissions, resulting in default file permissions of 644 (rw-r--r--).",
+      "It explicitly grants read and write access to the group.",
+      "It prevents the superuser from modifying the file."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 60,
+    "text": "Which `sed` command correctly replaces the first occurrence of 'apple' with 'orange' on every line of a file?",
+    "options": [
+      "sed 's/apple/orange/g' file.txt",
+      "sed 's/apple/orange/' file.txt",
+      "sed 'r/apple/orange/' file.txt",
+      "sed 'sub/apple/orange/' file.txt"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 61,
+    "text": "What does the `env` command do in Unix/Linux?",
+    "options": [
+      "It modifies the kernel parameters.",
+      "It displays the current environment variables or runs a command in a modified environment.",
+      "It encrypts the current shell session.",
+      "It evaluates mathematical expressions."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 62,
+    "text": "Which graph traversal algorithm mathematically guarantees finding the shortest path in an unweighted directed graph?",
+    "options": [
+      "Depth First Search (DFS)",
+      "Breadth First Search (BFS)",
+      "Prim's Algorithm",
+      "Kruskal's Algorithm"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 63,
+    "text": "What is the optimal worst-case time complexity of inserting a new element into a balanced Binary Search Tree (like an AVL tree)?",
+    "options": ["O(1)", "O(log N)", "O(N)", "O(N log N)"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 64,
+    "text": "Which sorting algorithm is heavily dependent on the 'Divide and Conquer' paradigm and uses a 'Pivot' element?",
+    "options": ["Insertion Sort", "Merge Sort", "Quick Sort", "Heap Sort"],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 65,
+    "text": "In a Hash Table utilizing Linear Probing, what does 'Primary Clustering' refer to?",
+    "options": [
+      "The tendency of keys to map to the exact same hash index.",
+      "The tendency for contiguous blocks of occupied slots to form, degrading search performance.",
+      "The clustering of linked lists at a single index.",
+      "The occurrence of hardware memory leaks due to bad hashing."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 66,
+    "text": "Which specific hardware component acts as a mediator, allowing high-speed I/O devices to transfer data directly to RAM without CPU intervention?",
+    "options": [
+      "Cache Controller",
+      "Interrupt Controller",
+      "Direct Memory Access (DMA) Controller",
+      "Memory Management Unit (MMU)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 67,
+    "text": "In a modern CPU pipeline, a 'Structural Hazard' occurs when:",
+    "options": [
+      "An instruction needs a result from a prior instruction that hasn't finished.",
+      "The hardware does not support the execution of two instructions simultaneously in the same cycle.",
+      "A branch instruction changes the program counter.",
+      "The cache experiences a miss."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 68,
+    "text": "Which of the following memory management techniques is explicitly designed to eliminate 'External Fragmentation'?",
+    "options": [
+      "Variable Partitioning",
+      "Paging",
+      "Contiguous Allocation",
+      "Swapping"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 69,
+    "text": "What is the primary function of a 'Process Control Block' (PCB)?",
+    "options": [
+      "To store hardware interrupt vectors.",
+      "To hold all vital information regarding a specific process (e.g., state, program counter, registers).",
+      "To act as a buffer for inter-process communication.",
+      "To manage virtual memory page tables."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 70,
+    "text": "Under the 'Banker's Algorithm' for deadlock avoidance, a system is deemed to be in a 'Safe State' if:",
+    "options": [
+      "All processes are currently in the waiting state.",
+      "There exists at least one execution sequence of all processes that avoids deadlock.",
+      "No process requests more resources than currently exist in total.",
+      "Preemption is enabled for all kernel threads."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 71,
+    "text": "In the Unix File System, what does an 'Inode' physically store?",
+    "options": [
+      "The actual file data content.",
+      "The filename and directory path.",
+      "Metadata about the file (permissions, size, block pointers), excluding the filename.",
+      "The environment variables of the user who created it."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 72,
+    "text": "Which fundamental algorithm does the Routing Information Protocol (RIP) utilize to construct its routing tables?",
+    "options": [
+      "Dijkstra's Algorithm",
+      "Bellman-Ford Algorithm",
+      "Prim's Algorithm",
+      "Kruskal's Algorithm"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 73,
+    "text": "At which OSI Layer do physical MAC (Media Access Control) addresses operate?",
+    "options": [
+      "Physical Layer",
+      "Data Link Layer",
+      "Network Layer",
+      "Transport Layer"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 74,
+    "text": "Which of the following is an accurate representation of a standard IPv6 address?",
+    "options": [
+      "192.168.1.1",
+      "2001:0db8:85a3:0000:0000:8a2e:0370:7334",
+      "00:1A:2B:3C:4D:5E",
+      "10.0.0.0/8"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 75,
+    "text": "In Relational Algebra, what is the result of a 'Cartesian Product' between Table A (5 rows) and Table B (4 rows)?",
+    "options": [
+      "A table with 9 rows.",
+      "A table with 20 rows.",
+      "A table with 5 rows.",
+      "A table with 1 row."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 76,
+    "text": "What type of Database Lock strictly prevents any other transaction from reading or writing the locked data item?",
+    "options": ["Shared Lock", "Exclusive Lock", "Update Lock", "Intent Lock"],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 77,
+    "text": "According to the principles of Software Engineering, 'High Cohesion' within a module implies:",
+    "options": [
+      "The module communicates heavily with other modules.",
+      "The module performs a single, well-defined, and logically related set of tasks.",
+      "The module relies entirely on global variables.",
+      "The module lacks internal structure and is overly complex."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 78,
+    "text": "Which Software Testing methodology is specifically designed to verify that recent code changes have not adversely affected existing, unmodified features?",
+    "options": [
+      "Acceptance Testing",
+      "Integration Testing",
+      "Regression Testing",
+      "Unit Testing"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 79,
+    "text": "In the K-Nearest Neighbors (KNN) algorithm, what does the hyperparameter 'K' signify?",
+    "options": [
+      "The number of clusters the data will be divided into.",
+      "The number of closest training examples used to determine the prediction of a new query point.",
+      "The number of iterations the algorithm will run.",
+      "The learning rate of the gradient descent."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 4
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 80,
+    "text": "Which of the following is a primary characteristic of 'Unsupervised Learning'?",
+    "options": [
+      "The training dataset includes labeled target outputs.",
+      "The goal is to map input variables to a continuous output variable.",
+      "The algorithm attempts to identify hidden structures or patterns in an unlabeled dataset.",
+      "It strictly relies on a reward/punishment reinforcement mechanism."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 81,
+    "text": "Which of the following statements about C Pointers are mathematically or syntactically correct?",
+    "options": [
+      "A pointer can be subtracted from another pointer of the same type.",
+      "An integer can be added to a pointer.",
+      "Two pointers of the same type can be added together.",
+      "A pointer can be multiplied by an integer."
+    ],
+    "correctOptionIndex": [0, 1],
+    "mock": 4
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 82,
+    "text": "Which of the following are recognized modes for opening a file using `fopen()` in C?",
+    "options": [
+      "\"r\" (Read)",
+      "\"w+\" (Write/Update)",
+      "\"a\" (Append)",
+      "\"x\" (Execute)"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 83,
+    "text": "Which of the following features are supported by 'Templates' in C++?",
+    "options": [
+      "Class Templates",
+      "Function Templates",
+      "Template Specialization",
+      "Virtual Templates"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 84,
+    "text": "Which of the following concepts inherently support the paradigm of 'Polymorphism' in C++?",
+    "options": [
+      "Function Overloading",
+      "Operator Overloading",
+      "Virtual Functions",
+      "Encapsulation"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 85,
+    "text": "Which of the following commands are categorized as Unix 'Text Processing Filters'?",
+    "options": ["grep", "sort", "awk", "chmod"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 86,
+    "text": "Which of the following shell symbols or commands are utilized for Input/Output Redirection or Piping in Unix?",
+    "options": [
+      "> (Output Redirection)",
+      "< (Input Redirection)",
+      "| (Pipe)",
+      "& (Background Execution)"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 87,
+    "text": "Which of the following are structurally valid types of Binary Trees?",
+    "options": [
+      "Full Binary Tree",
+      "Complete Binary Tree",
+      "Perfect Binary Tree",
+      "Cyclic Binary Tree"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 88,
+    "text": "Which of the following sorting algorithms possess an average-case time complexity of O(N log N)?",
+    "options": ["Merge Sort", "Quick Sort", "Heap Sort", "Bubble Sort"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 89,
+    "text": "Which of the following are standard buses found within a fundamental computer system architecture?",
+    "options": ["Data Bus", "Address Bus", "Control Bus", "Cache Bus"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 90,
+    "text": "Which of the following are standard thread models used to map User-Level Threads to Kernel-Level Threads?",
+    "options": ["Many-to-One", "One-to-One", "Many-to-Many", "Zero-to-One"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 91,
+    "text": "Which of the following mechanisms are explicitly utilized by Operating Systems for Inter-Process Communication (IPC)?",
+    "options": [
+      "Shared Memory",
+      "Message Passing (Pipes)",
+      "Semaphores",
+      "Translation Lookaside Buffer (TLB)"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 92,
+    "text": "Which of the following protocols function reliably at the Application Layer of the TCP/IP model?",
+    "options": ["HTTP", "FTP", "DNS", "ICMP"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 93,
+    "text": "Which of the following statements accurately describe the Transmission Control Protocol (TCP)?",
+    "options": [
+      "It is Connection-Oriented.",
+      "It provides robust Flow Control and Congestion Control.",
+      "It guarantees in-order delivery of data packets.",
+      "It is primarily used for real-time video streaming where speed is prioritized over reliability."
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 94,
+    "text": "Which of the following standard Normal Forms explicitly deal with removing functional dependencies to prevent anomalies?",
+    "options": [
+      "First Normal Form (1NF)",
+      "Second Normal Form (2NF)",
+      "Third Normal Form (3NF)",
+      "Boyce-Codd Normal Form (BCNF)"
+    ],
+    "correctOptionIndex": [1, 2, 3],
+    "mock": 4
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 95,
+    "text": "Which of the following SQL constraints enforce Data Integrity rules within a table schema?",
+    "options": ["PRIMARY KEY", "FOREIGN KEY", "CHECK", "SELECT"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 96,
+    "text": "Which of the following are distinct, recognized phases within the fundamental Software Development Life Cycle (SDLC)?",
+    "options": [
+      "Requirements Analysis",
+      "System Design",
+      "Testing",
+      "Marketing"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 97,
+    "text": "Which of the following are considered 'Black-Box' testing methodologies?",
+    "options": [
+      "Equivalence Partitioning",
+      "Boundary Value Analysis",
+      "Statement Coverage",
+      "State Transition Testing"
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 4
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 98,
+    "text": "Which of the following algorithms belong to the 'Supervised Learning' category?",
+    "options": [
+      "Linear Regression",
+      "Logistic Regression",
+      "Support Vector Machines (SVM)",
+      "K-Means Clustering"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 99,
+    "text": "Which of the following metrics are standardly extracted from a Confusion Matrix to evaluate a Classification model?",
+    "options": [
+      "Accuracy",
+      "Precision",
+      "Recall (Sensitivity)",
+      "Mean Absolute Error (MAE)"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 100,
+    "text": "Which of the following are common applications or use cases of Artificial Neural Networks (ANNs)?",
+    "options": [
+      "Image Recognition",
+      "Natural Language Processing (NLP)",
+      "Predictive Analytics",
+      "Relational Database Indexing"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 4
+  }
+]

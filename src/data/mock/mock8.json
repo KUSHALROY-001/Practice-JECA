@@ -1,0 +1,1167 @@
+[
+  {
+    "topic": "C Programming",
+    "questionNo": 1,
+    "text": "What is the output of the following C code?\n#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = x++ + ++x;\n    printf(\"%d\", y);\n    return 0;\n}",
+    "options": ["10", "11", "12", "Undefined Behavior"],
+    "correctOptionIndex": [3],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 2,
+    "text": "In C, how are command-line arguments passed to the `main` function?",
+    "options": [
+      "As an integer `argc` and an array of characters `argv`.",
+      "As an integer `argc` and an array of string pointers `argv`.",
+      "As a single string containing all arguments.",
+      "As a linked list of character arrays."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 3,
+    "text": "Which of the following functions is used to reposition the file pointer to a specific location in a file?",
+    "options": ["ftell()", "fseek()", "rewind()", "fsetpos()"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 4,
+    "text": "What does the bitwise expression `x & (x - 1)` accomplish for a non-zero integer `x`?",
+    "options": [
+      "Sets the rightmost unset bit.",
+      "Clears the rightmost set bit.",
+      "Inverts all bits.",
+      "Isolates the rightmost set bit."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 5,
+    "text": "What is the primary difference between a `struct` and a `union` in C?",
+    "options": [
+      "A struct can hold functions, a union cannot.",
+      "Members of a struct share the same memory location, while union members have separate memory.",
+      "Members of a union share the same memory location, while struct members have separate memory.",
+      "Unions cannot contain pointers, while structs can."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 6,
+    "text": "What is the output of `sizeof` operator on a pointer to a generic `void` type (`void *ptr`) on a standard 64-bit architecture?",
+    "options": ["1 byte", "4 bytes", "8 bytes", "Compiler Error"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 7,
+    "text": "Examine the following C++ class constructor using a member initialization list:\nclass Test {\n    int a;\n    int b;\npublic:\n    Test(int i) : b(i), a(b + 5) {}\n};\nIf an object is created as `Test t(10);`, what is the predictable value of `a`?",
+    "options": ["15", "10", "Garbage value", "Compilation error"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 8,
+    "text": "In C++11 and later, which syntax correctly utilizes the `using` keyword to create a type alias for a pointer to an integer, replacing traditional `typedef`?",
+    "options": [
+      "using int* = ptr;",
+      "using ptr = int*;",
+      "type alias ptr = int*;",
+      "using int* as ptr;"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 9,
+    "text": "What is the primary advantage of a strongly typed enumeration (`enum class`) over a traditional C-style `enum` in C++?",
+    "options": [
+      "It consumes less memory footprint.",
+      "It allows floating-point underlying types.",
+      "Its enumerators do not implicitly convert to integers and do not leak into the surrounding scope.",
+      "It can be used as a base class for inheritance."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 10,
+    "text": "Which of the following C++ operators CANNOT be overloaded?",
+    "options": [
+      "+ (Addition)",
+      "[] (Subscript)",
+      ":: (Scope Resolution)",
+      "-> (Member Access)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 11,
+    "text": "What happens if a class contains a pure virtual function?",
+    "options": [
+      "The class becomes a final class and cannot be inherited.",
+      "The class becomes an abstract base class, and no objects of this class can be instantiated.",
+      "The program will fail to compile unless all derived classes also declare it as pure virtual.",
+      "The compiler automatically provides a default implementation for the function."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 12,
+    "text": "When using the Unix `bc` (Basic Calculator) command within a shell script for floating-point arithmetic, which built-in variable must be set to determine the number of decimal places in the output?",
+    "options": ["length", "precision", "scale", "decimal"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 13,
+    "text": "In a Unix/Linux environment, what is the specific role of the `CLASSPATH` environment variable?",
+    "options": [
+      "It defines the directories where executable binary files are located.",
+      "It specifies the directories where the C++ compiler looks for header files.",
+      "It tells the Java Virtual Machine (JVM) and Java compiler where to find user-defined classes and packages.",
+      "It acts as an alias for the standard `PATH` variable in secure shell sessions."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 14,
+    "text": "Which command perfectly demonstrates moving a file to a new directory while simultaneously renaming it?",
+    "options": [
+      "mv /home/user/data.txt /var/tmp/new_data.txt",
+      "cp /home/user/data.txt /var/tmp/new_data.txt",
+      "mv -r /home/user/data.txt /var/tmp/new_data.txt",
+      "rename /home/user/data.txt /var/tmp/new_data.txt"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 15,
+    "text": "Which combination of `cp` command options is standardly used to recursively copy a directory and all its contents while preserving symbolic links, file permissions, and user ownerships?",
+    "options": ["cp -f", "cp -a", "cp -v", "cp -l"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 16,
+    "text": "What will be the exact result of executing the Unix shell command: `touch file_{A..C}.txt`?",
+    "options": [
+      "It creates a single file named 'file_{A..C}.txt'.",
+      "It creates three files: file_A.txt, file_B.txt, and file_C.txt.",
+      "It produces a syntax error because wildcards cannot be used with the touch command.",
+      "It recursively searches for files starting with 'A' and ending with 'C'."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 17,
+    "text": "What does the numeric file permission `755` represent in Unix via the `chmod` command?",
+    "options": [
+      "Owner: Read/Write/Execute; Group: Read/Execute; Others: Read/Execute",
+      "Owner: Read/Write; Group: Read/Write; Others: Read/Write",
+      "Owner: Read/Execute; Group: Read/Write/Execute; Others: Read/Execute",
+      "Owner: Execute; Group: Read/Execute; Others: Read/Write/Execute"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 18,
+    "text": "Which signal is sent by the `kill -9 <PID>` command to immediately terminate a process?",
+    "options": ["SIGTERM", "SIGINT", "SIGKILL", "SIGHUP"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 19,
+    "text": "Which data structure is primarily utilized internally to implement a Breadth-First Search (BFS) algorithm on a graph?",
+    "options": ["Stack", "Queue", "Priority Queue", "Hash Table"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 20,
+    "text": "What is the worst-case time complexity of the QuickSort algorithm?",
+    "options": ["O(n log n)", "O(n)", "O(n^2)", "O(log n)"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 21,
+    "text": "In a max-heap represented as an array (where root is at index 0), what is the formula to find the left child of a node located at index `i`?",
+    "options": ["2 * i", "2 * i + 1", "2 * i + 2", "i / 2"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 22,
+    "text": "How many edges are present in a completely connected undirected graph (Complete Graph) containing 'n' vertices?",
+    "options": ["n - 1", "n * (n - 1)", "n * (n - 1) / 2", "n^2"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 23,
+    "text": "When a user program issues a system call (like reading a file), how does the computer hardware transition control to the Operating System to execute the privileged instructions?",
+    "options": [
+      "By executing a jump (JMP) instruction directly to the kernel's memory address.",
+      "By triggering a software interrupt (trap), which shifts the CPU into Kernel mode and executes an interrupt service routine.",
+      "By modifying the Program Counter (PC) via Direct Memory Access (DMA).",
+      "By temporarily disabling the Arithmetic Logic Unit (ALU)."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 24,
+    "text": "What is the primary function of a DMA (Direct Memory Access) controller?",
+    "options": [
+      "To perform complex mathematical calculations faster than the main CPU.",
+      "To transfer data directly between I/O devices and main memory without continuous CPU intervention.",
+      "To manage virtual memory page faults.",
+      "To pipeline instructions within the CPU datapath."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 25,
+    "text": "Which of the following is NOT a necessary condition for a Deadlock to occur?",
+    "options": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Preemption",
+      "Circular Wait"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 26,
+    "text": "Which CPU scheduling algorithm allocates a fixed time quantum to each process and heavily relies on a timer interrupt to enforce preemption?",
+    "options": [
+      "Shortest Job First (SJF)",
+      "First-Come, First-Served (FCFS)",
+      "Round Robin (RR)",
+      "Priority Scheduling"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 27,
+    "text": "In memory management, what is 'Thrashing'?",
+    "options": [
+      "A situation where a process executes exceptionally fast due to high cache hits.",
+      "A state where the OS spends more time swapping pages in and out of memory than executing actual processes.",
+      "The process of compacting memory to remove external fragmentation.",
+      "A security mechanism to wipe memory after a process terminates."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 28,
+    "text": "What is the primary difference between a Mutex and a Semaphore?",
+    "options": [
+      "A Mutex is a locking mechanism for exclusively securing a resource, while a Semaphore is a signaling mechanism.",
+      "A Semaphore can only hold binary values (0 or 1), while a Mutex can hold any integer.",
+      "Mutexes are used in hardware, whereas Semaphores are purely software-based.",
+      "Semaphores automatically resolve deadlocks, while Mutexes do not."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 29,
+    "text": "In the context of Transmission Environments, what is the most significant advantage of Fiber Optic cables over Unshielded Twisted Pair (UTP) copper cables?",
+    "options": [
+      "Fiber optic cables are significantly cheaper to manufacture and install.",
+      "Fiber optic cables are completely immune to Electromagnetic Interference (EMI) and Radio Frequency Interference (RFI).",
+      "Fiber optic cables are much more flexible and easier to bend around tight corners.",
+      "Fiber optic cables can natively transmit analog electrical signals without modulation."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 30,
+    "text": "From a network topology perspective, which design offers the highest level of fault tolerance and redundancy by ensuring every node is directly connected to every other node?",
+    "options": [
+      "Star Topology",
+      "Ring Topology",
+      "Bus Topology",
+      "Full Mesh Topology"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 31,
+    "text": "Which of the following IP addresses represents the standard IPv4 loopback address used for local network testing?",
+    "options": ["192.168.1.1", "255.255.255.255", "127.0.0.1", "0.0.0.0"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 32,
+    "text": "Which Transport Layer protocol ensures reliable, ordered, and error-checked delivery of a stream of data?",
+    "options": [
+      "UDP (User Datagram Protocol)",
+      "TCP (Transmission Control Protocol)",
+      "IP (Internet Protocol)",
+      "ICMP (Internet Control Message Protocol)"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 33,
+    "text": "In the context of DBMS, which statement best differentiates Relational Algebra from Relational Calculus?",
+    "options": [
+      "Relational Algebra is used exclusively for NoSQL databases, while Relational Calculus is for SQL databases.",
+      "Relational Algebra is a procedural query language specifying *how* to obtain data, whereas Relational Calculus is a non-procedural language specifying *what* data is needed.",
+      "Relational Calculus supports Aggregate functions, whereas Relational Algebra does not.",
+      "There is no difference; they are synonymous terms for the same query processor."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 34,
+    "text": "In the ACID properties of database transactions, what does 'Isolation' guarantee?",
+    "options": [
+      "That a transaction executes completely or not at all.",
+      "That the database moves from one valid state to another.",
+      "That concurrent execution of transactions leaves the database in the same state as if they were executed sequentially.",
+      "That once a transaction is committed, it will remain in the system even in the event of a system failure."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 35,
+    "text": "Which normal form dictates that every determinant in a relation must be a candidate key?",
+    "options": [
+      "First Normal Form (1NF)",
+      "Second Normal Form (2NF)",
+      "Third Normal Form (3NF)",
+      "Boyce-Codd Normal Form (BCNF)"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 36,
+    "text": "In SQL, which clause is specifically used to filter the results of aggregated data grouped by the `GROUP BY` clause?",
+    "options": ["WHERE", "ORDER BY", "HAVING", "FILTER"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 37,
+    "text": "A relation is in Boyce-Codd Normal Form (BCNF) if and only if every determinant is a:",
+    "options": ["Primary Key", "Candidate Key", "Foreign Key", "Super Key"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 38,
+    "text": "Which tree data structure is most heavily utilized in database systems to implement index structures that allow for rapid search, sequential access, insertions, and deletions?",
+    "options": ["Binary Search Tree", "AVL Tree", "B+ Tree", "Red-Black Tree"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 39,
+    "text": "In an Entity-Relationship (ER) diagram, how is a Weak Entity set conventionally represented?",
+    "options": [
+      "By a double-outlined rectangle.",
+      "By a dashed rectangle.",
+      "By a diamond shape.",
+      "By a double-outlined ellipse."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 40,
+    "text": "What does the COCOMO (Constructive Cost Model) algorithm primarily estimate in software engineering?",
+    "options": [
+      "Software execution speed",
+      "Software development effort and cost",
+      "Number of software defects",
+      "Cyclomatic complexity"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 41,
+    "text": "Which formula correctly computes the Cyclomatic Complexity (V(G)) of a control flow graph having 'E' edges, 'N' nodes, and 'P' connected components?",
+    "options": [
+      "V(G) = E - N + 2P",
+      "V(G) = N - E + 2P",
+      "V(G) = E + N - P",
+      "V(G) = E - N + P"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 42,
+    "text": "Which of the following is an explicit example of a White-Box testing technique?",
+    "options": [
+      "Boundary Value Analysis",
+      "Equivalence Partitioning",
+      "Acceptance Testing",
+      "Path Coverage"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 8
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 43,
+    "text": "Which Software Development Life Cycle (SDLC) model is explicitly driven by risk analysis?",
+    "options": [
+      "Waterfall Model",
+      "Iterative Model",
+      "Spiral Model",
+      "V-Model"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 44,
+    "text": "Which of the following is NOT a desirable characteristic of a good Software Requirements Specification (SRS) document?",
+    "options": [
+      "Unambiguous",
+      "Traceable",
+      "Consistent",
+      "Implementation-dependent"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 8
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 45,
+    "text": "In a Support Vector Machine (SVM), what is the primary objective of the algorithm?",
+    "options": [
+      "To find a hyperplane that maximizes the margin between different classes.",
+      "To build a probability distribution of the input data.",
+      "To group similar data points based on Euclidean distance.",
+      "To map inputs directly to output neurons via weighted sums."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 46,
+    "text": "Which mathematical concept is primarily calculated at each step of building a Decision Tree to decide the best attribute to split the data on?",
+    "options": [
+      "Euclidean Distance",
+      "Information Gain (based on Entropy)",
+      "Standard Deviation",
+      "Pearson Correlation Coefficient"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 47,
+    "text": "K-Means is a classic algorithm belonging to which subfield of Machine Learning?",
+    "options": [
+      "Supervised Learning",
+      "Reinforcement Learning",
+      "Unsupervised Learning (Clustering)",
+      "Semi-supervised Learning"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 48,
+    "text": "Hidden Markov Models (HMMs) are exceptionally well-suited and frequently applied to which type of data problem?",
+    "options": [
+      "Image Classification",
+      "Sequential data tasks like Speech Recognition or Natural Language Processing",
+      "Static Database Query Optimization",
+      "Finding the shortest path in a network graph"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 49,
+    "text": "In Artificial Neural Networks, what is the 'Backpropagation' algorithm used for?",
+    "options": [
+      "To update the network weights by propagating the error backwards from output to input layers.",
+      "To pass the initial input features forward through the activation functions.",
+      "To randomly drop out neurons to prevent overfitting.",
+      "To cluster unlabeled data points automatically."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 50,
+    "text": "What will be the exact output of this C code snippet?\n#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"JECA\";\n    printf(\"%d %d\", sizeof(str), strlen(str));\n    return 0;\n}",
+    "options": ["4 4", "5 4", "4 5", "5 5"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 51,
+    "text": "Predict the output of the following C macro operation:\n#define SQUARE(x) x * x\nint main() {\n    int a = SQUARE(3 + 2);\n    printf(\"%d\", a);\n    return 0;\n}",
+    "options": ["25", "11", "10", "Compilation Error"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 52,
+    "text": "When a 1D array is passed as an argument to a function in C, what is actually passed to the function?",
+    "options": [
+      "The memory address of the first element (pointer decay).",
+      "A complete copy of the entire array.",
+      "The size of the array.",
+      "The value of the first element."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 53,
+    "text": "In the C `main(int argc, char *argv[])` signature, what does `argv[0]` typically hold?",
+    "options": [
+      "The name or path of the program being executed.",
+      "The first user-provided argument string.",
+      "The total count of arguments.",
+      "A NULL pointer."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 54,
+    "text": "How do you correctly declare a pointer that points to a constant integer in C? (Meaning the integer value cannot be modified through the pointer).",
+    "options": [
+      "int * const ptr;",
+      "const * int ptr;",
+      "const int *ptr;",
+      "int const * const ptr;"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 55,
+    "text": "Why is it heavily recommended to declare a base class destructor as `virtual` in C++?",
+    "options": [
+      "To allow the constructor to be overloaded.",
+      "To ensure that the derived class destructor is called when deleting an object through a base class pointer.",
+      "To prevent the instantiation of the base class.",
+      "To allocate memory dynamically on the heap."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 56,
+    "text": "Which mechanism solves the 'Diamond Problem' (multiple inheritance leading to duplicate base class subobjects) in C++?",
+    "options": [
+      "Virtual Inheritance",
+      "Abstract Base Classes",
+      "Function Overloading",
+      "Friend Classes"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 57,
+    "text": "What is the primary purpose of C++ Templates?",
+    "options": [
+      "To hide data members from outside access.",
+      "To override operators for custom types.",
+      "To allow functions and classes to operate with generic types, facilitating code reuse.",
+      "To define namespaces."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 58,
+    "text": "In a C++ class member function, what is the underlying type of the `this` keyword for a class named `MyClass`?",
+    "options": [
+      "MyClass* const",
+      "const MyClass*",
+      "MyClass&",
+      "const MyClass&"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 59,
+    "text": "Which Unix command is fundamentally designed for searching plain-text data sets for lines that match a regular expression?",
+    "options": ["find", "grep", "awk", "sed"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 60,
+    "text": "What is the correct Unix command to search the entire root filesystem (`/`) for a file specifically named `config.txt`?",
+    "options": [
+      "search / -name config.txt",
+      "locate config.txt /",
+      "find / -name \"config.txt\"",
+      "grep -r \"config.txt\" /"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 61,
+    "text": "In the `vi` editor's command mode, which sequence of characters will explicitly save the current file and quit the editor?",
+    "options": [":q", ":s", ":w", ":wq"],
+    "correctOptionIndex": [3],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 62,
+    "text": "Which depth-first traversal of a Binary Search Tree (BST) will theoretically yield the elements sorted in non-decreasing (ascending) order?",
+    "options": [
+      "In-order Traversal",
+      "Pre-order Traversal",
+      "Post-order Traversal",
+      "Level-order Traversal"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 63,
+    "text": "Which fundamental data structure is utilized internally to efficiently evaluate a postfix mathematical expression?",
+    "options": ["Queue", "Stack", "Graph", "Binary Tree"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 64,
+    "text": "Floyd's Cycle-Finding Algorithm (often called the 'Tortoise and Hare' algorithm) is most famously used to detect loops in which data structure?",
+    "options": ["Array", "Binary Search Tree", "Linked List", "Hash Table"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 65,
+    "text": "When implementing Dijkstra's shortest path algorithm on a graph, using a Min-Priority Queue structure reduces the time complexity compared to a simple array. Which underlying structure best implements this Min-Priority Queue?",
+    "options": [
+      "A Doubly Linked List",
+      "A Min-Heap",
+      "A Stack",
+      "A Circular Queue"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 66,
+    "text": "In Virtual Memory management, when does a 'Page Fault' occur?",
+    "options": [
+      "When a program attempts to access a page that is mapped in the logical address space but not currently loaded in physical RAM.",
+      "When a process tries to execute a privileged instruction in user mode.",
+      "When memory becomes too fragmented to allocate a contiguous block.",
+      "When the CPU cache suffers a cache miss."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 67,
+    "text": "What is the primary function of the 'Banker's Algorithm' in Operating Systems?",
+    "options": [
+      "To handle context switching between threads.",
+      "To proactively detect and avoid deadlock states during resource allocation.",
+      "To schedule disk I/O requests efficiently.",
+      "To encrypt data stored in virtual memory pages."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 68,
+    "text": "What is the default subnet mask for a standard Class C IPv4 address?",
+    "options": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 69,
+    "text": "The OSPF (Open Shortest Path First) routing protocol builds a topology map of the network. Under which classification of routing algorithms does OSPF fall?",
+    "options": [
+      "Link-State Routing",
+      "Distance-Vector Routing",
+      "Path-Vector Routing",
+      "Static Routing"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 70,
+    "text": "Which Application Layer protocol relies on the User Datagram Protocol (UDP) for transport because speed is prioritized over guaranteed, ordered delivery?",
+    "options": [
+      "DNS (Domain Name System)",
+      "HTTP (Hypertext Transfer Protocol)",
+      "SMTP (Simple Mail Transfer Protocol)",
+      "FTP (File Transfer Protocol)"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 8
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 71,
+    "text": "In a pipelined CPU architecture, a 'Data Hazard' typically occurs under which circumstance?",
+    "options": [
+      "Two instructions attempt to access the same memory location simultaneously.",
+      "An instruction depends on the result of a previous instruction that is still processing in the pipeline.",
+      "A conditional branch instruction is fetched, and the pipeline does not know which path to take.",
+      "The CPU overheats and temporarily halts the clock cycle."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 72,
+    "text": "Which type of ROM allows its contents to be erased and reprogrammed electrically, byte-by-byte, without needing to be removed from the computer circuit?",
+    "options": ["PROM", "EPROM", "EEPROM", "Mask ROM"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 73,
+    "text": "The width (number of lines) of the System Address Bus directly determines which of the following?",
+    "options": [
+      "The processing speed of the ALU.",
+      "The maximum capacity of addressable physical memory.",
+      "The number of I/O devices that can be attached.",
+      "The bandwidth of data transfer per clock cycle."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 74,
+    "text": "In disk scheduling, which algorithm moves the disk arm from one end of the disk to the other, servicing requests along the way, and then immediately reverses direction to service requests on the return trip?",
+    "options": [
+      "FCFS (First-Come, First-Served)",
+      "SSTF (Shortest Seek Time First)",
+      "SCAN (Elevator Algorithm)",
+      "C-SCAN (Circular SCAN)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 75,
+    "text": "In a Unix-like Operating System, what specific data structure is maintained by the file system to store metadata about a file (such as permissions, size, and physical data block locations), but NOT the file's name?",
+    "options": [
+      "Directory Entry",
+      "Superblock",
+      "inode (Index Node)",
+      "File Control Block (FCB)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 76,
+    "text": "Which of the following statements is a distinct advantage of User-Level Threads over Kernel-Level Threads?",
+    "options": [
+      "If one User-Level Thread blocks for I/O, other threads in the same process can continue executing.",
+      "They can be natively scheduled across multiple CPU cores simultaneously by the OS.",
+      "Context switching between User-Level Threads is much faster because it does not require system calls or OS intervention.",
+      "They are immune to process deadlocks."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 77,
+    "text": "How many bits constitute an IPv6 address, and how is it typically represented?",
+    "options": [
+      "32 bits, represented in dotted-decimal format.",
+      "64 bits, represented in hexadecimal format.",
+      "128 bits, represented in hexadecimal format separated by colons.",
+      "256 bits, represented in binary format."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 78,
+    "text": "In Asymmetric Key Cryptography (Public-Key Cryptography), if Alice wants to send a strictly confidential message to Bob, which key should she use to encrypt the data?",
+    "options": [
+      "Alice's Public Key",
+      "Alice's Private Key",
+      "Bob's Public Key",
+      "Bob's Private Key"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 79,
+    "text": "The Border Gateway Protocol (BGP), which is responsible for routing between different Autonomous Systems on the Internet, uses which class of routing algorithm?",
+    "options": [
+      "Link-State Routing",
+      "Path-Vector Routing",
+      "Distance-Vector Routing",
+      "Static Flooding"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 80,
+    "text": "If Relation 'A' has a cardinality of 5 and a degree of 3, and Relation 'B' has a cardinality of 4 and a degree of 2, what will be the cardinality and degree of their Cartesian Product (A x B)?",
+    "options": [
+      "Cardinality: 9, Degree: 5",
+      "Cardinality: 20, Degree: 6",
+      "Cardinality: 20, Degree: 5",
+      "Cardinality: 9, Degree: 6"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 81,
+    "text": "In a B+ Tree index structure used in databases, what is the defining characteristic regarding the storage of data pointers/records?",
+    "options": [
+      "Data pointers are distributed randomly across all nodes.",
+      "Data pointers are stored only in the internal (non-leaf) nodes.",
+      "Data pointers are stored exclusively in the leaf nodes, which are linked together sequentially.",
+      "Both internal and leaf nodes contain data pointers to improve search speed."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 82,
+    "text": "Which of the following describes a crucial difference between the SQL commands `DELETE` and `TRUNCATE`?",
+    "options": [
+      "`TRUNCATE` can use a WHERE clause to filter rows, while `DELETE` cannot.",
+      "`DELETE` is a Data Definition Language (DDL) command, while `TRUNCATE` is Data Manipulation Language (DML).",
+      "`DELETE` logs each row deletion individually and can be rolled back, while `TRUNCATE` deallocates pages and typically cannot be rolled back.",
+      "`TRUNCATE` removes the table schema from the database entirely, while `DELETE` just empties it."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 83,
+    "text": "If a Stack is to be implemented using a Singly Linked List to achieve O(1) time complexity for both Push and Pop operations, where must these operations take place?",
+    "options": [
+      "Push at the Head, Pop at the Tail.",
+      "Push at the Tail, Pop at the Head.",
+      "Both Push and Pop must occur at the Head of the linked list.",
+      "Both Push and Pop must occur at the Tail of the linked list."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 84,
+    "text": "In a balanced AVL Tree, what is the maximum permitted Balance Factor for any individual node? (Where Balance Factor = Height of Left Subtree - Height of Right Subtree)",
+    "options": [
+      "Exactly 0",
+      "Either -1, 0, or +1",
+      "Either -2, -1, 0, +1, or +2",
+      "It depends on the number of nodes in the tree."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 85,
+    "text": "Which of the following searching algorithms strictly requires the target array to be sorted prior to execution?",
+    "options": [
+      "Linear Search",
+      "Breadth-First Search",
+      "Binary Search",
+      "Depth-First Search"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 86,
+    "text": "In a Unix Shell Script, which special variable holds the total number of command-line arguments passed to the script?",
+    "options": ["$*", "$@", "$?", "$#"],
+    "correctOptionIndex": [3],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 87,
+    "text": "What does the execution of the Unix command `chmod u+s executable_file` accomplish?",
+    "options": [
+      "It makes the file a shared library.",
+      "It restricts execution solely to the superuser.",
+      "It sets the Set-User-ID (SUID) bit, allowing the file to run with the privileges of its owner rather than the user executing it.",
+      "It synchronizes the file to the system storage directly."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 88,
+    "text": "How can you check the exit status (return code) of the most recently executed command in a Unix terminal to determine if it was successful?",
+    "options": ["echo $!", "echo $$", "echo $?", "echo $0"],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 89,
+    "text": "In Software Risk Management, how is the metric 'Risk Exposure' formally calculated?",
+    "options": [
+      "Risk Probability + Risk Impact",
+      "Risk Probability \u00d7 Risk Impact",
+      "Risk Impact / Risk Probability",
+      "Total Project Cost \u00d7 Risk Probability"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 90,
+    "text": "What is the foundational 'Na\u00efve' assumption made by the Na\u00efve Bayes classification algorithm?",
+    "options": [
+      "All features contribute equally to the output class.",
+      "The input features are conditionally independent of each other given the class label.",
+      "The training data contains zero noise or outliers.",
+      "The prior probabilities of all classes are exactly equal."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 91,
+    "text": "In a C `switch` statement, what occurs if the `break` keyword is omitted at the end of a matching `case` block?",
+    "options": [
+      "A compiler error is generated.",
+      "The switch statement immediately terminates automatically.",
+      "Execution falls through and executes the code in subsequent cases until a break is encountered or the switch ends.",
+      "The program enters an infinite loop."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 92,
+    "text": "Why is the string function `strncpy()` generally considered safer for systems programming than `strcpy()`?",
+    "options": [
+      "It encrypts the string during the copy process.",
+      "It automatically allocates dynamic memory for the destination string.",
+      "It limits the number of characters copied, preventing buffer overflows if the source string is larger than the destination array.",
+      "It automatically converts all characters to lowercase."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 93,
+    "text": "Regarding C Pre-Processor Directives, what is the primary difference between `#include <stdio.h>` and `#include \"myheader.h\"`?",
+    "options": [
+      "`< >` is used for C files, while `\" \"` is used for C++ files.",
+      "`< >` directs the preprocessor to search for the file in standard system directories first, while `\" \"` directs it to search the current directory first.",
+      "`< >` includes the file at compile time, while `\" \"` includes it at runtime.",
+      "There is absolutely no functional difference."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 94,
+    "text": "If `int arr[] = {10, 20, 30, 40, 50};` is declared in C, which of the following expressions is NOT equivalent to accessing the element `30`?",
+    "options": ["arr[2]", "*(arr + 2)", "2[arr]", "*(arr + 30)"],
+    "correctOptionIndex": [3],
+    "mock": 8
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 95,
+    "text": "When using File Handling in C, the `feof(FILE *stream)` function returns a non-zero value when:",
+    "options": [
+      "The file has been successfully opened.",
+      "A read operation has attempted to read past the end of the file.",
+      "The file size exceeds the maximum allowed buffer.",
+      "The file pointer is currently pointing to the first character."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 96,
+    "text": "Which of the following C++ features is strictly resolved at Compile-Time (Static Polymorphism)?",
+    "options": [
+      "Virtual Functions",
+      "Function Overloading",
+      "Dynamic Casting",
+      "Abstract Base Classes"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 97,
+    "text": "If Class `Derived` inherits from Class `Base` using `protected` inheritance (`class Derived : protected Base`), what is the access level of `Base`'s public members inside `Derived`?",
+    "options": ["Public", "Protected", "Private", "Inaccessible"],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 98,
+    "text": "In C++, what does the term 'Template Specialization' refer to?",
+    "options": [
+      "Restricting a template function so it can only accept integer types.",
+      "Providing a distinct, specific implementation for a template when a particular data type is passed to it.",
+      "Combining multiple templates into a single generic macro.",
+      "Preventing a class template from being inherited."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 99,
+    "text": "Which of the following statements is TRUE regarding a `friend` function in C++?",
+    "options": [
+      "It is a member of the class and has a hidden `this` pointer.",
+      "It is inherited by derived classes.",
+      "It is NOT a member of the class but is granted full access to the class's private and protected members.",
+      "It can only be invoked by an object of the class."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 8
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 100,
+    "text": "What is the primary architectural difference between a `class` and a `namespace` in C++?",
+    "options": [
+      "A class is used strictly for variables, while a namespace is used for functions.",
+      "A class defines a blueprint for objects that can be instantiated, whereas a namespace merely defines a declarative region to organize code and prevent name collisions.",
+      "Namespaces support private and public access specifiers, classes do not.",
+      "Classes can be nested, but namespaces cannot."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 8
+  }
+]

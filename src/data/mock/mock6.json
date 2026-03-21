@@ -1,0 +1,1172 @@
+[
+  {
+    "topic": "Unix",
+    "questionNo": 1,
+    "text": "Which standard Unix command is used to output the first 10 lines of a file by default?",
+    "options": ["tail", "cat", "head", "more"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 2,
+    "text": "The `comm` command compares two sorted files line by line and outputs three columns. Which option suppresses the third column (lines common to both files)?",
+    "options": ["comm -1", "comm -2", "comm -3", "comm -c"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 3,
+    "text": "What is the primary restriction when using the `renice` command to significantly increase the priority (lower the nice value) of a running process?",
+    "options": [
+      "Only the root (superuser) can lower the nice value.",
+      "It requires rebooting the process.",
+      "It can only be used on stopped processes.",
+      "It requires the PID to be a negative number."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 4,
+    "text": "Which `cut` command correctly extracts the 3rd field from a file where fields are separated by a colon (`:`)?",
+    "options": [
+      "cut -c3 -d':' filename",
+      "cut -f3 -d':' filename",
+      "cut -d3 -f':' filename",
+      "cut -p3 -s':' filename"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 5,
+    "text": "What is the primary difference between the `which` and `whereis` commands in Unix?",
+    "options": [
+      "`which` searches the entire filesystem, while `whereis` only searches the current directory.",
+      "`which` only searches paths in $PATH for executables, while `whereis` searches for executables, source files, and manuals in broader standard directories.",
+      "`whereis` is an alias for `which`.",
+      "`which` is used for files, and `whereis` is used exclusively for directories."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 6,
+    "text": "In the `vi` editor's command mode, which keystroke is used to search forward in the document for a specific text pattern?",
+    "options": ["?pattern", "f pattern", "/pattern", "s/pattern"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 7,
+    "text": "Which Unix command is specifically used to display the amount of available (free) and used disk space on mounted file systems?",
+    "options": ["du", "df", "fdisk", "free"],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 8,
+    "text": "In a Bash shell script, what does the conditional test operator `-z` (e.g., `[ -z \"$var\" ]`) check for?",
+    "options": [
+      "If a file exists and has zero size.",
+      "If a numeric variable is strictly equal to zero.",
+      "If a string variable is empty (its length is zero).",
+      "If a process has become a zombie."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 9,
+    "text": "What is the primary purpose of the `trap` command in shell scripting?",
+    "options": [
+      "To catch syntax errors during script execution.",
+      "To trap user input into a secure variable.",
+      "To intercept and handle OS signals (like SIGINT) sent to the script.",
+      "To prevent an infinite loop from consuming CPU."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 10,
+    "text": "Which `sort` command correctly sorts a file numerically based entirely on the 2nd column?",
+    "options": [
+      "sort -n -k 2 filename",
+      "sort -c 2 -n filename",
+      "sort -num 2 filename",
+      "sort -f 2 -N filename"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 11,
+    "text": "Which `find` command syntax is completely valid for locating all files ending in `.txt` starting from the root directory?",
+    "options": [
+      "find root \"*.txt\"",
+      "find / -name \"*.txt\"",
+      "find / -type \"*.txt\"",
+      "find -name / \"*.txt\""
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 12,
+    "text": "When comparing two files with the `diff` command, what does the output block header `2,4c2,4` indicate?",
+    "options": [
+      "Lines 2 to 4 were deleted from both files.",
+      "Lines 2 to 4 in the first file need to be copied to the second file.",
+      "Lines 2 to 4 in the first file need to be changed to match lines 2 to 4 in the second file.",
+      "Lines 2 and 4 are identical in both files."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 13,
+    "text": "What specifically does the command `wc -l file.txt` output?",
+    "options": [
+      "The number of words in the file.",
+      "The number of characters in the file.",
+      "The size of the file in bytes.",
+      "The number of lines in the file."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 14,
+    "text": "If you want to grant execute permission exclusively to the user (owner) of a script named `run.sh` without modifying group or other permissions, which command is correct?",
+    "options": [
+      "chmod +e run.sh",
+      "chmod u+x run.sh",
+      "chmod o+x run.sh",
+      "chmod a+e run.sh"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 15,
+    "text": "What is a fundamental characteristic of a Hard Link created by the `ln` command?",
+    "options": [
+      "It points to the same inode as the original file and cannot cross file system boundaries.",
+      "It can seamlessly link directories across different file systems.",
+      "It is simply a small text file containing the absolute path to the original file.",
+      "If the original file is deleted, the hard link becomes permanently broken (dangling)."
+    ],
+    "correctOptionIndex": [0],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 16,
+    "text": "Which option, when used with the `grep` command, prints the line number directly alongside the matching output lines?",
+    "options": ["-c", "-v", "-l", "-n"],
+    "correctOptionIndex": [3],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 17,
+    "text": "The `paste` command in Unix is primarily used to:",
+    "options": [
+      "Copy text from the clipboard to a file.",
+      "Merge corresponding lines of multiple files side-by-side.",
+      "Append the contents of one file to the bottom of another.",
+      "Format text into multiple columns."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 18,
+    "text": "When running the `time` command before an executable (e.g., `time ./script.sh`), what does the `sys` metric in the output specifically represent?",
+    "options": [
+      "The total elapsed real-world time.",
+      "The time the CPU spent executing user-space code.",
+      "The time the CPU spent executing system calls within the kernel.",
+      "The time spent waiting for I/O operations."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 19,
+    "text": "In Unix shell wildcard expansion (globbing), what does the pattern `[a-z]*` successfully match?",
+    "options": [
+      "Any file containing only lowercase letters.",
+      "Any file starting with a lowercase letter, followed by any sequence of characters.",
+      "Any file that strictly starts with 'a' and ends with 'z'.",
+      "Any file exactly one character long ranging from 'a' to 'z'."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 20,
+    "text": "Which of the following represents the structurally correct syntax for a `while` loop in a standard Bash script?",
+    "options": [
+      "while [ condition ]; do ... done",
+      "while ( condition ) { ... }",
+      "while [ condition ] then ... endwhile",
+      "while condition do ... loop"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 21,
+    "text": "Which option of the `ps` command provides a full listing of all processes currently running on the system, including those completely detached from a controlling terminal?",
+    "options": ["ps -f", "ps -u", "ps -e (or ps -A)", "ps -t"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 22,
+    "text": "To make persistent, user-specific changes to the `$PATH` environment variable, which file should typically be edited in a standard bash environment?",
+    "options": [
+      "/etc/passwd",
+      "~/.bashrc or ~/.profile",
+      "/etc/fstab",
+      "~/.ssh/config"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 23,
+    "text": "By default, if no specific signal number is specified, which termination signal does the `kill` command send to a process?",
+    "options": ["SIGINT (2)", "SIGTERM (15)", "SIGKILL (9)", "SIGQUIT (3)"],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 24,
+    "text": "What is the specific effect of executing the `touch` command on a file that already exists?",
+    "options": [
+      "It clears all the existing contents of the file.",
+      "It deletes the file and recreates an empty one in its place.",
+      "It throws an error stating \"File exists\".",
+      "It updates the file's access and modification timestamps to the current system time."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 25,
+    "text": "Which command syntax correctly changes the owner to 'alice' and the group to 'developers' for a file named `project.txt`?",
+    "options": [
+      "chown alice.developers project.txt",
+      "chown alice:developers project.txt",
+      "chgrp alice:developers project.txt",
+      "chmod alice:developers project.txt"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 26,
+    "text": "What does the command `sleep 60` achieve when placed inside a shell script?",
+    "options": [
+      "It safely shuts down the operating system after a 60-second delay.",
+      "It sends the hard drive into sleep mode to conserve power.",
+      "It puts the current script process into a suspended state, pausing execution for 60 seconds.",
+      "It permanently kills any background process that has been idle for 60 seconds."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 27,
+    "text": "Which specific option tells the `echo` command NOT to output the default trailing newline character at the end of the string?",
+    "options": ["-e", "-n", "-t", "-s"],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 28,
+    "text": "To explicitly display the calendar for the month of March in the year 2026, which `cal` command syntax is entirely correct?",
+    "options": [
+      "cal 2026 3",
+      "cal -m 3 -y 2026",
+      "cal 3 2026",
+      "calendar 03/2026"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 29,
+    "text": "Because Unix does not inherently rely on file extensions, how does the `file` command typically determine the true type of a file?",
+    "options": [
+      "By executing a small portion of it in a sandbox.",
+      "By examining a 'magic number' stored near the beginning of the file.",
+      "By checking the file's permissions.",
+      "By looking up the file name in a system database."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 30,
+    "text": "While navigating in the `vi` editor's command mode, which keystroke allows you to jump directly to the very last line of the file?",
+    "options": ["gg", "L", "G", "Shift + End"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 31,
+    "text": "What is the expected output of the following snippet if executed? \n```c\nchar c = 'M';\nprintf(\"%c\", c);\n```",
+    "options": ["m", "Error", "M", "ASCII value of M"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 32,
+    "text": "Assuming a 32-bit architecture with 4-byte word alignment, what is the `sizeof` the following structure due to memory padding?\n```c\nstruct Data {\n  char a;\n  int b;\n  char c;\n};\n```",
+    "options": ["6 bytes", "8 bytes", "12 bytes", "16 bytes"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 33,
+    "text": "Which of the following is the correct syntax to declare an array of 10 pointers to functions, where each function takes an `int` and returns a `void`?",
+    "options": [
+      "void *ptr[10](int);",
+      "void (*ptr[10])(int);",
+      "void (*ptr)(int)[10];",
+      "void *(*ptr)[10](int);"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 34,
+    "text": "Find out the wrong statement based on the characteristics of AVL tree data structure.",
+    "options": [
+      "AVL tree is a binary search tree in nature.",
+      "AVL tree is known as height-balanced tree.",
+      "AVL tree has O(log_2 n) search time complexity considering 'n' as number of nodes.",
+      "AVL tree has O(n) search time complexity considering 'n' as number of nodes."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 6
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 35,
+    "text": "What is the primary danger of a 'Dangling Pointer' in C?",
+    "options": [
+      "It points to a memory address that is strictly read-only.",
+      "It points to an uninitialized variable.",
+      "It points to a memory location that has already been deallocated (freed) or has gone out of scope.",
+      "It bypasses type-checking during pointer arithmetic."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 36,
+    "text": "In the expression `*p++` (where `p` is a valid pointer), how is the evaluation performed according to C operator precedence?",
+    "options": [
+      "Increments the value pointed to by p.",
+      "Increments p, then dereferences the new address.",
+      "Dereferences p, then increments the pointer p.",
+      "Dereferences p, then increments the dereferenced value."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 37,
+    "text": "What is the key difference between `#define` macros and `inline` functions in C/C++?",
+    "options": [
+      "Macros perform type checking, inline functions do not.",
+      "Inline functions are evaluated by the preprocessor.",
+      "Macros are handled by the preprocessor (text substitution), inline functions are handled by the compiler.",
+      "Macros can only be used for constants."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 38,
+    "text": "In C++, if a base class has a Pure Virtual Destructor (`virtual ~Base() = 0;`), what MUST the programmer absolutely provide to prevent linker errors?",
+    "options": [
+      "A pure virtual constructor.",
+      "A concrete function body (definition) for the pure virtual destructor outside the class.",
+      "A `friend` class declaration.",
+      "Nothing, the compiler auto-generates it."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 39,
+    "text": "What is 'Object Slicing' in C++?",
+    "options": [
+      "Dividing a large object into smaller objects.",
+      "Assigning a derived class object to a base class by-value, causing derived-specific data to be lost.",
+      "Casting a base class pointer to a derived class pointer.",
+      "Overloading the slicing operator."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 40,
+    "text": "How does the presence of a `virtual` function explicitly affect the `sizeof` a C++ class?",
+    "options": [
+      "It decreases the size by removing duplicate functions.",
+      "It increases the size by adding a hidden Virtual Table Pointer (vptr).",
+      "It has no effect on the size of the class.",
+      "It makes the size of the class dynamic at runtime."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 41,
+    "text": "What does the `= delete;` syntax explicitly do when applied to a member function in modern C++?",
+    "options": [
+      "It marks the function for automatic garbage collection.",
+      "It forces the compiler to ignore the function definition.",
+      "It intentionally prevents the compiler from generating or allowing the usage of that specific function (e.g., disabling the copy constructor).",
+      "It acts as a destructor for static objects."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 42,
+    "text": "In C++, what happens when a `dynamic_cast` applied to a REFERENCE type strictly fails at runtime?",
+    "options": [
+      "It returns a `nullptr`.",
+      "It returns a void pointer.",
+      "It throws a `std::bad_cast` exception.",
+      "It silently falls back to a `static_cast`."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 43,
+    "text": "Inside a `const` member function of a class `MyClass`, what is the exact internal data type of the implicit `this` pointer?",
+    "options": [
+      "MyClass *",
+      "const MyClass *",
+      "MyClass * const",
+      "const MyClass * const"
+    ],
+    "correctOptionIndex": [4],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 44,
+    "text": "Which of the following operators CANNOT be overloaded as a global/friend function, and must strictly be overloaded as a non-static member function?",
+    "options": [
+      "+ (Addition)",
+      "== (Equality)",
+      "[] (Array Subscript)",
+      "<< (Stream Insertion)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 45,
+    "text": "What is the mathematically proven time complexity to completely build a Max-Heap from an unsorted array of N elements using the bottom-up `heapify` method?",
+    "options": ["O(N)", "O(log N)", "O(N log N)", "O(N^2)"],
+    "correctOptionIndex": [0],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 46,
+    "text": "In a standard Binary Tree containing exactly N nodes, what is the exact number of NULL (empty) child pointer links?",
+    "options": ["N - 1", "N", "N + 1", "2N"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 47,
+    "text": "What is the primary computational advantage of utilizing a Threaded Binary Tree over a conventional Binary Search Tree?",
+    "options": [
+      "It reduces the memory size of each node.",
+      "It allows for faster, stackless traversal by using null pointers to thread to the next node (in-order successor/predecessor).",
+      "It automatically balances the tree.",
+      "It allows multi-threading operations."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 48,
+    "text": "When performing a Post-Order traversal on a valid Expression Tree, what format of mathematical expression is generated?",
+    "options": [
+      "Infix expression",
+      "Prefix expression",
+      "Postfix expression (Reverse Polish Notation)",
+      "Syntax Tree"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 49,
+    "text": "Which Graph algorithm is inherently unable to yield correct shortest-path results if the graph contains edges with negative weights?",
+    "options": [
+      "Bellman-Ford Algorithm",
+      "Dijkstra's Algorithm",
+      "Floyd-Warshall Algorithm",
+      "Kruskal's Algorithm"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 50,
+    "text": "A sorting algorithm is formally defined as 'Stable' if and only if:",
+    "options": [
+      "It executes in exactly O(N log N) time under all conditions.",
+      "It utilizes an in-place array swap without auxiliary memory.",
+      "It strictly preserves the relative spatial order of records possessing equal keys.",
+      "It never crashes upon encountering a Null pointer."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 51,
+    "text": "What is the worst-case space complexity of an Adjacency Matrix used to represent a graph with V vertices and E edges?",
+    "options": ["O(V + E)", "O(V^2)", "O(E^2)", "O(V * log E)"],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 52,
+    "text": "In the implementation of a Breadth-First Search (BFS) algorithm on a Graph, which underlying auxiliary data structure is standardly mandated?",
+    "options": ["Stack", "Priority Queue", "Queue", "Hash Table"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 53,
+    "text": "What does the 'Von Neumann Bottleneck' refer to in computer architecture?",
+    "options": [
+      "The limitation of CPU clock speeds due to heat.",
+      "The performance limitation caused by the shared bus between the CPU and memory, where data and instructions must wait.",
+      "The limit on the maximum number of hard drives.",
+      "The inability of an OS to schedule multiple threads."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 54,
+    "text": "What is primarily stored within the CPU's Program Status Word (PSW) register?",
+    "options": [
+      "The next instruction to be fetched.",
+      "The memory address of the current operand.",
+      "Condition codes and status flags (like carry, zero, overflow).",
+      "The current stack pointer."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 55,
+    "text": "In a CPU Instruction Pipeline, a 'Data Hazard' (Read-After-Write) specifically occurs when:",
+    "options": [
+      "Two instructions try to access memory simultaneously.",
+      "An instruction requires the result of a preceding instruction that has not yet completed execution.",
+      "A branch instruction alters the flow of control.",
+      "The cache memory has a miss."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 56,
+    "text": "In real-time Operating Systems, what specific mechanism successfully resolves the 'Priority Inversion' problem?",
+    "options": [
+      "Round Robin Scheduling",
+      "Priority Inheritance Protocol",
+      "Shortest Job First",
+      "Virtual Memory Paging"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 57,
+    "text": "A 'Wait-For Graph' is actively utilized by an Operating System exclusively to detect the presence of:",
+    "options": ["Memory leaks", "Deadlocks", "Starvation", "Race conditions"],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 58,
+    "text": "In a multithreaded application process, which of the following memory domains is NOT shared among sibling threads, but rather maintained independently?",
+    "options": [
+      "Code (Text) Segment",
+      "Data Segment (Global variables)",
+      "Open Files",
+      "Registers and Stack"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 59,
+    "text": "According to the 'Working Set Model', a system undergoes 'Thrashing' primarily when:",
+    "options": [
+      "The CPU becomes idle because of too many blocked I/O operations.",
+      "A process spends more time continuously swapping pages in and out of memory than executing.",
+      "Two processes indefinitely wait for each other (Deadlock).",
+      "The hard disk physically malfunctions."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 60,
+    "text": "Which specific Disk Scheduling algorithm mitigates Starvation by sweeping the disk arm in one direction, but upon hitting the end, instantly jumps back to the beginning without servicing requests on the return trip?",
+    "options": ["SSTF", "SCAN", "C-SCAN (Circular SCAN)", "FCFS"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 61,
+    "text": "What is the operational purpose of 'Spooling' (Simultaneous Peripheral Operations On-line) in an OS?",
+    "options": [
+      "Allocating memory dynamically.",
+      "Protecting the OS from user programs.",
+      "Using a secondary storage buffer to overlap the execution of jobs with I/O operations (e.g., printing).",
+      "Scheduling CPU threads."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 62,
+    "text": "The problem of 'Internal Fragmentation' is notoriously prevalent in which memory management framework?",
+    "options": ["Variable Partitioning", "Segmentation", "Paging", "Swapping"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 63,
+    "text": "In the TCP Congestion Control algorithm, receiving 3 duplicate ACKs (Acknowledgments) immediately triggers which protocol behavior?",
+    "options": [
+      "Slow Start",
+      "Fast Retransmit",
+      "Connection Tear-down",
+      "Window Scaling"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 64,
+    "text": "Which protocol fundamentally resolves a known, logical IPv4 address into a physical Media Access Control (MAC) address?",
+    "options": ["DNS", "DHCP", "ARP (Address Resolution Protocol)", "ICMP"],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 65,
+    "text": "What is the standard, well-known TCP port number officially designated for HTTPS (Secure HTTP) traffic?",
+    "options": ["80", "21", "25", "443"],
+    "correctOptionIndex": [3],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 66,
+    "text": "The Border Gateway Protocol (BGP), which interconnects Autonomous Systems on the global Internet, is mathematically classified as a:",
+    "options": [
+      "Link-State Protocol",
+      "Distance-Vector Protocol",
+      "Path-Vector Protocol (Exterior Gateway Protocol)",
+      "Interior Gateway Protocol"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 67,
+    "text": "Given the Classless Inter-Domain Routing (CIDR) notation block `/26`, exactly how many usable host IP addresses are available per subnet?",
+    "options": ["30", "62", "64", "126"],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 68,
+    "text": "At which specific layer of the OSI model does the CSMA/CD (Carrier Sense Multiple Access with Collision Detection) protocol strictly operate?",
+    "options": [
+      "Physical Layer",
+      "Network Layer",
+      "Data Link Layer (MAC Sublayer)",
+      "Transport Layer"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 69,
+    "text": "In DBMS Concurrency Control, the Strict Two-Phase Locking (Strict 2PL) protocol explicitly solves which severe transactional anomaly?",
+    "options": [
+      "Phantom Reads",
+      "Cascading Rollbacks",
+      "Deadlocks",
+      "Lost Updates"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 70,
+    "text": "What strict mathematical condition defines a relation as being in Boyce-Codd Normal Form (BCNF)?",
+    "options": [
+      "It is in 1NF and contains no partial dependencies.",
+      "For every non-trivial functional dependency X -> Y, X must be a superkey.",
+      "It has no multi-valued dependencies.",
+      "All attributes are atomic."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 71,
+    "text": "What is the primary structural requirement for implementing a 'Sparse Index' on a database table?",
+    "options": [
+      "The data file must be randomly ordered.",
+      "The underlying data file must be sequentially sorted on the search key.",
+      "It must be implemented using a B+ tree.",
+      "It requires a hash function."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 72,
+    "text": "In SQL execution hierarchy, what is the precise difference between the `WHERE` clause and the `HAVING` clause?",
+    "options": [
+      "HAVING is used for joins, WHERE is used for single tables.",
+      "WHERE filters individual rows before grouping, HAVING filters groups after the GROUP BY operation.",
+      "They are perfectly interchangeable.",
+      "WHERE can use aggregate functions, HAVING cannot."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 73,
+    "text": "Which internal DBMS subsystem is directly responsible for ensuring the 'Durability' property via mechanisms like Write-Ahead Logging (WAL)?",
+    "options": [
+      "Query Optimizer",
+      "Buffer Manager",
+      "Recovery Manager",
+      "Concurrency Control Manager"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 74,
+    "text": "In Relational Algebra, a 'Natural Join' is functionally equivalent to which sequence of mathematical operations?",
+    "options": [
+      "A Set Difference followed by a Union.",
+      "A Cartesian Product followed by a Selection (on equality of common attributes) and a Projection (to remove duplicates).",
+      "A Division followed by a Cartesian Product.",
+      "An Intersection followed by a Rename."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 75,
+    "text": "According to Thomas McCabe, what is the formula to calculate the Cyclomatic Complexity V(G) of a Control Flow Graph with E edges, N nodes, and P connected components?",
+    "options": [
+      "V(G) = N - E + P",
+      "V(G) = E - N + 2P",
+      "V(G) = E + N - P",
+      "V(G) = (E * N) / 2"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 76,
+    "text": "What explicitly defines the architectural flaw known as 'Stamp Coupling' between two modules?",
+    "options": [
+      "Modules share a global data area.",
+      "One module passes control flags to another module.",
+      "Modules share a composite data structure, but each uses only a specific, different part of it.",
+      "One module modifies the internal code of another."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 77,
+    "text": "In Software Quality Assurance, 'Validation' explicitly addresses which of the following core questions?",
+    "options": [
+      "Are we building the product right?",
+      "Does the code meet the coding standards?",
+      "Are we building the right product? (Does it meet user needs/requirements?)",
+      "Are there any syntax errors?"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 78,
+    "text": "In Ensemble Learning, how does 'Boosting' fundamentally differ from 'Bagging'?",
+    "options": [
+      "Boosting runs models in parallel, Bagging runs sequentially.",
+      "Boosting only uses Decision Trees.",
+      "Boosting is an unsupervised technique.",
+      "Bagging builds independent models in parallel to reduce variance, while Boosting builds models sequentially to iteratively correct the errors of previous models."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 6
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 79,
+    "text": "When assessing a Classification model on a highly imbalanced dataset (e.g., 99% Negative, 1% Positive), why is the F1-Score vastly superior to raw Accuracy?",
+    "options": [
+      "Accuracy takes too long to compute.",
+      "Accuracy can be misleadingly high (e.g., 99%) by simply predicting the majority class, whereas F1-Score balances Precision and Recall for the minority class.",
+      "F1-Score is required for continuous data.",
+      "Accuracy is only used for unsupervised learning."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 6
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 80,
+    "text": "In a Support Vector Machine (SVM), what is the exact mathematical purpose of employing the 'Kernel Trick'?",
+    "options": [
+      "To speed up the training process by ignoring outliers.",
+      "To reduce the number of features.",
+      "To implicitly map the input data into a higher-dimensional space to make it linearly separable without explicitly calculating the transformation.",
+      "To randomly initialize the weights."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 6
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 81,
+    "text": "Which of the following attributes mathematically and operationally define a `static` local variable in C?",
+    "options": [
+      "It retains its value between multiple function calls.",
+      "It is visible and accessible from anywhere in the program.",
+      "It is initialized only once.",
+      "It is allocated on the Stack."
+    ],
+    "correctOptionIndex": [0, 2],
+    "mock": 6
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 82,
+    "text": "Which of the following declarations legitimately and safely initialize a character string in C?",
+    "options": [
+      "char str[] = \"JECA\";",
+      "char *str = \"JECA\";",
+      "char str[5] = {'J', 'E', 'C', 'A', '\\0'};",
+      "char str[3] = \"JECA\";"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 83,
+    "text": "To correctly and safely achieve runtime Polymorphism (Dynamic Binding) in C++, which of the following prerequisites MUST be satisfied?",
+    "options": [
+      "Base class must have a virtual function.",
+      "Derived class must override the virtual function.",
+      "A base class pointer or reference must be used to point to the derived object.",
+      "The function call must be resolved dynamically at runtime."
+    ],
+    "correctOptionIndex": [0, 1, 2, 3],
+    "mock": 6
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 84,
+    "text": "Which of the following are definitively true statements regarding an Abstract Class in C++?",
+    "options": [
+      "It cannot be instantiated directly.",
+      "It must contain at least one pure virtual function.",
+      "It can contain non-virtual functions.",
+      "It can have constructors and destructors."
+    ],
+    "correctOptionIndex": [0, 1, 2, 3],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 85,
+    "text": "Which of the following standard Data Structures strictly enforce a Last-In-First-Out (LIFO) operational protocol?",
+    "options": ["Stack", "Queue", "Linked List", "Call Stack"],
+    "correctOptionIndex": [0, 3],
+    "mock": 6
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 86,
+    "text": "Which of the following mathematical properties universally hold true for any valid Binary Search Tree (BST)?",
+    "options": [
+      "The left subtree of a node contains only nodes with keys lesser than the node's key.",
+      "The right subtree of a node contains only nodes with keys greater than the node's key.",
+      "Both the left and right subtrees must also be binary search trees.",
+      "The tree must always be perfectly height-balanced."
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 87,
+    "text": "Which of the following memory technologies are officially classified as non-volatile Read-Only Memory (ROM) variants?",
+    "options": ["EPROM", "SRAM", "EEPROM", "PROM"],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 88,
+    "text": "According to Coffman's mathematical postulates, which of the following conditions must concurrently hold true for a process Deadlock to manifest?",
+    "options": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "No Preemption",
+      "Circular Wait"
+    ],
+    "correctOptionIndex": [0, 1, 2, 3],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 89,
+    "text": "Which of the following CPU Scheduling algorithms are definitively classified as 'Preemptive' by nature?",
+    "options": [
+      "FCFS (First-Come, First-Serve)",
+      "Round Robin",
+      "SRTF (Shortest Remaining Time First)",
+      "Strict Priority without Preemption"
+    ],
+    "correctOptionIndex": [1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 90,
+    "text": "Which of the following OS primitives are actively utilized to facilitate Inter-Process Communication (IPC) across isolated memory spaces?",
+    "options": [
+      "Pipes",
+      "Message Queues",
+      "Shared Memory",
+      "Translation Lookaside Buffer (TLB)"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 91,
+    "text": "Which of the following highly utilized protocols operate exclusively at the Transport Layer of the OSI/TCP-IP models?",
+    "options": [
+      "TCP (Transmission Control Protocol)",
+      "IP (Internet Protocol)",
+      "UDP (User Datagram Protocol)",
+      "HTTP (Hypertext Transfer Protocol)"
+    ],
+    "correctOptionIndex": [0, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 92,
+    "text": "According to the IANA registry, which of the following IPv4 addresses fall within the non-routable, explicitly 'Private' IP address blocks?",
+    "options": ["10.255.255.254", "172.16.50.50", "192.168.100.1", "8.8.8.8"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 93,
+    "text": "Which of the following architectural advancements or features define the IPv6 protocol compared to legacy IPv4?",
+    "options": [
+      "128-bit address space.",
+      "Built-in IPsec support for security.",
+      "Simplified packet header.",
+      "Reliance on Broadcasts instead of Multicasts."
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 94,
+    "text": "Which of the following SQL statements belong exclusively to the Transaction Control Language (TCL) subset?",
+    "options": ["COMMIT", "ROLLBACK", "SELECT", "SAVEPOINT"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 6
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 95,
+    "text": "A poorly designed, un-normalized relational database schema explicitly invites which of the following critical operational anomalies?",
+    "options": [
+      "Insertion Anomaly",
+      "Update Anomaly",
+      "Deletion Anomaly",
+      "Referential Integrity Automation"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 96,
+    "text": "Which of the following recognized Software Development Life Cycle (SDLC) models or frameworks fall under the Agile methodology umbrella?",
+    "options": ["Scrum", "Extreme Programming (XP)", "Kanban", "Waterfall"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 97,
+    "text": "Which of the following software testing paradigms are explicitly categorized as 'White-Box' (Structural) testing techniques?",
+    "options": [
+      "Statement Coverage",
+      "Branch Coverage",
+      "Path Coverage",
+      "Beta Testing"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 98,
+    "text": "Which of the following are officially standardized categories of Software Maintenance operations post-deployment?",
+    "options": [
+      "Corrective Maintenance",
+      "Adaptive Maintenance",
+      "Perfective Maintenance",
+      "Preventive Maintenance"
+    ],
+    "correctOptionIndex": [0, 1, 2, 3],
+    "mock": 6
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 99,
+    "text": "Which of the following algorithms are exclusively utilized for 'Unsupervised Learning' tasks (like clustering or dimensionality reduction)?",
+    "options": [
+      "K-Means Clustering",
+      "Principal Component Analysis (PCA)",
+      "Hierarchical Clustering",
+      "Linear Regression"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 100,
+    "text": "Which of the following mathematical formulas serve as highly common 'Activation Functions' within Deep Artificial Neural Networks?",
+    "options": [
+      "Sigmoid",
+      "ReLU (Rectified Linear Unit)",
+      "Tanh (Hyperbolic Tangent)",
+      "TF-IDF"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 6
+  }
+]

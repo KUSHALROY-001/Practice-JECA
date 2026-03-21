@@ -174,7 +174,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 17,
     "text": "In unix/linux platform, which vi editor command copies the current line of the file?",
     "options": ["yy", "yw", "yc", "ZZ"],
@@ -182,7 +182,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 18,
     "text": "In unix/linux platform, which command is used to delete a line in vi editor?",
     "options": ["p", "dd", "x", "q"],
@@ -190,7 +190,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 19,
     "text": "In unix/linux platform, which set is correct to move cursor within vi editor?",
     "options": [
@@ -203,7 +203,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 20,
     "text": "In unix/linux platform, which command is used to see path of the working directory?",
     "options": ["ls", "dir", "vi", "pwd"],
@@ -211,7 +211,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 21,
     "text": "In unix/linux platform, which command is used to view the first n number of lines of a particular file (consider the file name is \"filename\")?",
     "options": [
@@ -224,7 +224,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 22,
     "text": "In unix/linux platform, which command is used to search for a pattern within a file?",
     "options": ["cd", "cp", "paste", "grep"],
@@ -232,7 +232,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 23,
     "text": "In unix/linux platform, hidden file can be viewed using",
     "options": ["ls -a", "ls -1", "ls -h", "ls -k"],
@@ -240,7 +240,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 24,
     "text": "In unix/linux platform, what is the output of the following command (consider the file name is \"filename\")?\ngrep -v 'hello' filename",
     "options": [
@@ -253,7 +253,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 25,
     "text": "In shell script, what is the output of the following program?\ncounter=1\nwhile [$counter -le 10]\ndo\necho $counter\n((counter++))\ndone",
     "options": [
@@ -266,7 +266,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 26,
     "text": "Stack is a ______ in data structure concept.",
     "options": [
@@ -279,7 +279,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 27,
     "text": "In data structure, the stack is a linear type of data structure in which data is stored and retrieved in a ______ manner.",
     "options": [
@@ -292,7 +292,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 28,
     "text": "In bubble sort algorithm, worst case time complexity is ______ considering 'n' is the number of elements.",
     "options": ["O(1)", "O(n^2)", "O(n)", "O(n log n)"],
@@ -300,7 +300,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 29,
     "text": "In data structure, a binary tree with 'n' nodes has",
     "options": ["n edges", "n+1 edges", "n-1 edges", "n-2 edges"],
@@ -308,7 +308,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 30,
     "text": "Merge sort follows ______ in data structure.",
     "options": [
@@ -321,7 +321,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 31,
     "text": "In data structure, maximum degree of a vertex in a typical graph with 'n' vertices is",
     "options": ["n", "n-1", "n+1", "2n-1"],
@@ -329,7 +329,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 32,
     "text": "In data structure, a graph is represented as a pair of sets (V, E), where",
     "options": [
@@ -342,7 +342,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 33,
     "text": "In binary search tree data structure, in-order traversal means the nodes are being searched in ______ order.",
     "options": [
@@ -355,7 +355,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 34,
     "text": "Queue data structure can be utilized for ______ implementation.",
     "options": ["radix sort", "quick sort", "recursion", "depth first search"],
@@ -363,7 +363,7 @@
   },
   {
     "year": 2022,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 35,
     "text": "The hardware device used for direct memory access is known as",
     "options": ["DMA scheduler", "DMA controller", "DMA disk", "DMA monitor"],
@@ -371,7 +371,7 @@
   },
   {
     "year": 2022,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 36,
     "text": "Hit ratio means",
     "options": [
@@ -888,7 +888,7 @@
   },
   {
     "year": 2022,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 85,
     "text": "In unix/linux platform, which of the following statement(s) is (are) not correct?",
     "options": [
@@ -901,7 +901,7 @@
   },
   {
     "year": 2022,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 86,
     "text": "Example of linear data structure is",
     "options": ["Linked-list", "Graph", "Tree", "stack"],

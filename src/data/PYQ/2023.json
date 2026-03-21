@@ -86,7 +86,7 @@
   },
   {
     "year": 2023,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 11,
     "text": "Address of the next instruction to be executed is specified by",
     "options": ["MBR", "MAR", "PSW", "PC"],
@@ -322,7 +322,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 33,
     "text": "In shell script, which command is used to create a new directory?",
     "options": ["vi", "touch", "cd", "mkdir"],
@@ -330,7 +330,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 34,
     "text": "In shell script, which command is used to copy a file?",
     "options": ["copy", "cpy", "cp", "cy"],
@@ -338,7 +338,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 35,
     "text": "In shell script, which command is used to delete a file?",
     "options": ["delete", "del", "remove", "rm"],
@@ -346,7 +346,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 36,
     "text": "In Unix/Linux platform, which command is used to find out the difference between two files?",
     "options": ["diff", "comm", "du", "whereis"],
@@ -354,7 +354,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 37,
     "text": "In Unix/Linux platform, which command is used to create a symbolic link?",
     "options": ["ls -s", "ls -i", "ln -sym", "ln -s"],
@@ -362,7 +362,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 38,
     "text": "In Unix/Linux platform, which command is used to view the inode number of a file?",
     "options": ["ls -i", "ls -a", "ls -l", "ls -r"],
@@ -370,7 +370,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 39,
     "text": "In Unix/Linux platform, which command is used to specify the access mode for files?",
     "options": ["chmod", "cm", "am", "chacc"],
@@ -378,7 +378,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 40,
     "text": "In Unix/Linux platform, ______ command is used to show current running processes.",
     "options": ["ps", "ls", "sh", "du"],
@@ -386,7 +386,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 41,
     "text": "In singly linked list, the time complexity for insertion at a particular node is",
     "options": ["O(1)", "O(n^2)", "O(n)", "O(n log n)"],
@@ -394,7 +394,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 42,
     "text": "In stack data structure, ______ operation is not permitted.",
     "options": ["Push", "Pop", "Empty_Check", "Enqueue"],
@@ -402,7 +402,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 43,
     "text": "In tree data structure, the in-degree of root node is always",
     "options": ["0", "1", "2", "3"],
@@ -410,7 +410,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 44,
     "text": "In binary tree data structure, using depth-first approach, preorder traversal means",
     "options": [
@@ -423,7 +423,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 45,
     "text": "Find out the wrong statement based on the characteristics of AVL tree data structure.",
     "options": [
@@ -436,7 +436,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 46,
     "text": "Example of non-linear data structure is",
     "options": ["Linked-list", "Graph", "Queue", "Stack"],
@@ -444,7 +444,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 47,
     "text": "Bubble sort algorithm has a worst-case time complexity of",
     "options": ["O(n)", "O(n^2)", "O(n^3)", "O(n^4)"],
@@ -452,7 +452,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 48,
     "text": "Insertion sort algorithm has a best-case time complexity of",
     "options": ["O(n)", "O(n^2)", "O(n^3)", "O(n^4)"],
@@ -502,7 +502,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 53,
     "text": "______ algorithm is used to find out the shortest path between two points in a connected weighted graph.",
     "options": ["Kruskal", "K-Means", "BIRCH", "Ward"],
@@ -797,7 +797,7 @@
   },
   {
     "year": 2023,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 83,
     "text": "Basic elements of a computer mean",
     "options": [
@@ -810,7 +810,7 @@
   },
   {
     "year": 2023,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 84,
     "text": "Select the correct I/O communication techniques from the following options.",
     "options": [
@@ -865,7 +865,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 89,
     "text": "Select the correct UNIX wildcard characters from the options.",
     "options": ["*", "?", "[]", "{}"],
@@ -873,7 +873,7 @@
   },
   {
     "year": 2023,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 90,
     "text": "In shell script, what is the command to show the list of files?",
     "options": ["ls", "ls -l", "ps", "pwd"],
@@ -881,7 +881,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 91,
     "text": "Select the correct Linked list types from the options.",
     "options": [
@@ -894,7 +894,7 @@
   },
   {
     "year": 2023,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 92,
     "text": "Select the correct Linked list operations from the options.",
     "options": [

@@ -1,0 +1,1092 @@
+[
+  {
+    "topic": "C Programming",
+    "questionNo": 1,
+    "text": "What is the output of the following C code?\nint a[5] = {1, 2, 3, 4, 5};\nint *ptr = a;\nprintf(\"%d\", *(ptr + 2));",
+    "options": ["1", "2", "3", "4"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 2,
+    "text": "In C, what is the output of `printf(\"%d\", printf(\"JECA\"));`?",
+    "options": ["JECA", "JECA4", "4JECA", "Compilation Error"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 3,
+    "text": "Which of the following functions is used to compare two strings in C up to a specified number of characters?",
+    "options": ["strcmp()", "strncasecmp()", "strncmp()", "strchr()"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 4,
+    "text": "A pointer holding the address of a variable that has already been deallocated from memory is known as a:",
+    "options": [
+      "Null Pointer",
+      "Void Pointer",
+      "Wild Pointer",
+      "Dangling Pointer"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 5,
+    "text": "Which bitwise operator is frequently used to toggle or invert specific bits of a number?",
+    "options": [
+      "Bitwise AND (&)",
+      "Bitwise OR (|)",
+      "Bitwise XOR (^)",
+      "Bitwise Left Shift (<<)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 6,
+    "text": "In C++, which keyword is used to explicitly prevent a class from being inherited by any other class?",
+    "options": ["const", "static", "final", "sealed"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 7,
+    "text": "What is the primary characteristic of a 'Pure Virtual Function' in C++?",
+    "options": [
+      "It must be defined in the base class.",
+      "It forces the base class to become an Abstract Class.",
+      "It can only be called by static member functions.",
+      "It executes faster than a regular virtual function."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 8,
+    "text": "Which of the following is TRUE regarding the 'this' pointer in C++?",
+    "options": [
+      "It is accessible inside static member functions.",
+      "It is a constant pointer pointing to the object that invokes the member function.",
+      "It can be modified to point to another object.",
+      "It is explicitly passed as the first argument by the programmer."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 9,
+    "text": "In C++, what type of copy is performed by the default copy constructor provided by the compiler?",
+    "options": ["Deep Copy", "Shallow Copy", "Virtual Copy", "Move Copy"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 10,
+    "text": "Which of the following allows a function defined completely outside a class to access the private and protected members of that class?",
+    "options": [
+      "Inheritance",
+      "Namespace",
+      "Friend Function",
+      "Template Specialization"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 11,
+    "text": "Which Unix command is used to display the inode number of a file?",
+    "options": ["ls -l", "ls -a", "ls -i", "ls -h"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 12,
+    "text": "In a shell script, what does the special variable `$#` store?",
+    "options": [
+      "The process ID of the script.",
+      "The exit status of the last command.",
+      "The total number of command-line arguments passed to the script.",
+      "The name of the script itself."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 13,
+    "text": "Which option is used with the `grep` command to perform an inverted match (show lines that DO NOT match the pattern)?",
+    "options": ["-i", "-v", "-c", "-l"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 14,
+    "text": "In the `vi` editor, which command sequence saves the current changes and exits the editor?",
+    "options": [":q!", ":wq", ":w!", ":save"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 15,
+    "text": "Which Unix environment variable specifies the directories where the shell should look for executable commands?",
+    "options": ["HOME", "USER", "CLASSPATH", "PATH"],
+    "correctOptionIndex": [3],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 16,
+    "text": "What is the maximum number of edges possible in a simple, undirected graph with 'N' vertices?",
+    "options": ["N - 1", "N(N + 1) / 2", "N(N - 1) / 2", "N^2"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 17,
+    "text": "In a strictly binary tree (full binary tree) where every internal node has exactly two children, if there are 'L' leaf nodes, how many internal nodes are there?",
+    "options": ["L - 1", "L", "L + 1", "2L - 1"],
+    "correctOptionIndex": [0],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 18,
+    "text": "Which of the following sorting algorithms works by repeatedly finding the minimum element from the unsorted part and putting it at the beginning?",
+    "options": [
+      "Bubble Sort",
+      "Insertion Sort",
+      "Selection Sort",
+      "Merge Sort"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 19,
+    "text": "Which data structure provides the optimal performance for implementing a Least Recently Used (LRU) Cache?",
+    "options": [
+      "A Singly Linked List and an Array",
+      "A Doubly Linked List and a Hash Map",
+      "A Binary Search Tree",
+      "A standard Queue"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 20,
+    "text": "In graph algorithms, Kruskal's algorithm is primarily used to find:",
+    "options": [
+      "The Shortest Path between two nodes.",
+      "The Minimum Spanning Tree (MST) of a connected weighted graph.",
+      "Any existing cycles within a directed graph.",
+      "The strongly connected components."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 21,
+    "text": "Which architectural phenomenon limits CPU performance because the shared memory bus cannot fetch data as fast as the CPU can execute instructions?",
+    "options": [
+      "The Pipeline Hazard",
+      "The Moore's Law Limit",
+      "The Von Neumann Bottleneck",
+      "The Amdahl's Law Restriction"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 22,
+    "text": "Which memory type serves as a direct buffer between the main memory (RAM) and the CPU to speed up instruction execution?",
+    "options": ["Virtual Memory", "Cache Memory", "EEPROM", "Flash Memory"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 23,
+    "text": "In the context of instruction pipelining, what is a 'Control Hazard' (or Branch Hazard)?",
+    "options": [
+      "When two instructions need the same hardware resource.",
+      "When an instruction relies on the data output of a previous instruction.",
+      "When the pipeline makes wrong decisions on branch prediction, requiring a flush.",
+      "When the power supply to the CPU control unit fluctuates."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 24,
+    "text": "What does a 'Subroutine' heavily depend on to keep track of return addresses during execution?",
+    "options": ["Queue", "Accumulator Register", "System Stack", "ALU"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 25,
+    "text": "During which stage of the machine cycle is the fetched instruction broken down into control signals for the CPU?",
+    "options": ["Fetch Stage", "Decode Stage", "Execute Stage", "Store Stage"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 26,
+    "text": "What is the initial default value of a Binary Semaphore used strictly for mutual exclusion in a critical section?",
+    "options": ["0", "1", "-1", "Infinity"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 27,
+    "text": "Internal fragmentation is a major drawback specifically associated with which memory allocation scheme?",
+    "options": [
+      "Pure Segmentation",
+      "Paging",
+      "Variable Partitioning",
+      "Dynamic Linking"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 28,
+    "text": "Which system component acts as an interface between user-level application programs and the hardware resources managed by the kernel?",
+    "options": [
+      "Command Line Interface (CLI)",
+      "System Calls",
+      "Device Drivers",
+      "Memory Controller"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 29,
+    "text": "In a Multithreaded environment, 'User-Level Threads' are managed by:",
+    "options": [
+      "The OS Kernel directly.",
+      "A Thread Library operating in user space.",
+      "The CPU hardware scheduler.",
+      "The Memory Management Unit (MMU)."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 30,
+    "text": "A situation where a lower-priority process holds a lock needed by a higher-priority process is formally known as:",
+    "options": [
+      "Deadlock",
+      "Starvation",
+      "Priority Inversion",
+      "Race Condition"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 31,
+    "text": "What is the primary function of the 'Time To Live' (TTL) field in an IPv4 datagram?",
+    "options": [
+      "To specify the priority of the packet.",
+      "To track the encryption sequence.",
+      "To prevent packets from endlessly looping in the network.",
+      "To define the size of the payload."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 32,
+    "text": "Which of the following is the correct representation of the standard IPv4 localhost (loopback) address?",
+    "options": ["192.168.0.1", "127.0.0.1", "10.0.0.1", "255.255.255.255"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 33,
+    "text": "The length of a standard MAC (Media Access Control) address is:",
+    "options": ["32 bits", "48 bits", "64 bits", "128 bits"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 34,
+    "text": "Which Application Layer protocol operates over TCP Port 21 and is used for transferring files between a client and a server?",
+    "options": ["SMTP", "HTTP", "FTP", "Telnet"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 35,
+    "text": "In a TCP Three-Way Handshake, what is the correct sequence of packets exchanged to establish a connection?",
+    "options": [
+      "SYN -> ACK -> SYN/ACK",
+      "SYN -> SYN/ACK -> ACK",
+      "ACK -> SYN -> SYN/ACK",
+      "SYN/ACK -> SYN -> ACK"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 36,
+    "text": "Which relational algebra operation retrieves all columns from two tables where a specified condition is met, without removing duplicate columns?",
+    "options": ["Natural Join", "Theta Join", "Outer Join", "Projection"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 37,
+    "text": "In an ER Diagram, a multi-valued attribute (like a person having multiple phone numbers) is represented by a:",
+    "options": [
+      "Solid Ellipse",
+      "Dashed Ellipse",
+      "Double Ellipse",
+      "Rectangle"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 38,
+    "text": "The ACID property 'Isolation' ensures that:",
+    "options": [
+      "A transaction completes fully or not at all.",
+      "The database transitions from one valid state to another.",
+      "Committed data remains permanent despite system failures.",
+      "Concurrent transactions do not interfere with each other's uncommitted data."
+    ],
+    "correctOptionIndex": [3],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 39,
+    "text": "Which SQL command is utilized to remove a specific column from an existing table structure?",
+    "options": [
+      "DROP COLUMN table_name",
+      "DELETE COLUMN column_name FROM table_name",
+      "ALTER TABLE table_name DROP COLUMN column_name",
+      "TRUNCATE COLUMN column_name"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 40,
+    "text": "A database index where the physical order of data rows on the disk perfectly matches the logical order of the index keys is known as a:",
+    "options": [
+      "Clustered Index",
+      "Non-Clustered Index",
+      "Composite Index",
+      "Unique Index"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 41,
+    "text": "In the Spiral Model of software development, what is the primary focus of the first quadrant in each cycle?",
+    "options": [
+      "Risk Analysis and Mitigation",
+      "Customer Evaluation",
+      "Determining Objectives, Alternatives, and Constraints",
+      "Coding and Testing"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 42,
+    "text": "Which principle states that a software module should have a single, well-defined responsibility?",
+    "options": [
+      "High Coupling",
+      "High Cohesion",
+      "Low Cohesion",
+      "Data Hiding"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 43,
+    "text": "Which Software Testing strategy verifies whether the system meets the actual business requirements and is ready for delivery?",
+    "options": [
+      "Unit Testing",
+      "Integration Testing",
+      "Validation / Acceptance Testing",
+      "White-box Testing"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 44,
+    "text": "In Software Project Management, the 'Critical Path' in a PERT network defines:",
+    "options": [
+      "The path containing tasks with the highest financial cost.",
+      "The shortest possible sequence of tasks to complete the project.",
+      "The sequence of dependent tasks that determines the longest total duration of the project.",
+      "The tasks assigned to the most senior developers."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 45,
+    "text": "Which of the following documents acts as a formal contract between the development team and the client regarding what the software will actually do?",
+    "options": [
+      "Software Design Document (SDD)",
+      "Software Requirements Specification (SRS)",
+      "Test Case Document",
+      "UML Class Diagram"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 46,
+    "text": "Which Machine Learning algorithm builds a flowchart-like structure by splitting data based on metrics like Entropy or Gini Impurity?",
+    "options": [
+      "K-Means Clustering",
+      "Decision Tree",
+      "Support Vector Machine",
+      "Naive Bayes"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 47,
+    "text": "In the context of Machine Learning, what does 'Overfitting' mean?",
+    "options": [
+      "The model performs poorly on both training and test data.",
+      "The model fails to learn the underlying trend of the data.",
+      "The model memorizes the training data, including noise, resulting in poor generalization on new test data.",
+      "The model executes too slowly due to an excess of input features."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 48,
+    "text": "Which probabilistic theorem is the fundamental mathematical basis for the 'Naive Bayes' classifier algorithm?",
+    "options": [
+      "Pythagorean Theorem",
+      "Bayes' Theorem",
+      "Markov's Inequality",
+      "Central Limit Theorem"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 49,
+    "text": "In a Support Vector Machine (SVM), the 'Kernel Trick' is primarily utilized to:",
+    "options": [
+      "Reduce the number of support vectors to speed up computation.",
+      "Transform non-linearly separable data into a higher-dimensional space where a linear boundary can separate it.",
+      "Automatically cluster unlabeled data points.",
+      "Calculate the gradient descent path for error minimization."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 50,
+    "text": "Which of the following scenarios is an example of an 'Unsupervised Learning' task?",
+    "options": [
+      "Predicting house prices based on square footage.",
+      "Identifying whether an email is Spam or Not Spam.",
+      "Segmenting a large customer base into distinct groups based on purchasing behavior.",
+      "Diagnosing a disease from medical images using labeled datasets."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 51,
+    "text": "What does the `sprintf()` function in C do?",
+    "options": [
+      "Reads formatted data from standard input.",
+      "Writes formatted data to standard output.",
+      "Writes formatted data to a string (character array).",
+      "Reads formatted data from a file."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 52,
+    "text": "Which macro is used with the `fseek()` function to set the file pointer relative to the end of the file?",
+    "options": ["SEEK_SET", "SEEK_CUR", "SEEK_END", "EOF"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 53,
+    "text": "What is the primary difference between `#include <filename.h>` and `#include \"filename.h\"`?",
+    "options": [
+      "The first is for C programs, the second is for C++ programs.",
+      "The first searches the standard library directories, the second searches the current directory first.",
+      "The first is evaluated at compile time, the second at run time.",
+      "There is no difference; they are completely interchangeable."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 54,
+    "text": "Can a `switch` case label in C be a floating-point number (e.g., `case 1.5:`)?",
+    "options": [
+      "Yes, as long as it is a double.",
+      "Yes, but it will be automatically truncated to an integer.",
+      "No, switch cases can only be integral or character constants.",
+      "No, switch cases can only be enumerations."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 55,
+    "text": "What will be the value of `x` after the following statement executes?\nint x = (1, 2, 3);",
+    "options": ["1", "2", "3", "Compilation Error"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 56,
+    "text": "What is the primary purpose of an `inline` function in C++?",
+    "options": [
+      "To prevent the function from being overridden.",
+      "To allow the function to be called from a different namespace.",
+      "To reduce function call overhead by expanding the function body at the point of the call.",
+      "To strictly limit the scope of the function to the current file."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 57,
+    "text": "Which type of inheritance is supported in C++ but not supported directly (via classes) in Java?",
+    "options": [
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance",
+      "Multiple Inheritance"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 58,
+    "text": "Which operator is required to access a specific entity explicitly from a namespace?",
+    "options": [
+      ". (Dot Operator)",
+      "-> (Arrow Operator)",
+      ":: (Scope Resolution Operator)",
+      ": (Colon)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 59,
+    "text": "In C++, what is the default underlying data type of an unscoped `enum`?",
+    "options": ["char", "int", "float", "unsigned long"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 60,
+    "text": "If an exception is thrown in a C++ program and is not caught by any `catch` block, what happens?",
+    "options": [
+      "The program ignores the exception and continues executing the next line.",
+      "The compiler generates a syntax error.",
+      "The program calls `std::terminate()` and aborts.",
+      "The operating system restarts the process."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 61,
+    "text": "Which Unix command compares two sorted files line by line and outputs the result in three columns?",
+    "options": ["diff", "cmp", "comm", "sort"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 62,
+    "text": "Which command is used to bring a background job back to the foreground in a Unix shell?",
+    "options": ["bg", "fg", "jobs", "bring"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 63,
+    "text": "Which Unix command changes the group ownership of a file?",
+    "options": ["chown", "chmod", "chgrp", "passwd"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 64,
+    "text": "What is the Process ID (PID) of the `init` or `systemd` process, which is the ultimate ancestor of all other processes in a Unix/Linux system?",
+    "options": ["0", "1", "1000", "2"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 65,
+    "text": "How do you display all current environment variables in a Unix/Linux terminal?",
+    "options": ["print var", "env", "showenv", "echo $ALL"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 66,
+    "text": "In which representation of a graph is checking if an edge exists between two specific vertices an O(1) constant-time operation?",
+    "options": [
+      "Adjacency List",
+      "Edge List",
+      "Adjacency Matrix",
+      "Incidence List"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 67,
+    "text": "Which of the following sorting algorithms heavily utilizes the 'Divide and Conquer' paradigm?",
+    "options": [
+      "Insertion Sort",
+      "Bubble Sort",
+      "Selection Sort",
+      "Merge Sort"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 68,
+    "text": "When a complete binary tree is represented optimally using a 0-based index array, where is the right child of the node at index `i` located?",
+    "options": ["2i", "2i + 1", "2i + 2", "i / 2"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 69,
+    "text": "Interpolation search works most efficiently on which type of array?",
+    "options": [
+      "An unsorted array.",
+      "An array where elements are uniformly distributed and sorted.",
+      "An array with highly clustered random values.",
+      "An array represented as a linked list."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 70,
+    "text": "Which fundamental problem can Floyd’s Cycle-Finding Algorithm (Tortoise and Hare) solve efficiently in O(N) time and O(1) space?",
+    "options": [
+      "Finding the shortest path in a graph.",
+      "Detecting a loop in a linked list.",
+      "Sorting an array of floating-point numbers.",
+      "Finding the minimum spanning tree of a graph."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 71,
+    "text": "What is the primary function of the Arithmetic Logic Unit (ALU) within a CPU?",
+    "options": [
+      "To store variables and instructions temporarily.",
+      "To decode assembly language instructions.",
+      "To perform mathematical operations and bitwise logical operations.",
+      "To manage memory access speeds."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 72,
+    "text": "Which hardware bus is exclusively responsible for transmitting the physical location of the data that the CPU wants to read or write?",
+    "options": ["Data Bus", "Address Bus", "Control Bus", "Expansion Bus"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 73,
+    "text": "In a buddy memory allocation system, if memory blocks are repeatedly split in half to satisfy requests, which type of fragmentation becomes the most prominent issue?",
+    "options": [
+      "External Fragmentation",
+      "Internal Fragmentation",
+      "Data Fragmentation",
+      "Process Fragmentation"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 74,
+    "text": "Which directory structure allows files to have multiple paths and be shared among different directories via hard links?",
+    "options": [
+      "Single-Level Directory",
+      "Two-Level Directory",
+      "Tree-Structured Directory",
+      "Acyclic-Graph Directory"
+    ],
+    "correctOptionIndex": [3],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 75,
+    "text": "In process synchronization, what is a 'Monitor'?",
+    "options": [
+      "A hardware component that displays memory usage.",
+      "A high-level programming language construct that encapsulates shared variables and synchronization procedures.",
+      "An algorithm to detect deadlocks dynamically.",
+      "A specific type of Round Robin scheduler."
+    ],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 76,
+    "text": "How does the C-LOOK disk scheduling algorithm behave upon reaching the last request in the current direction?",
+    "options": [
+      "It reverses direction and services requests on the way back.",
+      "It travels all the way to the physical edge of the disk platter before returning.",
+      "It jumps back to the furthest request in the opposite direction without servicing any requests on the return trip.",
+      "It stops permanently until a new request arrives."
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 77,
+    "text": "Which Application Layer protocol is standardly used by a client to retrieve and download emails from a remote mail server?",
+    "options": ["SMTP", "POP3", "FTP", "SNMP"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 78,
+    "text": "Which default TCP port is utilized by the Secure Shell (SSH) protocol for secure remote logins?",
+    "options": ["21", "22", "23", "25"],
+    "correctOptionIndex": [1],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 79,
+    "text": "In the original IPv4 address class architecture, which class was explicitly reserved for Multicasting?",
+    "options": ["Class B", "Class C", "Class D", "Class E"],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 80,
+    "text": "Which of the following is a widely used Symmetric-Key encryption algorithm?",
+    "options": [
+      "RSA (Rivest–Shamir–Adleman)",
+      "Diffie-Hellman",
+      "AES (Advanced Encryption Standard)",
+      "ECC (Elliptic Curve Cryptography)"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 81,
+    "text": "Which of the following are valid Data Control Language (DCL) commands in SQL?",
+    "options": ["SELECT", "GRANT", "COMMIT", "REVOKE"],
+    "correctOptionIndex": [1, 3],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 82,
+    "text": "Which of the following are primary advantages of utilizing a Database Management System (DBMS) over traditional File Systems?",
+    "options": [
+      "Data Independence",
+      "Reduced Data Redundancy",
+      "Simpler internal data structures",
+      "Improved Data Integrity"
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 83,
+    "text": "Which of the following operations in Relational Algebra are classified as 'Unary Operations' (operating on a single relation)?",
+    "options": [
+      "Selection (σ)",
+      "Projection (π)",
+      "Cartesian Product (x)",
+      "Set Difference (-)"
+    ],
+    "correctOptionIndex": [0, 1],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 84,
+    "text": "Which of the following Process Models fall under the category of 'Agile Methodologies'?",
+    "options": [
+      "Scrum",
+      "Waterfall Model",
+      "Extreme Programming (XP)",
+      "Kanban"
+    ],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 85,
+    "text": "Which of the following are classified as White-Box Testing techniques?",
+    "options": [
+      "Boundary Value Analysis",
+      "Statement Coverage",
+      "Equivalence Partitioning",
+      "Branch Coverage"
+    ],
+    "correctOptionIndex": [1, 3],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 86,
+    "text": "Which of the following metrics are standardly utilized to measure the physical or functional size of a software product?",
+    "options": [
+      "Lines of Code (LOC)",
+      "Cyclomatic Complexity",
+      "Function Points (FP)",
+      "Mean Time To Failure (MTTF)"
+    ],
+    "correctOptionIndex": [0, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 87,
+    "text": "Which of the following algorithms are exclusively used for Supervised Learning (Classification/Regression)?",
+    "options": [
+      "Support Vector Machines (SVM)",
+      "Decision Trees",
+      "K-Means Clustering",
+      "Artificial Neural Networks"
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 88,
+    "text": "Which of the following are algorithms primarily used for Clustering (Unsupervised Learning)?",
+    "options": ["K-Means", "DBSCAN", "Naive Bayes", "Hierarchical Clustering"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 89,
+    "text": "Which of the following are fundamental components required to construct a basic Artificial Neural Network?",
+    "options": [
+      "Neurons (Nodes)",
+      "Support Vectors",
+      "Weights",
+      "Activation Functions"
+    ],
+    "correctOptionIndex": [0, 2, 3],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 90,
+    "text": "Which of the following are valid Pre-processor Directives in C?",
+    "options": ["#include", "#define", "#typedef", "#ifdef"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 3
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 91,
+    "text": "Which of the following functions in C read data from standard input (stdin)?",
+    "options": ["scanf()", "printf()", "fgets()", "puts()"],
+    "correctOptionIndex": [0, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 92,
+    "text": "Which of the following class members can be declared as 'virtual' to achieve run-time polymorphism in C++?",
+    "options": [
+      "Constructors",
+      "Destructors",
+      "Static Member Functions",
+      "Non-static Member Functions"
+    ],
+    "correctOptionIndex": [1, 3],
+    "mock": 3
+  },
+  {
+    "topic": "Unix",
+    "questionNo": 93,
+    "text": "Which of the following Unix/Linux commands can be used to display the contents of a text file?",
+    "options": ["cat", "grep", "more", "chmod"],
+    "correctOptionIndex": [0, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 94,
+    "text": "Which of the following data structures inherently operate on a Last-In-First-Out (LIFO) basis?",
+    "options": ["Stack", "Queue", "Call Stack", "Binary Search Tree"],
+    "correctOptionIndex": [0, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 95,
+    "text": "Which of the following are necessary Coffman conditions for a Deadlock to occur?",
+    "options": [
+      "Mutual Exclusion",
+      "Preemption",
+      "Circular Wait",
+      "Starvation"
+    ],
+    "correctOptionIndex": [0, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Computer Networks",
+    "questionNo": 96,
+    "text": "Which of the following IPv4 addresses are reserved exclusively for Private Networks (and are non-routable on the public internet)?",
+    "options": ["10.250.1.1", "192.168.100.5", "172.16.5.5", "8.8.8.8"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 97,
+    "text": "Which of the following are standard Aggregate Functions in SQL?",
+    "options": ["SUM()", "AVG()", "COUNT()", "UPPER()"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Software Engineering",
+    "questionNo": 98,
+    "text": "Which of the following are recognized Agile software development frameworks or methodologies?",
+    "options": ["Scrum", "Kanban", "Extreme Programming (XP)", "Waterfall"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Machine Learning",
+    "questionNo": 99,
+    "text": "Which of the following algorithms are primarily utilized for Classification tasks (predicting discrete class labels)?",
+    "options": [
+      "Support Vector Machine (SVM)",
+      "Logistic Regression",
+      "Decision Tree",
+      "K-Means"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 3
+  },
+  {
+    "topic": "Introduction of Computers",
+    "questionNo": 100,
+    "text": "Which of the following are System Calls associated specifically with Process Management in Unix-like Operating Systems?",
+    "options": ["fork()", "exec()", "wait()", "mkdir()"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 3
+  }
+]

@@ -9,9 +9,13 @@ import {
   Layers3,
   Hash,
 } from "lucide-react";
-import { getQuestionsByYear, getQuestionsByTopic } from "../data";
+import {
+  getPYQByYear,
+  getPYQByTopic,
+  getMockByPaper,
+  getMockByTopic,
+} from "../data";
 
-const YEAR_EXAM_TIME_MINUTES = 120;
 
 const QuestionText = ({ index, text }) => {
   const newlineIndex = text.indexOf("\n");
@@ -21,7 +25,7 @@ const QuestionText = ({ index, text }) => {
 
   return (
     <div>
-      <h3 className="text-xl font-semibold text-slate-800 mb-2 leading-relaxed">
+      <h3 className="text-base md:text-xl font-semibold text-slate-800 mb-2 leading-relaxed">
         <span className="text-indigo-600 mr-2">Q{index}.</span>
         {questionProse}
       </h3>
@@ -34,27 +38,28 @@ const QuestionText = ({ index, text }) => {
   );
 };
 
-const TOPIC_EXAM_TIME_MINUTES = 30;
 
 const Exam = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
+  const type = searchParams.get("type");
   const year = searchParams.get("year");
+  const paper = searchParams.get("paper");
   const topic = searchParams.get("topic");
-  const isYearExam = Boolean(year);
-  const examTimeMinutes = isYearExam
-    ? YEAR_EXAM_TIME_MINUTES
-    : TOPIC_EXAM_TIME_MINUTES;
+
+  const isFullExam = Boolean(year) || Boolean(paper);
 
   const { data: questions, error } = useMemo(() => {
     try {
       let data = [];
-      if (year) {
-        data = getQuestionsByYear(year);
-      } else if (topic) {
-        data = getQuestionsByTopic(topic);
+      if (type === "pyq") {
+        if (year) data = getPYQByYear(year);
+        else if (topic) data = getPYQByTopic(topic);
+      } else if (type === "mock") {
+        if (paper) data = getMockByPaper(paper);
+        else if (topic) data = getMockByTopic(topic);
       } else {
-        return { data: [], error: "No exam criteria provided." };
+        return { data: [], error: "No valid exam criteria provided." };
       }
 
       if (data.length === 0) {
@@ -65,9 +70,13 @@ const Exam = () => {
       const sorted = [...data].sort((a, b) => a.questionNo - b.questionNo);
       return { data: sorted, error: "" };
     } catch (err) {
-      return { data: [], error: err.message || 'Error loading questions' };
+      return { data: [], error: err.message || "Error loading questions" };
     }
-  }, [year, topic]);
+  }, [type, year, paper, topic]);
+
+  const examTimeMinutes = useMemo(() => {
+    return questions ? Math.round(questions.length * 1.2) : 0;
+  }, [questions]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -79,8 +88,7 @@ const Exam = () => {
     setCurrentIndex(0);
     setAnswers({});
     hasSubmittedRef.current = false;
-  }, [examTimeMinutes, year, topic]);
-
+  }, [examTimeMinutes, type, year, paper, topic]);
 
   // Timer logic
   useEffect(() => {
@@ -102,7 +110,9 @@ const Exam = () => {
   const handleSubmit = () => {
     if (hasSubmittedRef.current) return;
     hasSubmittedRef.current = true;
-    navigate("/result", { state: { questions, answers, year, topic } });
+    navigate("/result", {
+      state: { questions, answers, type, year, paper, topic },
+    });
   };
 
   const currentQ = questions[currentIndex];
@@ -112,7 +122,6 @@ const Exam = () => {
     const s = seconds % 60;
     return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
   };
-
 
   if (error)
     return (
@@ -127,14 +136,20 @@ const Exam = () => {
       <div className="mb-6 flex flex-col gap-4 rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-sm backdrop-blur-md md:flex-row md:items-center md:justify-between">
         <div className="space-y-2">
           <h2 className="text-2xl font-extrabold text-slate-800">
-            {year ? `Exam: Year ${year}` : `Exam: ${topic}`}
+            {type === "pyq"
+              ? year
+                ? `PYQ: Year ${year}`
+                : `PYQ: ${topic}`
+              : paper
+                ? `Mock: ${paper}`
+                : `Mock: ${topic}`}
           </h2>
           <div className="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-500">
             <span className="rounded-full bg-slate-100 px-3 py-1">
               Question {currentIndex + 1} of {questions.length}
             </span>
             <span className="rounded-full bg-indigo-50 px-3 py-1 text-indigo-700">
-              {isYearExam ? "Full Year Exam" : "Topic Practice"}
+              {isFullExam ? "Full Exam" : "Topic Practice"}
             </span>
             <span className="rounded-full bg-amber-50 px-3 py-1 text-amber-700">
               Duration: {examTimeMinutes} min
@@ -142,30 +157,54 @@ const Exam = () => {
           </div>
         </div>
 
-        <div
-          className={`flex items-center gap-2 rounded-2xl border px-5 py-3 text-xl font-bold transition-colors ${timeLeft < 300 ? "border-red-200 bg-red-100 text-red-600" : "border-indigo-200 bg-indigo-100 text-indigo-700"}`}
-        >
-          <Clock size={24} className={timeLeft < 300 ? "animate-pulse" : ""} />
-          {formatTime(timeLeft)}
+        <div className="flex flex-col md:items-end gap-3 flex-shrink-0">
+          <div
+            className={`flex items-center justify-center gap-2 rounded-2xl border px-5 py-3 text-xl font-bold transition-colors w-full ${timeLeft < 300 ? "border-red-200 bg-red-100 text-red-600" : "border-indigo-200 bg-indigo-100 text-indigo-700"}`}
+          >
+            <Clock size={24} className={timeLeft < 300 ? "animate-pulse" : ""} />
+            {formatTime(timeLeft)}
+          </div>
+          <div className="flex items-center gap-2 w-full">
+            <button
+              onClick={() => navigate("/")}
+              className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold text-red-600 border-2 border-red-200 bg-white hover:bg-red-50 hover:border-red-400 transition-all shadow-sm text-sm"
+            >
+              ✕ Cancel
+            </button>
+            <button
+              onClick={handleSubmit}
+              className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-bold text-white bg-green-600 border-2 border-green-600 hover:bg-green-700 transition-all shadow-sm shadow-green-200 text-sm"
+            >
+              <CheckCircle2 size={16} /> Submit
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Question Card */}
       <div className="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col">
         <div className="mb-3 flex flex-wrap gap-2">
-          {isYearExam ? (
-            // Year exam: show topic only
+          {isFullExam ? (
+            // Full exam: show topic only
             <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700">
               <Layers3 size={16} />
               {currentQ.topic}
             </div>
           ) : (
-            // Topic practice: show year + original question number
+            // Topic practice: show year/paper + original question number
             <>
-              <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700">
-                <Layers3 size={16} />
-                Year: {currentQ.year}
-              </div>
+              {currentQ.year && (
+                <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700">
+                  <Layers3 size={16} />
+                  Year: {currentQ.year}
+                </div>
+              )}
+              {currentQ.mock && (
+                <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700">
+                  <Layers3 size={16} />
+                  Mock Paper: {currentQ.mock}
+                </div>
+              )}
               <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-600">
                 <Hash size={16} />
                 Original Q. No. {currentQ.questionNo}
@@ -252,7 +291,7 @@ const Exam = () => {
                     )}
                   </div>
                 )}
-                <span className="text-lg font-medium">{option}</span>
+                <span className="text-base md:text-lg font-medium">{option}</span>
               </button>
             );
           })}
@@ -314,15 +353,6 @@ const Exam = () => {
         </div>
       </div>
 
-      {/* Cancel Exam */}
-      <div className="mt-4 flex justify-center">
-        <button
-          onClick={() => navigate("/")}
-          className="flex items-center gap-2 px-8 py-3 rounded-xl font-semibold text-red-600 border-2 border-red-200 bg-white hover:bg-red-50 hover:border-red-400 transition-all shadow-sm"
-        >
-          ✕ Cancel Exam
-        </button>
-      </div>
     </div>
   );
 };

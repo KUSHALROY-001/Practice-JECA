@@ -1,0 +1,906 @@
+[
+  {
+    "topic": "C Programming",
+    "questionNo": 1,
+    "text": "What is the output?\n\nint x = 5;\nprintf(\"%d %d\", x, x++);",
+    "options": ["5 5", "5 6", "6 5", "Undefined Behavior"],
+    "correctOptionIndex": [3],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 2,
+    "text": "What is the output?\n\nprintf(\"%d\", sizeof('A'));",
+    "options": ["1", "2", "4", "Depends"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 3,
+    "text": "What is the output?\n\nint a = 3;\nint b = a++ + ++a;\nprintf(\"%d\", b);",
+    "options": ["7", "8", "Undefined Behavior", "6"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 4,
+    "text": "Which of the following is a dangling pointer?",
+    "options": [
+      "Pointer not initialized",
+      "Pointer pointing to deallocated memory",
+      "NULL pointer",
+      "Void pointer"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 5,
+    "text": "Which macro expansion is correct?\n\n#define SQR(x) x*x\nSQR(2+3)",
+    "options": ["25", "11", "10", "15"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 6,
+    "text": "What is the output?\n\nint arr[] = {1,2,3};\nprintf(\"%d\", *(arr+1));",
+    "options": ["1", "2", "3", "Error"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 7,
+    "text": "Which supports runtime polymorphism?",
+    "options": [
+      "Function overloading",
+      "Templates",
+      "Virtual functions",
+      "Macros"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 8,
+    "text": "Constructor execution order:",
+    "options": ["Derived → Base", "Base → Derived", "Random", "Depends"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 9,
+    "text": "Which keyword gives access to current object?",
+    "options": ["self", "this", "current", "object"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 10,
+    "text": "Worst-case complexity of quick sort:",
+    "options": ["O(n log n)", "O(n)", "O(n^2)", "O(log n)"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 11,
+    "text": "Which traversal gives sorted output in BST?",
+    "options": ["Preorder", "Postorder", "Inorder", "Level"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 12,
+    "text": "Insertion in stack complexity:",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+
+  {
+    "topic": "Operating System",
+    "questionNo": 13,
+    "text": "Which scheduling gives minimum average waiting time?",
+    "options": ["FCFS", "RR", "SJF", "Priority"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 14,
+    "text": "Belady’s anomaly occurs in:",
+    "options": ["LRU", "FIFO", "Optimal", "SJF"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 15,
+    "text": "Deadlock avoidance algorithm:",
+    "options": ["Banker’s", "FIFO", "LRU", "RR"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+
+  {
+    "topic": "Database Management System",
+    "questionNo": 16,
+    "text": "Which normal form removes transitive dependency?",
+    "options": ["1NF", "2NF", "3NF", "BCNF"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 17,
+    "text": "Which command deletes all records but keeps table?",
+    "options": ["DROP", "DELETE", "TRUNCATE", "REMOVE"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 18,
+    "text": "Which key ensures entity integrity?",
+    "options": ["Foreign", "Primary", "Candidate", "Composite"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 19,
+    "text": "What is output?\n\nint a=5;\nprintf(\"%d\", a<<2);",
+    "options": ["10", "20", "15", "25"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 20,
+    "text": "Which is correct about arrays?",
+    "options": [
+      "Start from 1",
+      "Stores same data type",
+      "Stores mixed types",
+      "Dynamic size only"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 21,
+    "text": "What is the output?\n\nint x = 10;\nprintf(\"%d\", x++ + ++x);",
+    "options": ["21", "22", "Undefined Behavior", "20"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 22,
+    "text": "Which of the following is true about malloc()?",
+    "options": [
+      "Initializes memory to zero",
+      "Allocates memory dynamically",
+      "Works only for arrays",
+      "Returns int"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 23,
+    "text": "What is the output?\n\nint a = 5;\nint *p = &a;\nprintf(\"%d\", *p++);",
+    "options": ["5", "Address", "Error", "Undefined"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 24,
+    "text": "Which operator is used to free allocated memory?",
+    "options": ["delete", "remove", "free()", "clear()"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 25,
+    "text": "Which concept is achieved using function overloading?",
+    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 26,
+    "text": "Which is NOT allowed in operator overloading?",
+    "options": ["+", "-", "::", "*"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 27,
+    "text": "Which type of inheritance involves multiple base classes?",
+    "options": ["Single", "Multiple", "Multilevel", "Hierarchical"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 28,
+    "text": "Time complexity of searching in balanced BST:",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 29,
+    "text": "Which structure uses LIFO?",
+    "options": ["Queue", "Stack", "Tree", "Graph"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 30,
+    "text": "Maximum edges in undirected graph with n vertices:",
+    "options": ["n(n-1)/2", "n^2", "n", "2n"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+
+  {
+    "topic": "Operating System",
+    "questionNo": 31,
+    "text": "Which is a preemptive scheduling algorithm?",
+    "options": ["FCFS", "SJF", "Round Robin", "FIFO"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 32,
+    "text": "Deadlock requires how many conditions?",
+    "options": ["2", "3", "4", "5"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 33,
+    "text": "Which is NOT a memory management technique?",
+    "options": ["Paging", "Segmentation", "Scheduling", "Swapping"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+
+  {
+    "topic": "Database Management System",
+    "questionNo": 34,
+    "text": "Which SQL clause groups rows?",
+    "options": ["WHERE", "GROUP BY", "ORDER BY", "SELECT"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 35,
+    "text": "Which key refers to another table?",
+    "options": ["Primary", "Foreign", "Candidate", "Super"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 36,
+    "text": "Which normal form removes partial dependency?",
+    "options": ["1NF", "2NF", "3NF", "BCNF"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 37,
+    "text": "What is the output?\n\nprintf(\"%d\", 5 ^ 3);",
+    "options": ["6", "8", "15", "2"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 38,
+    "text": "Which is correct about sizeof operator?",
+    "options": [
+      "Evaluated at runtime",
+      "Returns bytes",
+      "Returns bits",
+      "Only for arrays"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 39,
+    "text": "Which function cannot be virtual?",
+    "options": [
+      "Constructor",
+      "Destructor",
+      "Member function",
+      "Friend function"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 40,
+    "text": "Which keyword is used for inheritance?",
+    "options": ["extends", "inherits", ":", "derive"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 41,
+    "text": "Height of balanced BST is:",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 42,
+    "text": "Which sorting is in-place?",
+    "options": ["Merge", "Quick", "Both", "None"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "Operating System",
+    "questionNo": 43,
+    "text": "Context switch happens when:",
+    "options": ["Process changes", "Memory changes", "Disk changes", "None"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 44,
+    "text": "Which is NOT deadlock condition?",
+    "options": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Preemption",
+      "Circular wait"
+    ],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+
+  {
+    "topic": "Database Management System",
+    "questionNo": 45,
+    "text": "Which is DML?",
+    "options": ["CREATE", "DROP", "INSERT", "ALTER"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 46,
+    "text": "Which operation selects rows?",
+    "options": ["Projection", "Selection", "Join", "Union"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 47,
+    "text": "Which pointer type can hold any address?",
+    "options": ["int*", "char*", "void*", "float*"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 48,
+    "text": "What is output?\n\nint x=2;\nprintf(\"%d\", x<<3);",
+    "options": ["16", "8", "6", "10"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 49,
+    "text": "Which is compile-time polymorphism?",
+    "options": ["Overloading", "Overriding", "Inheritance", "Encapsulation"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 50,
+    "text": "Which keyword restricts modification?",
+    "options": ["static", "const", "final", "this"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 51,
+    "text": "Queue insertion is:",
+    "options": ["Enqueue", "Dequeue", "Push", "Pop"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 52,
+    "text": "Which traversal uses queue?",
+    "options": ["DFS", "BFS", "Inorder", "Postorder"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "Operating System",
+    "questionNo": 53,
+    "text": "Which is synchronization tool?",
+    "options": ["Semaphore", "Cache", "Stack", "Queue"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 54,
+    "text": "Paging avoids:",
+    "options": [
+      "External fragmentation",
+      "Internal fragmentation",
+      "Deadlock",
+      "Thrashing"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+
+  {
+    "topic": "Database Management System",
+    "questionNo": 55,
+    "text": "Which join returns matching rows?",
+    "options": ["Inner", "Outer", "Left", "Right"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 56,
+    "text": "Which ensures no duplicate values?",
+    "options": ["Primary key", "Foreign key", "Unique", "Check"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 57,
+    "text": "Which loop executes at least once?",
+    "options": ["for", "while", "do-while", "none"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 58,
+    "text": "Which header for string functions?",
+    "options": ["stdio.h", "stdlib.h", "string.h", "math.h"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 59,
+    "text": "Binary search requires:",
+    "options": ["Sorted array", "Unsorted array", "Linked list", "Tree"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 60,
+    "text": "Thread is:",
+    "options": ["Lightweight process", "Heavy process", "Memory block", "File"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 61,
+    "text": "What is the output?\n\nint i = 3;\nprintf(\"%d %d\", i, i++ + ++i);",
+    "options": ["3 8", "4 8", "Undefined Behavior", "3 7"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 62,
+    "text": "Which of the following is TRUE about register variables?",
+    "options": [
+      "Stored in heap",
+      "Cannot access address using &",
+      "Stored in stack",
+      "Global variable"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 63,
+    "text": "Which expression clears the lowest set bit?",
+    "options": ["x | (x-1)", "x & (x-1)", "x ^ (x-1)", "x & ~(x-1)"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 64,
+    "text": "Which is TRUE about virtual destructor?",
+    "options": [
+      "Used for performance",
+      "Ensures correct deletion via base pointer",
+      "Mandatory in all classes",
+      "Cannot be overridden"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 65,
+    "text": "Worst case complexity of AVL insertion:",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 66,
+    "text": "Which scheduling minimizes response time?",
+    "options": ["FCFS", "SJF", "RR", "Priority"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 67,
+    "text": "Which of the following is NOT a transaction property?",
+    "options": ["Atomicity", "Consistency", "Isolation", "Redundancy"],
+    "correctOptionIndex": [3],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 68,
+    "text": "In a complete binary tree, nodes are filled:",
+    "options": [
+      "Left to right",
+      "Right to left",
+      "Top to bottom randomly",
+      "Any order"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 69,
+    "text": "Which is preemptive?",
+    "options": ["SJF", "Priority (non-preemptive)", "Round Robin", "FCFS"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 70,
+    "text": "Which algebra operation combines rows?",
+    "options": ["Selection", "Projection", "Join", "Rename"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 71,
+    "text": "What is output?\n\nint a = 1;\nprintf(\"%d\", a++ + a++);",
+    "options": ["3", "2", "Undefined Behavior", "4"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 72,
+    "text": "Which casting is runtime checked?",
+    "options": [
+      "static_cast",
+      "dynamic_cast",
+      "reinterpret_cast",
+      "const_cast"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 73,
+    "text": "Height of heap:",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 74,
+    "text": "Thrashing is due to:",
+    "options": ["High CPU", "Low memory", "Excess paging", "Deadlock"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 75,
+    "text": "Which is candidate key?",
+    "options": ["Minimal super key", "Any key", "Foreign key", "Composite key"],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 76,
+    "text": "Which pointer causes segmentation fault?",
+    "options": [
+      "NULL pointer",
+      "Dangling pointer",
+      "Void pointer",
+      "Static pointer"
+    ],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 77,
+    "text": "Which is NOT inherited?",
+    "options": [
+      "Constructor",
+      "Destructor",
+      "Member function",
+      "Static variable"
+    ],
+    "correctOptionIndex": [0],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 78,
+    "text": "Which is NOT linear structure?",
+    "options": ["Stack", "Queue", "Tree", "Array"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 79,
+    "text": "Semaphore value can be:",
+    "options": ["Only 0", "Only 1", "Integer", "Boolean"],
+    "correctOptionIndex": [2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 80,
+    "text": "Which is DCL?",
+    "options": ["SELECT", "GRANT", "INSERT", "UPDATE"],
+    "correctOptionIndex": [1],
+    "mock": 9
+  },
+
+  {
+    "topic": "C Programming",
+    "questionNo": 81,
+    "text": "Which are valid pointer operations?",
+    "options": ["Addition", "Subtraction", "Multiplication", "Comparison"],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 82,
+    "text": "Which cause undefined behavior?",
+    "options": [
+      "i++ + ++i",
+      "Using uninitialized variable",
+      "Division by zero",
+      "printf only"
+    ],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 83,
+    "text": "Which are runtime polymorphism?",
+    "options": ["Virtual function", "Overriding", "Overloading", "Templates"],
+    "correctOptionIndex": [0, 1],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 84,
+    "text": "Which are tree properties?",
+    "options": ["n-1 edges", "Connected", "No cycles", "Multiple roots"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 85,
+    "text": "Which cause deadlock?",
+    "options": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Preemption",
+      "Circular wait"
+    ],
+    "correctOptionIndex": [0, 1, 3],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 86,
+    "text": "Which are ACID properties?",
+    "options": ["Atomicity", "Consistency", "Isolation", "Durability"],
+    "correctOptionIndex": [0, 1, 2, 3],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 87,
+    "text": "Which are bitwise operators?",
+    "options": ["&", "|", "^", "&&"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 88,
+    "text": "Which are access specifiers?",
+    "options": ["public", "private", "protected", "friend"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 89,
+    "text": "Which are sorting algorithms?",
+    "options": ["Quick", "Merge", "Heap", "DFS"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 90,
+    "text": "Which are scheduling?",
+    "options": ["FCFS", "RR", "SJF", "LRU"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 91,
+    "text": "Which are keys?",
+    "options": ["Primary", "Foreign", "Candidate", "Loop"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 92,
+    "text": "Which are loops?",
+    "options": ["for", "while", "do-while", "if"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 93,
+    "text": "Which support abstraction?",
+    "options": ["Class", "Interface", "Encapsulation", "Loop"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 94,
+    "text": "Which are graphs?",
+    "options": ["Directed", "Undirected", "Weighted", "Binary"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 95,
+    "text": "Which are memory types?",
+    "options": ["RAM", "ROM", "Cache", "Stack"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Database Management System",
+    "questionNo": 96,
+    "text": "Which are joins?",
+    "options": ["Inner", "Outer", "Left", "Right"],
+    "correctOptionIndex": [0, 1, 2, 3],
+    "mock": 9
+  },
+  {
+    "topic": "C Programming",
+    "questionNo": 97,
+    "text": "Which are operators?",
+    "options": ["+", "-", "*", "loop"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Object-Oriented Programming",
+    "questionNo": 98,
+    "text": "Which are OOP concepts?",
+    "options": ["Encapsulation", "Inheritance", "Polymorphism", "Compilation"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Data Structure and Algorithms",
+    "questionNo": 99,
+    "text": "Which are linear structures?",
+    "options": ["Array", "Stack", "Queue", "Tree"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  },
+  {
+    "topic": "Operating System",
+    "questionNo": 100,
+    "text": "Which are process states?",
+    "options": ["Ready", "Running", "Waiting", "Compile"],
+    "correctOptionIndex": [0, 1, 2],
+    "mock": 9
+  }
+]

@@ -9,7 +9,7 @@
   },
   {
     "year": 2024,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 2,
     "text": "ROM is a",
     "options": [
@@ -22,7 +22,7 @@
   },
   {
     "year": 2024,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 3,
     "text": "A computer with a 32 bit wide data bus uses 4 k x 8 static RAM memory chips. The smallest memory this computer is",
     "options": ["8 kb", "16 kb", "24 kb", "32 kb"],
@@ -30,7 +30,7 @@
   },
   {
     "year": 2024,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 4,
     "text": "Each stage in pipelining should be completed within ______ cycle(s).",
     "options": ["1", "2", "3", "4"],
@@ -93,7 +93,7 @@
   },
   {
     "year": 2024,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 10,
     "text": "The small extremely fast RAM's are termed as",
     "options": ["Heaps", "Accumulators", "Stacks", "Cache"],
@@ -130,7 +130,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 14,
     "text": "How can you display a list of all files including the hidden files?",
     "options": ["find all", "find -a", "ls -a", "All of these"],
@@ -206,7 +206,7 @@
   },
   {
     "year": 2024,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 21,
     "text": "In DMA transfers, the required signals and addresses are given by the",
     "options": [
@@ -277,7 +277,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 28,
     "text": "The permission -rwxr--r-- represented in octal expression will be",
     "options": ["777", "744", "666", "711"],
@@ -293,7 +293,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 30,
     "text": "Which command changes a file's group owner?",
     "options": ["cgrp", "group", "change", "chgrp"],
@@ -343,7 +343,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 35,
     "text": "If a file has read and write permission for the owner, then the octal representation of the permissions will be:",
     "options": ["7", "5", "6", "3"],
@@ -419,7 +419,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 42,
     "text": "Given an unsorted array. The array has this property that every element in the array is at most k distance from its position in a sorted array where k is a positive integer smaller than the size of an array. Which sorting algorithm can be easily modified for sorting this array and what is the obtainable time complexity?",
     "options": [
@@ -495,7 +495,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 49,
     "text": "Which of the given statement is the correct recurrence for the worst case of Binary Search?",
     "options": [
@@ -521,7 +521,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 51,
     "text": "Which of the following data structure is required to convert an arithmetic expression in infix form to its equivalent postfix form?",
     "options": ["Queue", "Linked List", "Binary Search Tree", "Stack"],
@@ -555,7 +555,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 54,
     "text": "Suppose the numbers 7, 5, 1, 8, 3, 6, 0, 9, 4, 2 are inserted in that order into an initially empty binary search tree. The binary search tree uses usual ordering on natural numbers. What is the in-order traversal sequence of the resultant tree?",
     "options": [
@@ -568,7 +568,7 @@
   },
   {
     "year": 2024,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 55,
     "text": "Which of the following is popular for applications such as storage of log files in a database management system since it offers the best write performance?",
     "options": ["RAID level 0", "RAID level 1", "RAID level 2", "RAID level 3"],
@@ -576,7 +576,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 56,
     "text": "Which of the following statement is correct?",
     "options": [
@@ -602,7 +602,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 58,
     "text": "Which command is used to set the three permissions for all the three categories of users of a file?",
     "options": ["chgrp", "chown", "chmod", "chusr"],
@@ -610,7 +610,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 59,
     "text": "Which command is used for printing the current working directory?",
     "options": ["dir", "HOME", "cd", "pwd"],
@@ -644,7 +644,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 62,
     "text": "Which option will be used with sort command to start sorting after the nth column of the (m+1)th field?",
     "options": ["-mn", "+m.n", "+nm m+1", "+(m+1).n"],
@@ -665,7 +665,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 64,
     "text": "Which command is used for displaying the beginning of a file in Unix?",
     "options": ["lp", "begin", "pr", "head"],
@@ -681,7 +681,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 66,
     "text": "What is the result of the following postfix expression? ab*cd* + where a=2, b=2, c=3, d=4",
     "options": ["16", "12", "14", "10"],
@@ -697,7 +697,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 68,
     "text": "Which command is used to extract specific columns from the file?",
     "options": ["cat", "cut", "grep", "paste"],
@@ -718,7 +718,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 70,
     "text": "Which of the following is not a communication command?",
     "options": ["write", "mesg", "mail", "grep"],
@@ -747,7 +747,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 73,
     "text": "What is the worst case time complexity of inserting n elements into an empty linear linked list, if it needs to be maintained in sorted order after every insertion?",
     "options": ["θ(n)", "θ(n log n)", "θ(n^2)", "O(1)"],
@@ -768,7 +768,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 75,
     "text": "What is the worst case complexity of inserting a node in doubly linked list?",
     "options": ["O(log n)", "O(n)", "O(n log n)", "O(1)"],
@@ -789,7 +789,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 77,
     "text": "Which of the following sorting algorithm will be the most efficient if the elements are already in sorted order?",
     "options": [
@@ -810,7 +810,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 79,
     "text": "What is the prefix of the following expression A-B/(C*D^E)?",
     "options": ["-A/B*C^DE", "-A/BC*^DE", "-ABCD*^DE", "-/*^ACBDE"],
@@ -865,7 +865,7 @@
   },
   {
     "year": 2024,
-    "topic": "Data Structures and Algorithms",
+    "topic": "Data Structure and Algorithms",
     "questionNo": 84,
     "text": "What are non-linear data structure?",
     "options": ["Graph", "Linked List", "Queue", "Tree"],
@@ -881,7 +881,7 @@
   },
   {
     "year": 2024,
-    "topic": "Unix / Linux & Shell Scripting",
+    "topic": "Unix",
     "questionNo": 86,
     "text": "What are the valid shells in linux?",
     "options": ["Kernel shell", "C shell", "Vi shell", "Korn shell"],
@@ -978,7 +978,7 @@
   },
   {
     "year": 2024,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 95,
     "text": "A CPU generates 32-bit virtual addresses. The page size is 4 KB. The processor has a translation look-aside buffer (TLB) which can hold a total of 128 page table entries and is 4-way set associative. The minimum size of the TLB tag is:",
     "options": ["11 bits", "13 bits", "15 bits", "20 bits"],
@@ -1020,7 +1020,7 @@
   },
   {
     "year": 2024,
-    "topic": "Computer Architecture & Digital Logic",
+    "topic": "Introduction of Computers",
     "questionNo": 99,
     "text": "If memory access takes 20 ns with cache and 110 ns without cache, then the hit-ratio (cache uses a 10 ns memory) is :",
     "options": ["87%", "88%", "90%", "93%"],
