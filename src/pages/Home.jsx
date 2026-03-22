@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FileText, Target, ChevronRight, Sparkles, ChevronDown } from "lucide-react";
-import { getPYQMeta, getMockMeta } from "../data";
+import { getPYQMeta, getMockMeta, fetchPYQByTopic, fetchMockByTopic } from "../data";
 import { QuestionPatternSection } from "../components/QuestionPatternSection";
 import { SyllabusSection } from "../components/SyllabusSection";
 import { ExamZoneSection } from "../components/ExamZoneSection";
@@ -13,17 +13,25 @@ const Home = () => {
   const [pyqMode, setPyqMode] = useState("year"); // "year" or "topic"
   const [pyqYear, setPyqYear] = useState("");
   const [pyqTopic, setPyqTopic] = useState("");
+  const [pyqPart, setPyqPart] = useState(1);
 
   // Mock State
   const [mockMode, setMockMode] = useState("paper"); // "paper" or "topic"
   const [mockPaper, setMockPaper] = useState("");
   const [mockTopic, setMockTopic] = useState("");
+  const [mockPart, setMockPart] = useState(1);
 
   // Options State
   const [pyqYears, setPyqYears] = useState([]);
   const [pyqTopics, setPyqTopics] = useState([]);
   const [mockPapers, setMockPapers] = useState([]);
   const [mockTopics, setMockTopics] = useState([]);
+
+  // Part state calculation
+  const [pyqAvailableParts, setPyqAvailableParts] = useState([1]);
+  const [isPyqPartsLoading, setIsPyqPartsLoading] = useState(false);
+  const [mockAvailableParts, setMockAvailableParts] = useState([1]);
+  const [isMockPartsLoading, setIsMockPartsLoading] = useState(false);
 
   useEffect(() => {
     // PYQ Meta
@@ -54,7 +62,7 @@ const Home = () => {
     if (pyqMode === "year" && pyqYear) {
       navigate(`/exam?type=pyq&year=${pyqYear}`);
     } else if (pyqMode === "topic" && pyqTopic) {
-      navigate(`/exam?type=pyq&topic=${pyqTopic}`);
+      navigate(`/exam?type=pyq&topic=${pyqTopic}&part=${pyqPart}`);
     }
   };
 
@@ -63,9 +71,47 @@ const Home = () => {
     if (mockMode === "paper" && mockPaper) {
       navigate(`/exam?type=mock&paper=${mockPaper}`);
     } else if (mockMode === "topic" && mockTopic) {
-      navigate(`/exam?type=mock&topic=${mockTopic}`);
+      navigate(`/exam?type=mock&topic=${mockTopic}&part=${mockPart}`);
     }
   };
+
+  useEffect(() => {
+    if (pyqMode === "topic" && pyqTopic) {
+      let isMounted = true;
+      setIsPyqPartsLoading(true);
+      fetchPYQByTopic(pyqTopic).then((data) => {
+        if (!isMounted) return;
+        const total = data.length;
+        if (total === 0) setPyqAvailableParts([1]);
+        else {
+          const parts = Math.ceil(total / 30);
+          setPyqAvailableParts(Array.from({ length: parts }, (_, i) => i + 1));
+        }
+        setPyqPart(1);
+        setIsPyqPartsLoading(false);
+      });
+      return () => { isMounted = false; };
+    }
+  }, [pyqMode, pyqTopic]);
+
+  useEffect(() => {
+    if (mockMode === "topic" && mockTopic) {
+      let isMounted = true;
+      setIsMockPartsLoading(true);
+      fetchMockByTopic(mockTopic).then((data) => {
+        if (!isMounted) return;
+        const total = data.length;
+        if (total === 0) setMockAvailableParts([1]);
+        else {
+          const parts = Math.ceil(total / 30);
+          setMockAvailableParts(Array.from({ length: parts }, (_, i) => i + 1));
+        }
+        setMockPart(1);
+        setIsMockPartsLoading(false);
+      });
+      return () => { isMounted = false; };
+    }
+  }, [mockMode, mockTopic]);
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-slate-950 px-3 pb-12 pt-0 md:px-10 md:pb-20">
@@ -159,25 +205,43 @@ const Home = () => {
                     </select>
                   </div>
                 ) : (
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-slate-200">
-                      Select Subject/Topic
-                    </label>
-                    <select
-                      value={pyqTopic}
-                      onChange={(e) => setPyqTopic(e.target.value)}
-                      className="w-full appearance-none rounded-2xl border border-cyan-200/20 bg-slate-900/70 px-4 py-3 text-base font-semibold text-white outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-400/40"
-                      required
-                    >
-                      <option value="" disabled>
-                        Select a topic
-                      </option>
-                      {pyqTopics.map((t) => (
-                        <option key={t} value={t}>
-                          {t}
-                        </option>
-                      ))}
-                    </select>
+                  <div className="flex gap-3">
+                    <div className="flex-[3] space-y-2">
+                      <label className="text-sm font-medium text-slate-200">
+                        Select Subject
+                      </label>
+                      <select
+                        value={pyqTopic}
+                        onChange={(e) => setPyqTopic(e.target.value)}
+                        className="w-full appearance-none rounded-2xl border border-cyan-200/20 bg-slate-900/70 px-4 py-3 text-base font-semibold text-white outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-400/40"
+                        required
+                      >
+                        <option value="" disabled>Select a topic</option>
+                        {pyqTopics.map((t) => (
+                          <option key={t} value={t}>{t}</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="flex-[1] space-y-2">
+                      <label className="text-sm font-medium text-slate-200 text-ellipsis overflow-hidden whitespace-nowrap" title="30 Questions per Part">
+                        Part #
+                      </label>
+                      <select
+                        value={pyqPart}
+                        onChange={(e) => setPyqPart(e.target.value)}
+                        disabled={isPyqPartsLoading}
+                        className="w-full appearance-none rounded-2xl border border-cyan-200/20 bg-slate-900/70 px-2 py-3 text-center text-base font-semibold text-white outline-none transition focus:border-cyan-300 focus:ring-2 focus:ring-cyan-400/40 disabled:cursor-not-allowed disabled:opacity-50"
+                        required
+                      >
+                        {isPyqPartsLoading ? (
+                          <option value="1">...</option>
+                        ) : (
+                          pyqAvailableParts.map((p) => (
+                            <option key={p} value={p}>Part {p}</option>
+                          ))
+                        )}
+                      </select>
+                    </div>
                   </div>
                 )}
               </div>
@@ -255,25 +319,43 @@ const Home = () => {
                     </select>
                   </div>
                 ) : (
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-slate-200">
-                      Select Subject/Topic
-                    </label>
-                    <select
-                      value={mockTopic}
-                      onChange={(e) => setMockTopic(e.target.value)}
-                      className="w-full appearance-none rounded-2xl border border-fuchsia-200/20 bg-slate-900/70 px-4 py-3 text-base font-semibold text-white outline-none transition focus:border-fuchsia-300 focus:ring-2 focus:ring-fuchsia-400/40"
-                      required
-                    >
-                      <option value="" disabled>
-                        Select a topic
-                      </option>
-                      {mockTopics.map((t) => (
-                        <option key={t} value={t}>
-                          {t}
-                        </option>
-                      ))}
-                    </select>
+                  <div className="flex gap-3">
+                    <div className="flex-[3] space-y-2">
+                      <label className="text-sm font-medium text-slate-200">
+                        Select Subject/Topic
+                      </label>
+                      <select
+                        value={mockTopic}
+                        onChange={(e) => setMockTopic(e.target.value)}
+                        className="w-full appearance-none rounded-2xl border border-fuchsia-200/20 bg-slate-900/70 px-4 py-3 text-base font-semibold text-white outline-none transition focus:border-fuchsia-300 focus:ring-2 focus:ring-fuchsia-400/40"
+                        required
+                      >
+                        <option value="" disabled>Select a topic</option>
+                        {mockTopics.map((t) => (
+                          <option key={t} value={t}>{t}</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="flex-[1] space-y-2">
+                      <label className="text-sm font-medium text-slate-200 text-ellipsis overflow-hidden whitespace-nowrap" title="30 Questions per Part">
+                        Part #
+                      </label>
+                      <select
+                        value={mockPart}
+                        onChange={(e) => setMockPart(e.target.value)}
+                        disabled={isMockPartsLoading}
+                        className="w-full appearance-none rounded-2xl border border-fuchsia-200/20 bg-slate-900/70 px-2 py-3 text-center text-base font-semibold text-white outline-none transition focus:border-fuchsia-300 focus:ring-2 focus:ring-fuchsia-400/40 disabled:cursor-not-allowed disabled:opacity-50"
+                        required
+                      >
+                        {isMockPartsLoading ? (
+                          <option value="1">...</option>
+                        ) : (
+                          mockAvailableParts.map((p) => (
+                            <option key={p} value={p}>Part {p}</option>
+                          ))
+                        )}
+                      </select>
+                    </div>
                   </div>
                 )}
               </div>

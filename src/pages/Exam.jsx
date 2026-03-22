@@ -10,11 +10,12 @@ import {
   Hash,
 } from "lucide-react";
 import {
-  getPYQByYear,
-  getPYQByTopic,
-  getMockByPaper,
-  getMockByTopic,
+  fetchPYQByYear,
+  fetchPYQByTopic,
+  fetchMockByPaper,
+  fetchMockByTopic,
 } from "../data";
+
 
 
 const QuestionText = ({ index, text }) => {
@@ -46,53 +47,89 @@ const Exam = () => {
   const year = searchParams.get("year");
   const paper = searchParams.get("paper");
   const topic = searchParams.get("topic");
+  const part = searchParams.get("part");
 
   const isFullExam = Boolean(year) || Boolean(paper);
 
-  const { data: questions, error } = useMemo(() => {
-    try {
-      let data = [];
-      if (type === "pyq") {
-        if (year) data = getPYQByYear(year);
-        else if (topic) data = getPYQByTopic(topic);
-      } else if (type === "mock") {
-        if (paper) data = getMockByPaper(paper);
-        else if (topic) data = getMockByTopic(topic);
-      } else {
-        return { data: [], error: "No valid exam criteria provided." };
-      }
+  const [questions, setQuestions] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [answers, setAnswers] = useState({});
+  const [timeLeft, setTimeLeft] = useState(0);
+  const hasSubmittedRef = useRef(false);
 
-      if (data.length === 0) {
-        return { data: [], error: "No questions found for this criteria." };
-      }
 
-      // Sort questions sequentially by their original question number
-      const sorted = [...data].sort((a, b) => a.questionNo - b.questionNo);
-      return { data: sorted, error: "" };
-    } catch (err) {
-      return { data: [], error: err.message || "Error loading questions" };
-    }
-  }, [type, year, paper, topic]);
+  useEffect(() => {
+    let isMounted = true;
+    setIsLoading(true);
+    setError("");
+
+    const loadData = async () => {
+      try {
+        let data = [];
+        if (type === "pyq") {
+          if (year) data = await fetchPYQByYear(year);
+          else if (topic) data = await fetchPYQByTopic(topic);
+        } else if (type === "mock") {
+          if (paper) data = await fetchMockByPaper(paper);
+          else if (topic) data = await fetchMockByTopic(topic);
+        } else {
+          throw new Error("No valid exam criteria provided.");
+        }
+
+        if (!isMounted) return;
+
+        if (data.length === 0) {
+          setError("No questions found for this criteria.");
+        } else {
+          // Sort questions sequentially by their original question number
+          const sorted = [...data].sort((a, b) => a.questionNo - b.questionNo);
+          
+          let finalData = sorted;
+          if (topic && part) {
+            const partNum = parseInt(part, 10) || 1;
+            const size = 30; // Max questions per part
+            const start = (partNum - 1) * size;
+            const end = partNum * size;
+            finalData = sorted.slice(start, end);
+
+            if (finalData.length === 0) {
+              setError(`Part ${partNum} does not exist for this topic (Total available questions: ${sorted.length}).`);
+              setIsLoading(false);
+              return;
+            }
+          }
+
+          setQuestions(finalData);
+          setTimeLeft(Math.round(finalData.length * 1.2) * 60);
+          setCurrentIndex(0);
+          setAnswers({});
+          hasSubmittedRef.current = false;
+        }
+      } catch (err) {
+        if (!isMounted) return;
+        setError(err.message || "Error loading questions from network");
+      } finally {
+        if (isMounted) setIsLoading(false);
+      }
+    };
+
+    loadData();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [type, year, paper, topic, part]);
+
 
   const examTimeMinutes = useMemo(() => {
     return questions ? Math.round(questions.length * 1.2) : 0;
   }, [questions]);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [answers, setAnswers] = useState({});
-  const [timeLeft, setTimeLeft] = useState(examTimeMinutes * 60);
-  const hasSubmittedRef = useRef(false);
-
-  useEffect(() => {
-    setTimeLeft(examTimeMinutes * 60);
-    setCurrentIndex(0);
-    setAnswers({});
-    hasSubmittedRef.current = false;
-  }, [examTimeMinutes, type, year, paper, topic]);
-
   // Timer logic
   useEffect(() => {
-    if (error || questions.length === 0) return;
+    if (isLoading || error || questions.length === 0) return;
     if (hasSubmittedRef.current) return;
 
     if (timeLeft <= 0) {
@@ -106,6 +143,26 @@ const Exam = () => {
 
     return () => clearInterval(timer);
   }, [timeLeft, error, questions]);
+
+  // Keyboard navigation logic
+  useEffect(() => {
+    if (isLoading || error || questions.length === 0) return;
+
+    const handleKeyDown = (e) => {
+      if (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA") {
+        return;
+      }
+
+      if (e.key === "ArrowRight") {
+        setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1));
+      } else if (e.key === "ArrowLeft") {
+        setCurrentIndex((prev) => Math.max(0, prev - 1));
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isLoading, error, questions.length]);
 
   const handleSubmit = () => {
     if (hasSubmittedRef.current) return;
@@ -125,10 +182,20 @@ const Exam = () => {
 
   if (error)
     return (
-      <div className="text-xl font-bold text-red-500 bg-red-50 p-6 rounded-2xl border border-red-200">
+      <div className="w-full max-w-4xl mx-auto mt-20 p-6 rounded-2xl border border-red-200 bg-red-50 text-xl font-bold text-red-600 shadow-sm text-center">
         {error}
       </div>
     );
+
+  if (isLoading || questions.length === 0) {
+    return (
+      <div className="flex w-full min-h-[50vh] flex-col items-center justify-center gap-4">
+        <div className="h-12 w-12 animate-spin rounded-full border-4 border-indigo-200 border-t-indigo-600"></div>
+        <p className="font-semibold text-slate-500 animate-pulse">Loading Your Exam...</p>
+      </div>
+    );
+  }
+
 
   return (
     <div className="w-full max-w-4xl mx-auto">
@@ -139,10 +206,10 @@ const Exam = () => {
             {type === "pyq"
               ? year
                 ? `PYQ: Year ${year}`
-                : `PYQ: ${topic}`
+                : `PYQ: ${topic} (Part ${part || 1})`
               : paper
                 ? `Mock: ${paper}`
-                : `Mock: ${topic}`}
+                : `Mock: ${topic} (Part ${part || 1})`}
           </h2>
           <div className="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-500">
             <span className="rounded-full bg-slate-100 px-3 py-1">
@@ -301,6 +368,7 @@ const Exam = () => {
           <button
             onClick={() => setCurrentIndex((prev) => Math.max(0, prev - 1))}
             disabled={currentIndex === 0}
+            title="Shortcut: Left Arrow (←)"
             className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             <ChevronLeft size={20} /> Previous
@@ -320,6 +388,7 @@ const Exam = () => {
                   Math.min(questions.length - 1, prev + 1),
                 )
               }
+              title="Shortcut: Right Arrow (→)"
               className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-md shadow-indigo-200 transition-all"
             >
               Next <ChevronRight size={20} />

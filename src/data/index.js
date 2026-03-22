@@ -1,71 +1,105 @@
-import jeca2022 from "./PYQ/2022.json";
-import jeca2023 from "./PYQ/2023.json";
-import jeca2024 from "./PYQ/2024.json";
-import jeca2025 from "./PYQ/2025.json";
-import mock1 from "./mock/mock1.json";
-import mock2 from "./mock/mock2.json";
-import mock3 from "./mock/mock3.json";
-import mock4 from "./mock/mock4.json";
-import mock5 from "./mock/mock5.json";
-import mock6 from "./mock/mock6.json";
-import mock7 from "./mock/mock7.json";
-import mock8 from "./mock/mock8.json";
-import mock9 from "./mock/mock9.json";
-import mock10 from "./mock/mock10.json";
-
-export const allPyqQuestions = [
-  ...jeca2022,
-  ...jeca2023,
-  ...jeca2024,
-  ...jeca2025,
-];
-
-export const allMockQuestions = [
-  ...mock1,
-  ...mock2,
-  ...mock3,
-  ...mock4,
-  ...mock5,
-  ...mock6,
-  ...mock7,
-  ...mock8,
-  ...mock9,
-  ...mock10,
-];
-
+// Hardcoded metadata ensures the Home page loads instantly without parsing JSONs
 export const getPYQMeta = () => {
-  const years = [
-    ...new Set(
-      allPyqQuestions.filter((q) => q.year).map((q) => String(q.year)),
-    ),
-  ].sort((a, b) => b - a);
-  const topics = [...new Set(allPyqQuestions.map((q) => q.topic))].sort();
-  return { years, topics };
+  return {
+    years: ["2025", "2024", "2023", "2022"],
+    topics: [
+      "C Programming",
+      "Computer Networks",
+      "Data Structure and Algorithms",
+      "Database Management System",
+      "Introduction of Computers",
+      "Machine Learning",
+      "Object-Oriented Programming",
+      "Operating System",
+      "Software Engineering",
+      "Unix",
+    ],
+  };
 };
 
 export const getMockMeta = () => {
-  const papers = [
-    ...new Set(
-      allMockQuestions.filter((q) => q.mock).map((q) => `Mock ${q.mock}`),
-    ),
-  ].sort();
-  const topics = [...new Set(allMockQuestions.map((q) => q.topic))].sort();
-  return { papers, topics };
+  return {
+    papers: [
+      "Mock 1",
+      "Mock 2",
+      "Mock 3",
+      "Mock 4",
+      "Mock 5",
+      "Mock 6",
+      "Mock 7",
+      "Mock 8",
+      "Mock 9",
+      "Mock 10",
+    ],
+    topics: [
+      "C Programming",
+      "Computer Networks",
+      "Data Structure and Algorithms",
+      "Database Management System",
+      "Introduction of Computers",
+      "Machine Learning",
+      "Object-Oriented Programming",
+      "Operating System",
+      "Software Engineering",
+      "Unix",
+    ],
+  };
 };
 
-export const getPYQByYear = (year) => {
-  return allPyqQuestions.filter((q) => String(q.year) === String(year));
+// Dynamic Loaders
+const loadAllPYQs = async () => {
+  const modules = await Promise.all([
+    import("./PYQ/2022.json"),
+    import("./PYQ/2023.json"),
+    import("./PYQ/2024.json"),
+    import("./PYQ/2025.json"),
+  ]);
+  return modules.flatMap((m) => m.default);
 };
 
-export const getPYQByTopic = (topic) => {
-  return allPyqQuestions.filter((q) => q.topic === topic);
+const loadAllMocks = async () => {
+  const modules = await Promise.all([
+    import("./mock/mock1.json"),
+    import("./mock/mock2.json"),
+    import("./mock/mock3.json"),
+    import("./mock/mock4.json"),
+    import("./mock/mock5.json"),
+    import("./mock/mock6.json"),
+    import("./mock/mock7.json"),
+    import("./mock/mock8.json"),
+    import("./mock/mock9.json"),
+    import("./mock/mock10.json"),
+  ]);
+  return modules.flatMap((m) => m.default);
 };
 
-export const getMockByPaper = (paperStr) => {
+export const fetchPYQByYear = async (year) => {
+  try {
+    const module = await import(`./PYQ/${year}.json`);
+    return module.default;
+  } catch (err) {
+    console.error(`Failed to load PYQ ${year}`, err);
+    throw new Error(`Could not load PYQ paper for ${year}`);
+  }
+};
+
+export const fetchMockByPaper = async (paperStr) => {
   const mockNum = String(paperStr).replace("Mock ", "");
-  return allMockQuestions.filter((q) => String(q.mock) === String(mockNum));
+  try {
+    const module = await import(`./mock/mock${mockNum}.json`);
+    return module.default;
+  } catch (err) {
+    console.error(`Failed to load Mock ${mockNum}`, err);
+    throw new Error(`Could not load Mock paper ${mockNum}`);
+  }
 };
 
-export const getMockByTopic = (topic) => {
-  return allMockQuestions.filter((q) => q.topic === topic);
+export const fetchPYQByTopic = async (topic) => {
+  const all = await loadAllPYQs();
+  return all.filter((q) => q.topic === topic);
+};
+
+export const fetchMockByTopic = async (topic) => {
+  const all = await loadAllMocks();
+  return all.filter((q) => q.topic === topic);
 };
