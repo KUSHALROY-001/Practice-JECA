@@ -324,7 +324,7 @@ const Exam = () => {
       {/* Question Card — supports swipe gestures on mobile */}
       <div
         key={currentIndex}
-        className="animate-slide-in bg-white/80 backdrop-blur-md p-4 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col"
+        className="animate-slide-in bg-white/80 backdrop-blur-md p-4 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col touch-pan-y"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
