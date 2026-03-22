@@ -205,7 +205,7 @@ const Home = () => {
                     </select>
                   </div>
                 ) : (
-                  <div className="flex gap-3">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-3">
                     <div className="flex-[3] space-y-2">
                       <label className="text-sm font-medium text-slate-200">
                         Select Subject
@@ -319,7 +319,7 @@ const Home = () => {
                     </select>
                   </div>
                 ) : (
-                  <div className="flex gap-3">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-3">
                     <div className="flex-[3] space-y-2">
                       <label className="text-sm font-medium text-slate-200">
                         Select Subject/Topic

@@ -3,7 +3,6 @@ import { useSearchParams, useNavigate } from "react-router-dom";
 import {
   Clock,
   CheckCircle2,
-  AlertCircle,
   ChevronLeft,
   ChevronRight,
   Layers3,
@@ -164,6 +163,28 @@ const Exam = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isLoading, error, questions.length]);
 
+  // Touch/Swipe gesture navigation for mobile
+  const touchStartX = useRef(null);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    const SWIPE_THRESHOLD = 50; // minimum px to count as a swipe
+
+    if (diff > SWIPE_THRESHOLD) {
+      // Swiped Left → Next Question
+      setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1));
+    } else if (diff < -SWIPE_THRESHOLD) {
+      // Swiped Right → Previous Question
+      setCurrentIndex((prev) => Math.max(0, prev - 1));
+    }
+    touchStartX.current = null;
+  };
+
   const handleSubmit = () => {
     if (hasSubmittedRef.current) return;
     hasSubmittedRef.current = true;
@@ -211,7 +232,7 @@ const Exam = () => {
                 ? `Mock: ${paper}`
                 : `Mock: ${topic} (Part ${part || 1})`}
           </h2>
-          <div className="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-500">
+          <div className="hidden md:flex flex-wrap items-center gap-2 text-sm font-medium text-slate-500">
             <span className="rounded-full bg-slate-100 px-3 py-1">
               Question {currentIndex + 1} of {questions.length}
             </span>
@@ -248,8 +269,12 @@ const Exam = () => {
         </div>
       </div>
 
-      {/* Question Card */}
-      <div className="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col">
+      {/* Question Card — supports swipe gestures on mobile */}
+      <div
+        className="bg-white/80 backdrop-blur-md p-4 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <div className="mb-3 flex flex-wrap gap-2">
           {isFullExam ? (
             // Full exam: show topic only
@@ -269,7 +294,7 @@ const Exam = () => {
               {currentQ.mock && (
                 <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700">
                   <Layers3 size={16} />
-                  Mock Paper: {currentQ.mock}
+                  Mock: {currentQ.mock}
                 </div>
               )}
               <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-600">
@@ -318,7 +343,7 @@ const Exam = () => {
               <button
                 key={idx}
                 onClick={handleClick}
-                className={`w-full text-left p-4 rounded-xl border-2 transition-all flex items-center gap-4 group
+                className={`w-full text-left p-2 rounded-xl border-2 transition-all flex items-center gap-2 group
                   ${
                     isSelected
                       ? "border-indigo-600 bg-indigo-50 text-indigo-900 shadow-sm"

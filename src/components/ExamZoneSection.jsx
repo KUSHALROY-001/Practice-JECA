@@ -82,7 +82,7 @@ export const ExamZoneSection = () => {
               <tr>
                 <th
                   scope="col"
-                  className="whitespace-nowrap border-b border-white/5 px-6 py-4"
+                  className="whitespace-nowrap border-b border-white/5 px-3 py-4"
                 >
                   <div className="flex items-center gap-2">
                     <Hash size={16} /> Sl. No.
@@ -90,7 +90,7 @@ export const ExamZoneSection = () => {
                 </th>
                 <th
                   scope="col"
-                  className="whitespace-nowrap border-b border-white/5 px-6 py-4"
+                  className="whitespace-nowrap border-b border-white/5 py-4"
                 >
                   <div className="flex items-center gap-2">
                     <Map size={16} /> District of W.B.
@@ -118,10 +118,10 @@ export const ExamZoneSection = () => {
                   className="transition duration-150 hover:bg-cyan-500/10 hover:text-cyan-100"
                 >
                   <td className="px-6 py-4 font-semibold">{row.id}</td>
-                  <td className="px-6 py-4 font-semibold text-base text-slate-200">
+                  <td className=" py-4 font-semibold text-base text-slate-200">
                     {row.district}
                   </td>
-                  <td className="px-6 py-4 leading-relaxed">{row.zone}</td>
+                  <td className="pl-6 py-4 leading-relaxed">{row.zone}</td>
                   <td className="px-6 py-4 text-center sm:text-left">
                     <span className="inline-block rounded-lg bg-cyan-500/20 px-3 py-1 text-sm font-bold text-cyan-300 ring-1 ring-cyan-400/30">
                       {row.code}

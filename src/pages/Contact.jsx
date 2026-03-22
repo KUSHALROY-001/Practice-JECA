@@ -11,16 +11,21 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Change this to your preferred support email
     const toEmail = "lifeisapakage@gmail.com";
     const formattedBody = `Name: ${name}\nUniversity: ${university || "Not Provided"}\n\nMessage:\n${message}`;
-    
-    // Using Gmail's compose URL directly to bypass default client (like Outlook)
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-      toEmail
-    )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
-    
-    window.open(gmailUrl, "_blank");
+
+    // Detect mobile device
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // On mobile: open native Gmail app via mailto: scheme
+      const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
+      window.location.href = mailtoLink;
+    } else {
+      // On desktop: open Gmail web compose window
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(toEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
+      window.open(gmailUrl, "_blank");
+    }
   };
 
   return (
