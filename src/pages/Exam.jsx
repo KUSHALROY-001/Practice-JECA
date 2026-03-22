@@ -54,8 +54,10 @@ const Exam = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animKey, setAnimKey] = useState(0);
   const [answers, setAnswers] = useState({});
   const [timeLeft, setTimeLeft] = useState(0);
+  const [showCancelWarning, setShowCancelWarning] = useState(false);
   const hasSubmittedRef = useRef(false);
 
 
@@ -163,6 +165,23 @@ const Exam = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isLoading, error, questions.length]);
 
+  // Back-button warning: intercept browser back navigation during exam
+  useEffect(() => {
+    if (isLoading || questions.length === 0 || hasSubmittedRef.current) return;
+
+    // Push a dummy state so back button hits this instead of going to home
+    window.history.pushState(null, "", window.location.href);
+
+    const handlePopState = () => {
+      setShowCancelWarning(true);
+      // Re-push so the back button is still intercepted if user dismisses
+      window.history.pushState(null, "", window.location.href);
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [isLoading, questions.length]);
+
   // Touch/Swipe gesture navigation for mobile
   const touchStartX = useRef(null);
 
@@ -189,8 +208,15 @@ const Exam = () => {
     if (hasSubmittedRef.current) return;
     hasSubmittedRef.current = true;
     navigate("/result", {
+      replace: true,
       state: { questions, answers, type, year, paper, topic },
     });
+  };
+
+  // Update animKey whenever the question changes to retrigger animation
+  const goToIndex = (newIndex) => {
+    setCurrentIndex(newIndex);
+    setAnimKey((k) => k + 1);
   };
 
   const currentQ = questions[currentIndex];
@@ -220,6 +246,32 @@ const Exam = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
+      {/* Cancel exam warning dialog */}
+      {showCancelWarning && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+          <div className="mx-4 w-full max-w-sm rounded-3xl border border-white/10 bg-white p-8 shadow-2xl">
+            <h3 className="mb-2 text-xl font-black text-slate-800">Cancel Exam?</h3>
+            <p className="mb-6 text-sm leading-relaxed text-slate-500">
+              If you go back now, your progress will be lost and the exam will be cancelled.
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowCancelWarning(false)}
+                className="flex-1 rounded-2xl border-2 border-slate-200 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-50"
+              >
+                Keep Going
+              </button>
+              <button
+                onClick={() => navigate("/", { replace: true })}
+                className="flex-1 rounded-2xl bg-red-500 py-3 text-sm font-bold text-white transition hover:bg-red-600"
+              >
+                Cancel Exam
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div className="mb-6 flex flex-col gap-4 rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-sm backdrop-blur-md md:flex-row md:items-center md:justify-between">
         <div className="space-y-2">
@@ -271,7 +323,8 @@ const Exam = () => {
 
       {/* Question Card — supports swipe gestures on mobile */}
       <div
-        className="bg-white/80 backdrop-blur-md p-4 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col"
+        key={animKey}
+        className="animate-slide-in bg-white/80 backdrop-blur-md p-4 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
@@ -391,7 +444,7 @@ const Exam = () => {
 
         <div className="flex justify-between mt-6 pt-6 border-t border-slate-100">
           <button
-            onClick={() => setCurrentIndex((prev) => Math.max(0, prev - 1))}
+            onClick={() => goToIndex(Math.max(0, currentIndex - 1))}
             disabled={currentIndex === 0}
             title="Shortcut: Left Arrow (←)"
             className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
@@ -408,11 +461,7 @@ const Exam = () => {
             </button>
           ) : (
             <button
-              onClick={() =>
-                setCurrentIndex((prev) =>
-                  Math.min(questions.length - 1, prev + 1),
-                )
-              }
+              onClick={() => goToIndex(Math.min(questions.length - 1, currentIndex + 1))}
               title="Shortcut: Right Arrow (→)"
               className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-md shadow-indigo-200 transition-all"
             >
@@ -431,7 +480,7 @@ const Exam = () => {
           {questions.map((_, idx) => (
             <button
               key={idx}
-              onClick={() => setCurrentIndex(idx)}
+              onClick={() => goToIndex(idx)}
               className={`w-10 h-10 rounded-lg font-bold flex items-center justify-center border transition-colors
                     ${idx === currentIndex ? "ring-2 ring-offset-2 ring-indigo-500" : ""}
                     ${

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLocation, useNavigate, Navigate } from "react-router-dom";
 import { Trophy, ArrowLeft, Target } from "lucide-react";
 
@@ -44,6 +45,14 @@ const isAnswerCorrect = (q, answer) => {
 const Result = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
+
+  // When user hits back button from result, go to home (not back to exam)
+  useEffect(() => {
+    window.history.pushState(null, "", window.location.href);
+    const handlePop = () => navigate("/", { replace: true });
+    window.addEventListener("popstate", handlePop);
+    return () => window.removeEventListener("popstate", handlePop);
+  }, [navigate]);
 
   if (!state) {
     return <Navigate to="/" />;

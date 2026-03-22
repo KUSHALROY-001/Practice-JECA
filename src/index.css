@@ -7,3 +7,20 @@
     @apply bg-gradient-to-br from-indigo-50 to-blue-100 text-slate-800 font-sans m-0 p-0 min-h-screen;
   }
 }
+
+@layer utilities {
+  .animate-slide-in {
+    animation: slideIn 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(18px) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+}
