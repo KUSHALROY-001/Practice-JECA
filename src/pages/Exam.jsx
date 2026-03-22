@@ -15,8 +15,6 @@ import {
   fetchMockByTopic,
 } from "../data";
 
-
-
 const QuestionText = ({ index, text }) => {
   const newlineIndex = text.indexOf("\n");
   const hasCode = newlineIndex !== -1;
@@ -38,7 +36,6 @@ const QuestionText = ({ index, text }) => {
   );
 };
 
-
 const Exam = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -56,8 +53,8 @@ const Exam = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [timeLeft, setTimeLeft] = useState(0);
+  const [showCancelWarning, setShowCancelWarning] = useState(false);
   const hasSubmittedRef = useRef(false);
-
 
   useEffect(() => {
     let isMounted = true;
@@ -84,7 +81,7 @@ const Exam = () => {
         } else {
           // Sort questions sequentially by their original question number
           const sorted = [...data].sort((a, b) => a.questionNo - b.questionNo);
-          
+
           let finalData = sorted;
           if (topic && part) {
             const partNum = parseInt(part, 10) || 1;
@@ -94,7 +91,9 @@ const Exam = () => {
             finalData = sorted.slice(start, end);
 
             if (finalData.length === 0) {
-              setError(`Part ${partNum} does not exist for this topic (Total available questions: ${sorted.length}).`);
+              setError(
+                `Part ${partNum} does not exist for this topic (Total available questions: ${sorted.length}).`,
+              );
               setIsLoading(false);
               return;
             }
@@ -120,7 +119,6 @@ const Exam = () => {
       isMounted = false;
     };
   }, [type, year, paper, topic, part]);
-
 
   const examTimeMinutes = useMemo(() => {
     return questions ? Math.round(questions.length * 1.2) : 0;
@@ -148,7 +146,10 @@ const Exam = () => {
     if (isLoading || error || questions.length === 0) return;
 
     const handleKeyDown = (e) => {
-      if (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA") {
+      if (
+        document.activeElement.tagName === "INPUT" ||
+        document.activeElement.tagName === "TEXTAREA"
+      ) {
         return;
       }
 
@@ -162,6 +163,23 @@ const Exam = () => {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isLoading, error, questions.length]);
+
+  // Back-button warning: intercept browser back navigation during exam
+  useEffect(() => {
+    if (isLoading || questions.length === 0 || hasSubmittedRef.current) return;
+
+    // Push a dummy state so back button hits this instead of going to home
+    window.history.pushState(null, "", window.location.href);
+
+    const handlePopState = () => {
+      setShowCancelWarning(true);
+      // Re-push so the back button is still intercepted if user dismisses
+      window.history.pushState(null, "", window.location.href);
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [isLoading, questions.length]);
 
   // Touch/Swipe gesture navigation for mobile
   const touchStartX = useRef(null);
@@ -189,6 +207,7 @@ const Exam = () => {
     if (hasSubmittedRef.current) return;
     hasSubmittedRef.current = true;
     navigate("/result", {
+      replace: true,
       state: { questions, answers, type, year, paper, topic },
     });
   };
@@ -212,14 +231,44 @@ const Exam = () => {
     return (
       <div className="flex w-full min-h-[50vh] flex-col items-center justify-center gap-4">
         <div className="h-12 w-12 animate-spin rounded-full border-4 border-indigo-200 border-t-indigo-600"></div>
-        <p className="font-semibold text-slate-500 animate-pulse">Loading Your Exam...</p>
+        <p className="font-semibold text-slate-500 animate-pulse">
+          Loading Your Exam...
+        </p>
       </div>
     );
   }
 
-
   return (
     <div className="w-full max-w-4xl mx-auto">
+      {/* Cancel exam warning dialog */}
+      {showCancelWarning && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+          <div className="mx-4 w-full max-w-sm rounded-3xl border border-white/10 bg-white p-8 shadow-2xl">
+            <h3 className="mb-2 text-xl font-black text-slate-800">
+              Cancel Exam?
+            </h3>
+            <p className="mb-6 text-sm leading-relaxed text-slate-500">
+              If you go back now, your progress will be lost and the exam will
+              be cancelled.
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowCancelWarning(false)}
+                className="flex-1 rounded-2xl border-2 border-slate-200 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-50"
+              >
+                Keep Going
+              </button>
+              <button
+                onClick={() => navigate("/", { replace: true })}
+                className="flex-1 rounded-2xl bg-red-500 py-3 text-sm font-bold text-white transition hover:bg-red-600"
+              >
+                Cancel Exam
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div className="mb-6 flex flex-col gap-4 rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-sm backdrop-blur-md md:flex-row md:items-center md:justify-between">
         <div className="space-y-2">
@@ -249,7 +298,10 @@ const Exam = () => {
           <div
             className={`flex items-center justify-center gap-2 rounded-2xl border px-5 py-3 text-xl font-bold transition-colors w-full ${timeLeft < 300 ? "border-red-200 bg-red-100 text-red-600" : "border-indigo-200 bg-indigo-100 text-indigo-700"}`}
           >
-            <Clock size={24} className={timeLeft < 300 ? "animate-pulse" : ""} />
+            <Clock
+              size={24}
+              className={timeLeft < 300 ? "animate-pulse" : ""}
+            />
             {formatTime(timeLeft)}
           </div>
           <div className="flex items-center gap-2 w-full">
@@ -271,7 +323,8 @@ const Exam = () => {
 
       {/* Question Card — supports swipe gestures on mobile */}
       <div
-        className="bg-white/80 backdrop-blur-md p-4 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col"
+        key={currentIndex}
+        className="animate-slide-in bg-white/80 backdrop-blur-md p-4 rounded-3xl shadow-md border border-slate-100 mb-6 min-h-[400px] flex flex-col"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
@@ -383,7 +436,9 @@ const Exam = () => {
                     )}
                   </div>
                 )}
-                <span className="text-base md:text-lg font-medium">{option}</span>
+                <span className="text-base md:text-lg font-medium">
+                  {option}
+                </span>
               </button>
             );
           })}
@@ -446,7 +501,6 @@ const Exam = () => {
           ))}
         </div>
       </div>
-
     </div>
   );
 };
