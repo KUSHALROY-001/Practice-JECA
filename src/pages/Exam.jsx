@@ -272,7 +272,7 @@ const Exam = () => {
       {/* Header */}
       <div className="mb-6 flex flex-col gap-4 rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-sm backdrop-blur-md md:flex-row md:items-center md:justify-between">
         <div className="space-y-2">
-          <h2 className="text-2xl font-extrabold text-slate-800">
+          <h2 className="text-xl md:text-2xl font-extrabold text-slate-800">
             {type === "pyq"
               ? year
                 ? `PYQ: Year ${year}`
